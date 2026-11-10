@@ -71,6 +71,31 @@ window.PORTFOLIO = {
   ],
   "projects": [
     {
+      "id": "fine-nest",
+      "title": "FINE NEST",
+      "category": "Branding & Logo",
+      "subtitle": "Logo Design",
+      "description": "ผลงานออกแบบโลโก้ FINE NEST",
+      "visual": "fine-nest",
+      "mark": "FN",
+      "image": "media-8471bce3a407.jpg",
+      "gallery": [
+        {
+          "src": "media-8471bce3a407.jpg",
+          "alt": "โลโก้ FINE NEST สีทองบนพื้นแดง"
+        }
+      ],
+      "overview": "ผลงานออกแบบโลโก้ FINE NEST นำเสนอด้วยโทนสีทองและแดง",
+      "context": null,
+      "challenge": null,
+      "role": null,
+      "approach": null,
+      "deliverables": [
+        "Logo design"
+      ],
+      "results": null
+    },
+    {
       "id": "satit-kaset-55",
       "title": "55 ปี สาธิตเกษตร",
       "category": "Video & Motion",
