@@ -479,3 +479,6 @@ a.contact-channel:hover { border-color: var(--secondary); background: #221d4580;
   object-fit: cover;
   object-position: center;
 }
+
+/* SGS detail: border follows the original artwork without side gaps. */
+.case-hero .thumbnail.sgs-hawaii { aspect-ratio: 893 / 1264; }
