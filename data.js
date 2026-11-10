@@ -71,6 +71,35 @@ window.PORTFOLIO = {
   ],
   "projects": [
     {
+      "id": "bedo-brochure",
+      "title": "BEDO — B MARK Brochure",
+      "category": "Graphic & Key Visual",
+      "subtitle": "Brochure Design",
+      "description": "ออกแบบโบรชัวร์ BEDO เครื่องหมาย B MARK",
+      "visual": "bedo-brochure",
+      "mark": "BEDO",
+      "image": "media-7d4fca733bc9.png",
+      "detailLayout": "image-stack",
+      "gallery": [
+        {
+          "src": "media-315743986cb9.png",
+          "alt": "BEDO B MARK — ภาพแบนเนอร์โบรชัวร์"
+        },
+        {
+          "src": "media-6bf4c03d103a.jpg",
+          "alt": "BEDO B MARK — โบรชัวร์ด้านนอก"
+        },
+        {
+          "src": "media-951d0f3371d4.jpg",
+          "alt": "BEDO B MARK — โบรชัวร์ด้านใน"
+        }
+      ],
+      "overview": "ผลงานออกแบบโบรชัวร์ BEDO เครื่องหมาย B MARK",
+      "deliverables": [
+        "Brochure design"
+      ]
+    },
+    {
       "id": "sgs-colorful-hawaii-party",
       "title": "SGS — Colorful Hawaii Party",
       "category": "Graphic & Key Visual",

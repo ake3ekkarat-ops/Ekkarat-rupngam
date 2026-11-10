@@ -104,6 +104,9 @@
   function caseStudy(id){
     const p=projects.find(x=>x.id===id);if(!p)return notFound();
     const next=projects[(projects.indexOf(p)+1)%projects.length];
+    if(p.detailLayout==='image-stack'){
+      return heading('CASE STUDY / '+esc(p.category),esc(p.title),esc(p.subtitle))+'<section class="page-body container"><div class="case-image-stack">'+p.gallery.filter(x=>asset(x.src)).map((x,i)=>'<figure class="'+(i===0?'case-stack-banner':'case-stack-detail')+'"><img src="'+asset(x.src)+'" alt="'+esc(x.alt||p.title)+'" loading="'+(i===0?'eager':'lazy')+'"></figure>').join('')+'</div><a class="text-link" href="#/work" style="margin-top:25px">Back to All Work '+arrow+'</a></section>';
+    }
     if(p.category==='Video & Motion'&&asset(p.videoUrl)){
       return heading('CASE STUDY / '+esc(p.category),esc(p.title),esc(p.subtitle))+`<section class="page-body container"><video class="case-video" controls playsinline preload="metadata" src="${asset(p.videoUrl)}">Your browser does not support this video.</video>${asset(p.image)?'<div class="case-gallery"><figure><img src="'+asset(p.image)+'" alt="โลโก้ / ภาพปก '+esc(p.title)+'" loading="lazy"></figure></div>':''}${p.overview?'<div class="case-section"><h2>Project overview</h2><p>'+esc(p.overview)+'</p></div>':''}${p.gallery.length?'<div class="case-gallery">'+p.gallery.filter(x=>asset(x.src)).map(x=>'<figure><img src="'+asset(x.src)+'" alt="'+esc(x.alt||p.title)+'" loading="lazy"></figure>').join('')+'</div>':''}<a class="next-project" href="#/project/${next.id}"><div><span class="eyebrow">NEXT PROJECT</span><h2>${esc(next.title)}</h2></div><span aria-hidden="true">↗</span></a><a class="text-link" href="#/work" style="margin-top:25px">Back to All Work ${arrow}</a></section>`;
     }
