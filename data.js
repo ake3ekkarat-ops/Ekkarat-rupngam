@@ -71,6 +71,31 @@ window.PORTFOLIO = {
   ],
   "projects": [
     {
+      "id": "sgs-colorful-hawaii-party",
+      "title": "SGS — Colorful Hawaii Party",
+      "category": "Graphic & Key Visual",
+      "subtitle": "Event Key Visual",
+      "description": "ออกแบบ Key Visual สำหรับงาน SGS Laboratory — Colorful Hawaii Party",
+      "visual": "sgs-hawaii",
+      "mark": "SGS",
+      "image": "media-e0490f2c7719.jpg",
+      "gallery": [
+        {
+          "src": "media-e0490f2c7719.jpg",
+          "alt": "SGS Laboratory — Colorful Hawaii Party Key Visual"
+        }
+      ],
+      "overview": "ผลงานออกแบบ Key Visual งาน Colorful Hawaii Party ของ SGS Laboratory ในบรรยากาศทรอปิคอลสีสันสดใส",
+      "context": null,
+      "challenge": null,
+      "role": null,
+      "approach": null,
+      "deliverables": [
+        "Event key visual"
+      ],
+      "results": null
+    },
+    {
       "id": "fine-nest",
       "title": "FINE NEST",
       "category": "Branding & Logo",
