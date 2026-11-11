@@ -126,6 +126,18 @@
     revealObserver=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.remove('reveal-pending');revealObserver.unobserve(e.target)}}),{threshold:.05});
     document.querySelectorAll('.reveal').forEach(el=>{if(el.getBoundingClientRect().top>innerHeight){el.classList.add('reveal-pending');revealObserver.observe(el)}});
   }
+  function aiPage(){
+    return heading('AI LEARNING','ใช้ AI กับงานครีเอทีฟและการตลาด','เรียนรู้วิธีใช้ AI ตั้งแต่คิดไอเดียจนถึงทำชิ้นงาน ผ่านโจทย์ที่นำไปใช้กับงานของคุณได้')+
+      `<section class="page-body container" lang="th">
+        <h2>หัวข้อที่สนใจเรียนได้</h2>
+        <div class="interests-grid">
+          <article class="interest-card"><h3>ChatGPT สำหรับงานคอนเทนต์</h3><p>เขียนบรีฟ คิดหัวข้อ วางแผนโพสต์ และตรวจทานคำตอบก่อนนำไปใช้จริง</p></article>
+          <article class="interest-card"><h3>AI สำหรับงานภาพและวิดีโอ</h3><p>พัฒนาแนวทางภาพ ทำมู้ดบอร์ด และวางสตอรีบอร์ดจากโจทย์แบรนด์</p></article>
+          <article class="interest-card"><h3>AI สำหรับงานการตลาด</h3><p>แตกไอเดียแคมเปญ ร่างข้อความโฆษณาหลายแบบ และวางแผนทดสอบคอนเทนต์</p></article>
+        </div>
+        <div class="page-cta"><div><h2>สนใจเรียนหรือต้องการเวิร์กช็อป?</h2><p>บอกหัวข้อที่สนใจและลักษณะงานของคุณ เพื่อคุยเรื่องรูปแบบการเรียนและราคา</p></div>${btn('สอบถามทาง LINE',profile.line)}</div>
+      </section>`;
+  }
   function render(){
     const raw=location.hash.slice(1)||'/';
     if(!raw.startsWith('/'))return;
@@ -133,7 +145,7 @@
     const [path,query='']=raw.split('?'),parts=path.split('/').filter(Boolean),params=new URLSearchParams(query);
     const route=parts[0]||'home';
     activeCategory=categories.includes(params.get('category'))?params.get('category'):'All Projects';
-    const views={home,work:workPage,services:servicesPage,about:aboutPage,contact:contactPage,project:()=>caseStudy(parts[1])};
+    const views={home,work:workPage,services:servicesPage,about:aboutPage,ai:aiPage,contact:contactPage,project:()=>caseStudy(parts[1])};
     main.innerHTML=(views[route]||notFound)();
     document.querySelectorAll('[data-nav]').forEach(a=>{const current=a.dataset.nav===route||(route==='project'&&a.dataset.nav==='work');if(current)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
     const title=route==='project'?(projects.find(p=>p.id===parts[1])?.title||'Project'):({home:'Creative Designer & Digital Creator',work:'Work',services:'Services',about:'About',contact:'Contact'}[route]||'Page not found');
