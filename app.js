@@ -148,7 +148,7 @@
     const views={home,work:workPage,services:servicesPage,about:aboutPage,ai:aiPage,contact:contactPage,project:()=>caseStudy(parts[1])};
     main.innerHTML=(views[route]||notFound)();
     document.querySelectorAll('[data-nav]').forEach(a=>{const current=a.dataset.nav===route||(route==='project'&&a.dataset.nav==='work');if(current)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
-    const title=route==='project'?(projects.find(p=>p.id===parts[1])?.title||'Project'):({home:'Creative Designer & Digital Creator',work:'Work',services:'Services',about:'About',contact:'Contact'}[route]||'Page not found');
+    const title=route==='project'?(projects.find(p=>p.id===parts[1])?.title||'Project'):({home:'Creative Designer & Digital Creator',work:'Work',services:'Services',about:'About',ai:'AI Learning',contact:'Contact'}[route]||'Page not found');
     document.title='AKE EKKARAT — '+title;
     setupForm(params.get('service'));
     window.scrollTo({top:0,behavior:'instant'});main.focus({preventScroll:true});
