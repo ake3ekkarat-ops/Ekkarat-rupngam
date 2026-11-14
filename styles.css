@@ -326,12 +326,40 @@ body:has(.hero-stage) {
   margin-bottom: 9px;
   overflow-wrap: anywhere;
 }
-#main:has(.hero-stage) .work-grid .project-meta p:not(.category) {
+#main:has(.hero-stage) .work-grid .project-subtitle,
+#main:not(:has(.hero-stage)) .work-grid .project-subtitle {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  min-height: 24px;
+  margin: 0 0 9px;
+  padding: 4px 9px;
+  border: 1px solid color-mix(in srgb, var(--secondary) 30%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--secondary) 9%, transparent);
+  color: var(--secondary);
+  font-size: 9px;
+  line-height: 1.35;
+  letter-spacing: .035em;
+}
+#main:has(.hero-stage) .work-grid .project-meta p:not(.category):not(.project-subtitle) {
   font-size: 12px;
   line-height: 1.75;
   min-height: 0;
   margin: 0;
   overflow-wrap: anywhere;
+}
+#main:has(.hero-stage) .work-grid .project-meta .project-description {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+#main:not(:has(.hero-stage)) .work-grid .project-meta .project-description {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 #main:has(.hero-stage) .work-grid .project-arrow {
   width: 40px;
