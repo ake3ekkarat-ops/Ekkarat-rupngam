@@ -514,6 +514,20 @@ a.contact-channel:hover { border-color: var(--secondary); background: #221d4580;
 .case-image-stack { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; }
 .case-image-stack figure { width: min(100%, 800px); margin: 0 auto; min-width: 0; }
 .case-image-stack img { display: block; width: 100%; height: auto; border-radius: 10px; }
+.case-gallery-groups { display: grid; gap: clamp(58px, 8vw, 92px); }
+.case-gallery-group { min-width: 0; }
+.case-gallery-group-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; padding-bottom: 18px; margin-bottom: 24px; border-bottom: 1px solid var(--line); }
+.case-gallery-group-heading .eyebrow { display: block; margin-bottom: 10px; }
+.case-gallery-group-heading h2 { font-size: clamp(28px, 4vw, 42px); }
+.case-gallery-count { flex: none; color: var(--muted); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+.case-gallery-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; align-items: start; }
+.case-gallery-grid figure { min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+.case-gallery-grid img { display: block; width: 100%; height: auto; object-fit: contain; }
+@media (max-width: 650px) {
+  .case-gallery-groups { gap: 52px; }
+  .case-gallery-group-heading { align-items: start; margin-bottom: 18px; }
+  .case-gallery-grid { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+}
 
 /* BEDO cards share the square Ruean Luang card geometry. */
 .work-grid .project-card .thumbnail:is(.ruean-long, .bedo-brochure) { width: 100%; aspect-ratio: 1 / 1; }

@@ -105,7 +105,7 @@ window.PORTFOLIO = {
       "visual": "neofusion",
       "mark": "NF",
       "image": "assets/brands/neofusion.jpg",
-      "detailLayout": "image-stack",
+      "detailLayout": "grouped-gallery",
       "gallery": [
         { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/Earth_s-Pearl-04.jpg", "alt": "NeoFusion — Banner 01" },
         { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/Earth_s-Pearl.jpg", "alt": "NeoFusion — Banner 02" },
@@ -142,7 +142,7 @@ window.PORTFOLIO = {
       "visual": "earths-pearl",
       "mark": "EP",
       "image": "assets/brands/earthspearl-profile.jpg",
-      "detailLayout": "image-stack",
+      "detailLayout": "grouped-gallery",
       "gallery": [
         { "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earth's%20Pearl.jpg", "alt": "Earth’s Pearl — Banner 01" },
         { "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earth_s%20Pearl-02.jpg", "alt": "Earth’s Pearl — Banner 02" },

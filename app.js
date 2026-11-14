@@ -104,6 +104,12 @@
   function caseStudy(id){
     const p=projects.find(x=>x.id===id);if(!p)return notFound();
     const next=projects[(projects.indexOf(p)+1)%projects.length];
+    if(p.detailLayout==='grouped-gallery'){
+      const groupName=item=>{const path=decodeURIComponent(item.src||'');if(path.includes('อัลบั้ม2'))return'Album 02';if(path.includes('อัลบั้ม'))return'Album 01';return'Single Banner'};
+      const groups=['Single Banner','Album 01','Album 02'].map(title=>({title,items:p.gallery.filter(x=>asset(x.src)&&groupName(x)===title)})).filter(group=>group.items.length);
+      let imageIndex=0;
+      return heading('CASE STUDY / '+esc(p.category),esc(p.title),esc(p.subtitle))+'<section class="page-body container"><div class="case-gallery-groups">'+groups.map(group=>'<section class="case-gallery-group"><div class="case-gallery-group-heading"><div><span class="eyebrow accent">'+(group.title==='Single Banner'?'INDIVIDUAL ARTWORK':'SOCIAL MEDIA SERIES')+'</span><h2>'+esc(group.title)+'</h2></div><span class="case-gallery-count">'+group.items.length+' images</span></div><div class="case-gallery-grid">'+group.items.map(item=>{const eager=imageIndex++===0;return'<figure><img src="'+asset(item.src)+'" alt="'+esc(item.alt||p.title)+'" loading="'+(eager?'eager':'lazy')+'"></figure>'}).join('')+'</div></section>').join('')+'</div><a class="text-link" href="#/work" style="margin-top:25px">Back to All Work '+arrow+'</a></section>';
+    }
     if(p.detailLayout==='image-stack'){
       return heading('CASE STUDY / '+esc(p.category),esc(p.title),esc(p.subtitle))+'<section class="page-body container"><div class="case-image-stack">'+p.gallery.filter(x=>asset(x.src)).map((x,i)=>'<figure class="'+(i===0?'case-stack-banner':'case-stack-detail')+'"><img src="'+asset(x.src)+'" alt="'+esc(x.alt||p.title)+'" loading="'+(i===0?'eager':'lazy')+'"></figure>').join('')+'</div><a class="text-link" href="#/work" style="margin-top:25px">Back to All Work '+arrow+'</a></section>';
     }
