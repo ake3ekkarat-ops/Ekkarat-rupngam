@@ -71,6 +71,84 @@ window.PORTFOLIO = {
   ],
   "projects": [
     {
+      "id": "suf-create",
+      "title": "Suf Create",
+      "category": "Branding & Logo",
+      "subtitle": "Logo Design",
+      "description": "ผลงานออกแบบโลโก้และอัตลักษณ์สำหรับ Suf Create",
+      "visual": "suf-create",
+      "mark": "SUF",
+      "image": "assets/brands/sufcreate.webp",
+      "gallery": [
+        {
+          "src": "assets/brands/sufcreate.webp",
+          "alt": "โลโก้ Suf Create"
+        }
+      ],
+      "overview": "ผลงานออกแบบโลโก้และพัฒนาอัตลักษณ์ภาพสำหรับ Suf Create เพื่อให้แบรนด์มีภาพจำที่ชัดเจนและนำไปใช้งานต่อได้อย่างสม่ำเสมอ",
+      "context": "งานพัฒนาอัตลักษณ์สำหรับธุรกิจครีเอทีฟ",
+      "challenge": null,
+      "role": "Logo Design / Visual Identity",
+      "approach": null,
+      "deliverables": [
+        "Logo design",
+        "Visual identity"
+      ],
+      "results": null
+    },
+    {
+      "id": "neofusion",
+      "title": "NeoFusion",
+      "category": "Branding & Logo",
+      "subtitle": "Key Visual Design",
+      "description": "ออกแบบ Key Visual สำหรับผลิตภัณฑ์เสริมอาหาร NeoFusion",
+      "visual": "neofusion",
+      "mark": "NF",
+      "image": "assets/brands/neofusion.jpg",
+      "gallery": [
+        {
+          "src": "assets/brands/neofusion.jpg",
+          "alt": "NeoFusion Key Visual"
+        }
+      ],
+      "overview": "ผลงานออกแบบ Key Visual สำหรับผลิตภัณฑ์เสริมอาหาร NeoFusion โดยพัฒนาภาพลักษณ์ให้สื่อถึงนวัตกรรมและความทันสมัยของผลิตภัณฑ์",
+      "context": "งานสื่อสารภาพลักษณ์ผลิตภัณฑ์เสริมอาหาร",
+      "challenge": null,
+      "role": "Key Visual Design",
+      "approach": null,
+      "deliverables": [
+        "Key visual",
+        "Digital artwork"
+      ],
+      "results": null
+    },
+    {
+      "id": "earths-pearl",
+      "title": "Earth’s Pearl",
+      "category": "Branding & Logo",
+      "subtitle": "Key Visual Design",
+      "description": "ออกแบบ Key Visual สำหรับแบรนด์ Earth’s Pearl Probiotic",
+      "visual": "earths-pearl",
+      "mark": "EP",
+      "image": "assets/brands/earthspearl-profile.jpg",
+      "gallery": [
+        {
+          "src": "assets/brands/earthspearl-profile.jpg",
+          "alt": "Earth’s Pearl Probiotic Key Visual"
+        }
+      ],
+      "overview": "ผลงานออกแบบ Key Visual สำหรับแบรนด์ Earth’s Pearl Probiotic เพื่อสร้างภาพลักษณ์ที่จดจำง่ายและสอดคล้องกับกลุ่มผลิตภัณฑ์สุขภาพ",
+      "context": "งานสื่อสารภาพลักษณ์ผลิตภัณฑ์สุขภาพ",
+      "challenge": null,
+      "role": "Key Visual Design",
+      "approach": null,
+      "deliverables": [
+        "Key visual",
+        "Digital artwork"
+      ],
+      "results": null
+    },
+    {
       "id": "bedo-brochure",
       "title": "B MARK by BEDO",
       "category": "Graphic & Key Visual",

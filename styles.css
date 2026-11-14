@@ -517,6 +517,8 @@ a.contact-channel:hover { border-color: var(--secondary); background: #221d4580;
 
 /* BEDO cards share the square Ruean Luang card geometry. */
 .work-grid .project-card .thumbnail:is(.ruean-long, .bedo-brochure) { width: 100%; aspect-ratio: 1 / 1; }
+.work-grid .project-card .thumbnail:is(.suf-create, .neofusion, .earths-pearl) { width: 100%; aspect-ratio: 1 / 1; }
+.work-grid .thumbnail:is(.suf-create, .neofusion, .earths-pearl) .thumbnail-image { object-fit: cover; object-position: center; }
 .work-grid .thumbnail.bedo-brochure .thumbnail-content { background: #e4e4e4; min-width: 0; min-height: 0; transform: none; }
 .work-grid .thumbnail.bedo-brochure .thumbnail-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: center; }
 
