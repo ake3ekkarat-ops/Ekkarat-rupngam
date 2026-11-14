@@ -153,6 +153,8 @@
     activeCategory=categories.includes(params.get('category'))?params.get('category'):'All Projects';
     const views={home,work:workPage,services:servicesPage,about:aboutPage,ai:aiPage,contact:contactPage,project:()=>caseStudy(parts[1])};
     main.innerHTML=(views[route]||notFound)();
+    const sufLogo=main.querySelector('.brand-logo-image[alt="Sufcreate"]');
+    if(sufLogo){sufLogo.src='assets/works/branding%20%26%20Logo/Suf%20create/logo%20suf%20create.jpg';sufLogo.alt='Suf Create'}
     document.querySelectorAll('[data-nav]').forEach(a=>{const current=a.dataset.nav===route||(route==='project'&&a.dataset.nav==='work');if(current)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
     const title=route==='project'?(projects.find(p=>p.id===parts[1])?.title||'Project'):({home:'Creative Designer & Digital Creator',work:'Work',services:'Services',about:'About',ai:'AI Learning',contact:'Contact'}[route]||'Page not found');
     document.title='AKE EKKARAT — '+title;

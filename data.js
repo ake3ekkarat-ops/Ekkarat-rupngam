@@ -78,10 +78,10 @@ window.PORTFOLIO = {
       "description": "ผลงานออกแบบโลโก้และอัตลักษณ์สำหรับ Suf Create",
       "visual": "suf-create",
       "mark": "SUF",
-      "image": "assets/brands/sufcreate.webp",
+      "image": "assets/works/branding%20%26%20Logo/Suf%20create/logo%20suf%20create.jpg",
       "gallery": [
         {
-          "src": "assets/brands/sufcreate.webp",
+          "src": "assets/works/branding%20%26%20Logo/Suf%20create/logo%20suf%20create.jpg",
           "alt": "โลโก้ Suf Create"
         }
       ],
