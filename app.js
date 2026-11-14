@@ -210,32 +210,3 @@
   window.addEventListener('hashchange',render);
   render();
 })();
-
-
-
-
-
-
-
-
-
-
-
-
-
-(() => {
-  const root = document.documentElement;
-  const toggle = document.getElementById('theme-toggle');
-  const themeColor = document.querySelector('meta[name="theme-color"]');
-  function applyTheme(light) {
-    root.dataset.theme = light ? 'light' : 'dark';
-    toggle.setAttribute('aria-pressed', String(light));
-    themeColor.content = light ? '#f6f7fc' : '#08051d';
-  }
-  applyTheme(root.dataset.theme === 'light');
-  toggle.addEventListener('click', () => {
-    const light = root.dataset.theme !== 'light';
-    applyTheme(light);
-    try { localStorage.setItem('ake-theme', root.dataset.theme); } catch {}
-  });
-})();
