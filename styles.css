@@ -526,6 +526,27 @@ a.contact-channel:hover { border-color: var(--secondary); background: #221d4580;
 
 #main:has(.hero-stage) .work-grid .project-card:has(.thumbnail:is(.bedo-brochure, .fine-nest)) { align-self: start; height: auto; }
 
+/* BEDO Home card: let the cover artwork meet the card edges. */
+#main:has(.hero-stage) .work-grid .project-card:has(.thumbnail.bedo-brochure) {
+  padding: 0;
+  overflow: hidden;
+}
+#main:has(.hero-stage) .work-grid .project-card:has(.thumbnail.bedo-brochure) .thumbnail {
+  border: 0;
+  border-radius: 11px 0 0 11px;
+}
+#main:has(.hero-stage) .work-grid .project-card:has(.thumbnail.bedo-brochure) .project-meta {
+  padding: 20px 20px 20px 2px;
+}
+@media (max-width: 650px) {
+  #main:has(.hero-stage) .work-grid .project-card:has(.thumbnail.bedo-brochure) .thumbnail {
+    border-radius: 11px 11px 0 0;
+  }
+  #main:has(.hero-stage) .work-grid .project-card:has(.thumbnail.bedo-brochure) .project-meta {
+    padding: 18px;
+  }
+}
+
 @media (max-width: 380px) {
   .nav-actions .button-small { display: none; }
 }
