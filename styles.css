@@ -484,7 +484,7 @@ a.contact-channel:hover { border-color: var(--secondary); background: #221d4580;
 .case-hero .thumbnail.sgs-hawaii { aspect-ratio: 893 / 1264; }
 
 .case-image-stack { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; }
-.case-image-stack figure { margin: 0; min-width: 0; }
+.case-image-stack figure { width: min(100%, 800px); margin: 0 auto; min-width: 0; }
 .case-image-stack img { display: block; width: 100%; height: auto; border-radius: 10px; }
 
 /* BEDO cards share the square Ruean Luang card geometry. */
@@ -493,4 +493,61 @@ a.contact-channel:hover { border-color: var(--secondary); background: #221d4580;
 .work-grid .thumbnail.bedo-brochure .thumbnail-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: center; }
 
 /* Fill the BEDO card edge to edge. */
-#main .work-grid .project-card .thumbnail.bedo-brochure .thumbnail-image { object-fit: cover; object-position: center; }
+#main:not(:has(.hero-stage)) .work-grid .project-card .thumbnail.bedo-brochure .thumbnail-image { object-fit: cover; object-position: center; }
+
+#main:has(.hero-stage) .work-grid .project-card:has(.thumbnail:is(.bedo-brochure, .fine-nest)) { align-self: start; height: auto; }
+
+/* Theme control and light palette. */
+.theme-toggle {
+  display: grid;
+  place-items: center;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--surface);
+}
+.theme-toggle:hover { border-color: var(--secondary); }
+.theme-icon { width: 19px; height: 19px; }
+.theme-sun, [data-theme="light"] .theme-moon { display: none; }
+[data-theme="light"] .theme-sun { display: block; }
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f6f7fc;
+  --surface: #fff;
+  --text: #161832;
+  --muted: #515773;
+  --line: #d9def0;
+  --primary: #6133ca;
+  --secondary: #096a96;
+  --gradient: linear-gradient(90deg,#6333c8,#086b99);
+}
+[data-theme="light"] :is(.site-header,.mobile-menu,.project-card,.service-item,.interest-card,.info-block,.contact-line,.page-cta,.philosophy,.podcast-interests,.soft-skills-list li,.brand-logo-tile) {
+  background: var(--surface);
+  border-color: var(--line);
+}
+[data-theme="light"] :is(.tag,.project-arrow,.menu-toggle,.close-button,.filter) {
+  background: var(--surface);
+  color: var(--text);
+}
+[data-theme="light"] :is(.button:not(.button-secondary),.filter[aria-pressed="true"]) {
+  background: var(--gradient);
+  color: #fff;
+}
+[data-theme="light"] .button-secondary { color: inherit; }
+[data-theme="light"] .hero-stage {
+  --text: #f5f7ff;
+  --muted: #e4e8fa;
+  --secondary: #8bdcff;
+  --gradient: linear-gradient(90deg,#b897ff,#75dbff);
+  color: var(--text);
+}
+[data-theme="light"] .hero-stage .button:not(.button-secondary) {
+  background: linear-gradient(90deg,#6333c8,#086b99);
+}
+[data-theme="light"] .thumbnail-content { color: #f5f7ff; }
+@media (max-width: 380px) {
+  .nav-actions .button-small { display: none; }
+}

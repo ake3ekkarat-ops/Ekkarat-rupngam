@@ -72,7 +72,7 @@ window.PORTFOLIO = {
   "projects": [
     {
       "id": "bedo-brochure",
-      "title": "BEDO — B MARK Brochure",
+      "title": "B MARK by BEDO",
       "category": "Graphic & Key Visual",
       "subtitle": "Brochure Design",
       "description": "ออกแบบโบรชัวร์ BEDO เครื่องหมาย B MARK",
