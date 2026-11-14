@@ -99,52 +99,72 @@ window.PORTFOLIO = {
     {
       "id": "neofusion",
       "title": "NeoFusion",
-      "category": "Branding & Logo",
-      "subtitle": "Key Visual Design",
-      "description": "ออกแบบ Key Visual สำหรับผลิตภัณฑ์เสริมอาหาร NeoFusion",
+      "category": "Graphic & Key Visual",
+      "subtitle": "Banner Design",
+      "description": "ออกแบบแบนเนอร์ประชาสัมพันธ์สำหรับผลิตภัณฑ์ NeoFusion",
       "visual": "neofusion",
       "mark": "NF",
       "image": "assets/brands/neofusion.jpg",
+      "detailLayout": "image-stack",
       "gallery": [
-        {
-          "src": "assets/brands/neofusion.jpg",
-          "alt": "NeoFusion Key Visual"
-        }
+        { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/Earth_s-Pearl-04.jpg", "alt": "NeoFusion — Banner 01" },
+        { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/Earth_s-Pearl.jpg", "alt": "NeoFusion — Banner 02" },
+        { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/Earth_s-Pearl2.jpg", "alt": "NeoFusion — Banner 03" },
+        { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/Earth_s-Pearl3.jpg", "alt": "NeoFusion — Banner 04" },
+        { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/NeoFusion-6.jpg", "alt": "NeoFusion — Banner 05" },
+        { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/NeoFusion.jpg", "alt": "NeoFusion — Banner 06" },
+        { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A12/NeoFusion%20(1)-01.jpg", "alt": "NeoFusion — Banner 07" },
+        { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A12/NeoFusion%20(1)-02.jpg", "alt": "NeoFusion — Banner 08" },
+        { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A12/NeoFusion%20(1)-03.jpg", "alt": "NeoFusion — Banner 09" },
+        { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A12/NeoFusion%20(1)-04.jpg", "alt": "NeoFusion — Banner 10" },
+        { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A1/Earth_s%20Pearl-01.jpg", "alt": "NeoFusion — Banner 11" },
+        { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A1/Earth_s%20Pearl-02.jpg", "alt": "NeoFusion — Banner 12" },
+        { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A1/Earth_s%20Pearl-03.jpg", "alt": "NeoFusion — Banner 13" },
+        { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A1/Earth_s%20Pearl-04.jpg", "alt": "NeoFusion — Banner 14" },
+        { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A1/Earth_s%20Pearl-05.jpg", "alt": "NeoFusion — Banner 15" }
       ],
-      "overview": "ผลงานออกแบบ Key Visual สำหรับผลิตภัณฑ์เสริมอาหาร NeoFusion โดยพัฒนาภาพลักษณ์ให้สื่อถึงนวัตกรรมและความทันสมัยของผลิตภัณฑ์",
-      "context": "งานสื่อสารภาพลักษณ์ผลิตภัณฑ์เสริมอาหาร",
+      "overview": "ผลงานออกแบบแบนเนอร์ประชาสัมพันธ์สำหรับผลิตภัณฑ์ NeoFusion",
+      "context": null,
       "challenge": null,
-      "role": "Key Visual Design",
+      "role": "Banner Design",
       "approach": null,
       "deliverables": [
-        "Key visual",
-        "Digital artwork"
+        "Digital banners"
       ],
       "results": null
     },
     {
       "id": "earths-pearl",
       "title": "Earth’s Pearl",
-      "category": "Branding & Logo",
-      "subtitle": "Key Visual Design",
-      "description": "ออกแบบ Key Visual สำหรับแบรนด์ Earth’s Pearl Probiotic",
+      "category": "Graphic & Key Visual",
+      "subtitle": "Banner Design",
+      "description": "ออกแบบแบนเนอร์ประชาสัมพันธ์สำหรับ Earth’s Pearl Probiotic",
       "visual": "earths-pearl",
       "mark": "EP",
       "image": "assets/brands/earthspearl-profile.jpg",
+      "detailLayout": "image-stack",
       "gallery": [
-        {
-          "src": "assets/brands/earthspearl-profile.jpg",
-          "alt": "Earth’s Pearl Probiotic Key Visual"
-        }
+        { "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earth's%20Pearl.jpg", "alt": "Earth’s Pearl — Banner 01" },
+        { "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earth_s%20Pearl-02.jpg", "alt": "Earth’s Pearl — Banner 02" },
+        { "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earth_s-Pearl-01.jpg", "alt": "Earth’s Pearl — Banner 03" },
+        { "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earth_s-Pearl-02.jpg", "alt": "Earth’s Pearl — Banner 04" },
+        { "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earth_s-Pearl-04.jpg", "alt": "Earth’s Pearl — Banner 05" },
+        { "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earth_s-Pearl-1.jpg", "alt": "Earth’s Pearl — Banner 06" },
+        { "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earth_s-Pearl-6.jpg", "alt": "Earth’s Pearl — Banner 07" },
+        { "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earth_s-Pearl.jpg", "alt": "Earth’s Pearl — Banner 08" },
+        { "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earthpearl-02.jpg", "alt": "Earth’s Pearl — Banner 09" },
+        { "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A11/Earth_s%20Pearl-01.jpg", "alt": "Earth’s Pearl — Banner 10" },
+        { "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A11/Earth_s%20Pearl-02.jpg", "alt": "Earth’s Pearl — Banner 11" },
+        { "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A11/Earth_s%20Pearl-03.jpg", "alt": "Earth’s Pearl — Banner 12" },
+        { "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A11/Earth_s%20Pearl-04.jpg", "alt": "Earth’s Pearl — Banner 13" }
       ],
-      "overview": "ผลงานออกแบบ Key Visual สำหรับแบรนด์ Earth’s Pearl Probiotic เพื่อสร้างภาพลักษณ์ที่จดจำง่ายและสอดคล้องกับกลุ่มผลิตภัณฑ์สุขภาพ",
-      "context": "งานสื่อสารภาพลักษณ์ผลิตภัณฑ์สุขภาพ",
+      "overview": "ผลงานออกแบบแบนเนอร์ประชาสัมพันธ์สำหรับ Earth’s Pearl Probiotic",
+      "context": null,
       "challenge": null,
-      "role": "Key Visual Design",
+      "role": "Banner Design",
       "approach": null,
       "deliverables": [
-        "Key visual",
-        "Digital artwork"
+        "Digital banners"
       ],
       "results": null
     },
