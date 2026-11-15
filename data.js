@@ -279,6 +279,39 @@ window.PORTFOLIO = {
       "results": null
     },
     {
+      "id": "ocs-international-symposium-2024",
+      "title": "OCS International Symposium 2024",
+      "category": "Graphic & Key Visual",
+      "subtitle": "Conference Key Visual",
+      "description": "ออกแบบ Key Visual สำหรับงาน OCS International Symposium 2024",
+      "visual": "ocs-symposium",
+      "mark": "OCS",
+      "image": "assets/works/Graphic%20%26%20Key%20Visual/OCS%20International%20Symposium%202024/OCS-International-Symposium-2024.jpg",
+      "detailImage": "assets/works/Graphic%20%26%20Key%20Visual/OCS%20International%20Symposium%202024/ocs.jpg",
+      "detailLabel": "Key Visual",
+      "detailLayout": "work-sets",
+      "workSets": [
+        {
+          "type": "single",
+          "format": "portrait",
+          "images": [
+            {
+              "src": "assets/works/Graphic%20%26%20Key%20Visual/OCS%20International%20Symposium%202024/OCS-International-Symposium-2024.jpg",
+              "alt": "OCS International Symposium 2024 — Key Visual"
+            }
+          ]
+        }
+      ],
+      "gallery": [],
+      "overview": "Key Visual สำหรับงาน OCS International Symposium 2024 ภายใต้แนวคิด Competitive Thailand, Growing Sustainably Together",
+      "context": null,
+      "challenge": null,
+      "role": "Key Visual Design",
+      "approach": null,
+      "deliverables": ["Conference Key Visual"],
+      "results": null
+    },
+    {
       "id": "yum-yum-sports-day",
       "title": "YUM YUM — Well-Being Sports Day",
       "category": "Graphic & Key Visual",
