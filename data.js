@@ -791,33 +791,39 @@ window.PORTFOLIO = {
   "process": [
     {
       "title": "Discover",
-      "icon": "search",
-      "description": "We start with your goals, audience and the problem worth solving.",
-      "thai": "ทำความเข้าใจแบรนด์ กลุ่มเป้าหมาย และขอบเขตงานร่วมกัน"
+      "icon": "chat",
+      "description": "Understand the brand, audience and project goals.",
+      "thai": "เข้าใจแบรนด์ เป้าหมาย กลุ่มเป้าหมาย และโจทย์ของงาน"
+    },
+    {
+      "title": "Strategize",
+      "icon": "target",
+      "description": "Define the communication and marketing strategy.",
+      "thai": "กำหนดกลยุทธ์การสื่อสารและแนวทางการตลาด ให้ตอบเป้าหมายธุรกิจ"
     },
     {
       "title": "Ideate",
-      "icon": "spark",
-      "description": "Explore ideas, references and creative directions before choosing a path.",
-      "thai": "สำรวจคอนเซปต์และภาพอ้างอิง เพื่อกำหนดทิศทางร่วมกัน"
+      "icon": "bulb",
+      "description": "Develop creative ideas aligned with the strategy.",
+      "thai": "ระดมไอเดียและพัฒนาแนวคิดสร้างสรรค์ ที่สอดคล้องกับกลยุทธ์"
     },
     {
       "title": "Design",
-      "icon": "layout",
-      "description": "Turn the chosen direction into considered, connected design.",
-      "thai": "พัฒนาแนวคิดเป็นชิ้นงาน โดยคำนึงถึงการใช้งานและการสื่อสาร"
+      "icon": "layers",
+      "description": "Turn the direction into clear and compelling design.",
+      "thai": "ลงมือออกแบบและพัฒนาชิ้นงานให้สวยงาม สื่อสารได้ชัดเจน"
     },
     {
       "title": "Refine",
       "icon": "refine",
-      "description": "Review together and sharpen the details within the agreed scope.",
-      "thai": "รับความคิดเห็นและปรับรายละเอียดตามขอบเขตที่ตกลง"
+      "description": "Review feedback and sharpen every detail.",
+      "thai": "ปรับแก้ตาม Feedback และเก็บรายละเอียด ให้มีประสิทธิภาพยิ่งขึ้น"
     },
     {
       "title": "Deliver",
       "icon": "send",
-      "description": "Prepare the final assets and hand over what you need to move forward.",
-      "thai": "ตรวจสอบและส่งมอบไฟล์ตามรูปแบบและเงื่อนไขของโปรเจกต์"
+      "description": "Prepare accurate final assets for every agreed channel.",
+      "thai": "ตรวจสอบความถูกต้อง จัดเตรียมไฟล์ และส่งมอบพร้อมใช้งานในทุกช่องทาง"
     }
   ]
 };
