@@ -228,20 +228,25 @@ window.PORTFOLIO = {
       "detailImage": "assets/works/branding%20%26%20Logo/banner/GoodLife/logo-goodlife.jpg",
       "detailLayout": "work-sets",
       "workSets": [
-        { "type": "album", "images": [
-          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201_8.jpg", "alt": "GoodLife Journey — Banner 01" },
-          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-07.jpg", "alt": "GoodLife Journey — Banner 02" },
-          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-08.jpg", "alt": "GoodLife Journey — Banner 03" },
-          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-09.jpg", "alt": "GoodLife Journey — Banner 04" },
-          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-10.jpg", "alt": "GoodLife Journey — Banner 05" },
-          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-11.jpg", "alt": "GoodLife Journey — Banner 06" },
-          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-12.jpg", "alt": "GoodLife Journey — Banner 07" },
-          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-13.jpg", "alt": "GoodLife Journey — Banner 08" },
-          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-14.jpg", "alt": "GoodLife Journey — Banner 09" },
-          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-15.jpg", "alt": "GoodLife Journey — Banner 10" },
-          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-16.jpg", "alt": "GoodLife Journey — Banner 11" },
-          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-17.jpg", "alt": "GoodLife Journey — Banner 12" },
-          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-18.jpg", "alt": "GoodLife Journey — Banner 13" }
+        { "type": "single", "title": "Cover Design", "label": "GoodLife Journey Cover", "images": [
+          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/cover%20GoodLife.jpg", "alt": "GoodLife Journey — Cover Design" }
+        ] },
+        { "type": "album", "title": "อัลบั้มผู้ชาย / Men", "label": "Men Collection", "images": [
+          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-08.jpg", "alt": "GoodLife Journey — Men 01" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-09.jpg", "alt": "GoodLife Journey — Men 02" }
+        ] },
+        { "type": "album", "title": "อัลบั้มผู้หญิง / Women", "label": "Women Collection", "images": [
+          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201_8.jpg", "alt": "GoodLife Journey — Women 01" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-07.jpg", "alt": "GoodLife Journey — Women 02" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-10.jpg", "alt": "GoodLife Journey — Women 03" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-11.jpg", "alt": "GoodLife Journey — Women 04" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-12.jpg", "alt": "GoodLife Journey — Women 05" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-13.jpg", "alt": "GoodLife Journey — Women 06" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-14.jpg", "alt": "GoodLife Journey — Women 07" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-15.jpg", "alt": "GoodLife Journey — Women 08" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-16.jpg", "alt": "GoodLife Journey — Women 09" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-17.jpg", "alt": "GoodLife Journey — Women 10" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-18.jpg", "alt": "GoodLife Journey — Women 11" }
         ] }
       ],
       "gallery": [],
