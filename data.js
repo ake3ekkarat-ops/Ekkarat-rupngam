@@ -176,13 +176,7 @@ window.PORTFOLIO = {
         { "type": "single", "format": "portrait", "images": [{ "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earth_s-Pearl-1.jpg", "alt": "Earth’s Pearl — Portrait Banner 04" }] },
         { "type": "single", "format": "square", "images": [{ "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earth_s-Pearl-6.jpg", "alt": "Earth’s Pearl — Square Banner 02" }] },
         { "type": "single", "format": "square", "images": [{ "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earth_s-Pearl.jpg", "alt": "Earth’s Pearl — Square Banner 03" }] },
-        { "type": "single", "format": "square", "images": [{ "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earthpearl-02.jpg", "alt": "Earth’s Pearl — Square Banner 04" }] },
-        { "type": "album", "images": [
-          { "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A11/Earth_s%20Pearl-01.jpg", "alt": "Earth’s Pearl — Album 01, image 01" },
-          { "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A11/Earth_s%20Pearl-02.jpg", "alt": "Earth’s Pearl — Album 01, image 02" },
-          { "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A11/Earth_s%20Pearl-03.jpg", "alt": "Earth’s Pearl — Album 01, image 03" },
-          { "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A11/Earth_s%20Pearl-04.jpg", "alt": "Earth’s Pearl — Album 01, image 04" }
-        ] }
+        { "type": "single", "format": "square", "images": [{ "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earthpearl-02.jpg", "alt": "Earth’s Pearl — Square Banner 04" }] }
       ],
       "gallery": [
         { "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earth_s%20Pearl-02.jpg", "alt": "Earth’s Pearl — Banner 02" },
@@ -192,11 +186,7 @@ window.PORTFOLIO = {
         { "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earth_s-Pearl-1.jpg", "alt": "Earth’s Pearl — Banner 06" },
         { "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earth_s-Pearl-6.jpg", "alt": "Earth’s Pearl — Banner 07" },
         { "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earth_s-Pearl.jpg", "alt": "Earth’s Pearl — Banner 08" },
-        { "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earthpearl-02.jpg", "alt": "Earth’s Pearl — Banner 09" },
-        { "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A11/Earth_s%20Pearl-01.jpg", "alt": "Earth’s Pearl — Banner 10" },
-        { "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A11/Earth_s%20Pearl-02.jpg", "alt": "Earth’s Pearl — Banner 11" },
-        { "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A11/Earth_s%20Pearl-03.jpg", "alt": "Earth’s Pearl — Banner 12" },
-        { "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A11/Earth_s%20Pearl-04.jpg", "alt": "Earth’s Pearl — Banner 13" }
+        { "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earthpearl-02.jpg", "alt": "Earth’s Pearl — Banner 09" }
       ],
       "overview": "ผลงานออกแบบแบนเนอร์ประชาสัมพันธ์สำหรับ Earth’s Pearl Probiotic",
       "context": null,
