@@ -105,7 +105,28 @@ window.PORTFOLIO = {
       "visual": "neofusion",
       "mark": "NF",
       "image": "assets/brands/neofusion.jpg",
-      "detailLayout": "grouped-gallery",
+      "detailLayout": "work-sets",
+      "workSets": [
+        { "type": "single", "images": [{ "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/Earth_s-Pearl-04.jpg", "alt": "NeoFusion — Single Banner 01" }] },
+        { "type": "album", "images": [
+          { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A1/Earth_s%20Pearl-01.jpg", "alt": "NeoFusion — Album 01, image 01" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A1/Earth_s%20Pearl-02.jpg", "alt": "NeoFusion — Album 01, image 02" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A1/Earth_s%20Pearl-03.jpg", "alt": "NeoFusion — Album 01, image 03" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A1/Earth_s%20Pearl-04.jpg", "alt": "NeoFusion — Album 01, image 04" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A1/Earth_s%20Pearl-05.jpg", "alt": "NeoFusion — Album 01, image 05" }
+        ] },
+        { "type": "album", "images": [
+          { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A12/NeoFusion%20(1)-01.jpg", "alt": "NeoFusion — Album 02, image 01" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A12/NeoFusion%20(1)-02.jpg", "alt": "NeoFusion — Album 02, image 02" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A12/NeoFusion%20(1)-03.jpg", "alt": "NeoFusion — Album 02, image 03" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A12/NeoFusion%20(1)-04.jpg", "alt": "NeoFusion — Album 02, image 04" }
+        ] },
+        { "type": "single", "images": [{ "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/Earth_s-Pearl.jpg", "alt": "NeoFusion — Single Banner 02" }] },
+        { "type": "single", "images": [{ "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/Earth_s-Pearl2.jpg", "alt": "NeoFusion — Single Banner 03" }] },
+        { "type": "single", "images": [{ "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/Earth_s-Pearl3.jpg", "alt": "NeoFusion — Single Banner 04" }] },
+        { "type": "single", "images": [{ "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/NeoFusion-6.jpg", "alt": "NeoFusion — Single Banner 05" }] },
+        { "type": "single", "images": [{ "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/NeoFusion.jpg", "alt": "NeoFusion — Single Banner 06" }] }
+      ],
       "gallery": [
         { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/Earth_s-Pearl-04.jpg", "alt": "NeoFusion — Banner 01" },
         { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/Earth_s-Pearl.jpg", "alt": "NeoFusion — Banner 02" },
@@ -142,7 +163,24 @@ window.PORTFOLIO = {
       "visual": "earths-pearl",
       "mark": "EP",
       "image": "assets/brands/earthspearl-profile.jpg",
-      "detailLayout": "grouped-gallery",
+      "detailLayout": "work-sets",
+      "workSets": [
+        { "type": "single", "images": [{ "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earth's%20Pearl.jpg", "alt": "Earth’s Pearl — Single Banner 01" }] },
+        { "type": "album", "images": [
+          { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A11/Earth_s%20Pearl-01.jpg", "alt": "Earth’s Pearl — Album 01, image 01" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A11/Earth_s%20Pearl-02.jpg", "alt": "Earth’s Pearl — Album 01, image 02" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A11/Earth_s%20Pearl-03.jpg", "alt": "Earth’s Pearl — Album 01, image 03" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A11/Earth_s%20Pearl-04.jpg", "alt": "Earth’s Pearl — Album 01, image 04" }
+        ] },
+        { "type": "single", "images": [{ "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earth_s%20Pearl-02.jpg", "alt": "Earth’s Pearl — Single Banner 02" }] },
+        { "type": "single", "images": [{ "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earth_s-Pearl-01.jpg", "alt": "Earth’s Pearl — Single Banner 03" }] },
+        { "type": "single", "images": [{ "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earth_s-Pearl-02.jpg", "alt": "Earth’s Pearl — Single Banner 04" }] },
+        { "type": "single", "images": [{ "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earth_s-Pearl-04.jpg", "alt": "Earth’s Pearl — Single Banner 05" }] },
+        { "type": "single", "images": [{ "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earth_s-Pearl-1.jpg", "alt": "Earth’s Pearl — Single Banner 06" }] },
+        { "type": "single", "images": [{ "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earth_s-Pearl-6.jpg", "alt": "Earth’s Pearl — Single Banner 07" }] },
+        { "type": "single", "images": [{ "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earth_s-Pearl.jpg", "alt": "Earth’s Pearl — Single Banner 08" }] },
+        { "type": "single", "images": [{ "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earthpearl-02.jpg", "alt": "Earth’s Pearl — Single Banner 09" }] }
+      ],
       "gallery": [
         { "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earth's%20Pearl.jpg", "alt": "Earth’s Pearl — Banner 01" },
         { "src": "assets/works/branding%20%26%20Logo/banner/Earth's%20Pearl/Earth_s%20Pearl-02.jpg", "alt": "Earth’s Pearl — Banner 02" },

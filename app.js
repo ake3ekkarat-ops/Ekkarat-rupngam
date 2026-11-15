@@ -104,6 +104,11 @@
   function caseStudy(id){
     const p=projects.find(x=>x.id===id);if(!p)return notFound();
     const next=projects[(projects.indexOf(p)+1)%projects.length];
+    if(p.detailLayout==='work-sets'){
+      let imageIndex=0;
+      const sets=(p.workSets||[]).filter(set=>Array.isArray(set.images)&&set.images.some(item=>asset(item.src)));
+      return heading('CASE STUDY / '+esc(p.category),esc(p.title),esc(p.subtitle))+'<section class="page-body container"><div class="work-set-grid">'+sets.map((set,setIndex)=>{const images=set.images.filter(item=>asset(item.src));const isAlbum=set.type==='album';return '<article class="work-set-card"><header class="work-set-head"><h2>'+esc(isAlbum?'Album Design':'Single Banner')+'</h2><span>'+images.length+' '+(images.length===1?'Image':'Images')+'</span></header><div class="work-set-media '+(isAlbum?'is-album':'is-single')+'">'+images.map((item,itemIndex)=>{const eager=imageIndex++===0;return '<figure><img src="'+asset(item.src)+'" alt="'+esc(item.alt||p.title)+'" loading="'+(eager?'eager':'lazy')+'">'+(isAlbum?'<span class="work-set-order" aria-hidden="true">'+String(itemIndex+1).padStart(2,'0')+'</span>':'')+'</figure>'}).join('')+'</div><footer class="work-set-foot"><span>Work Set '+String(setIndex+1).padStart(2,'0')+'</span><span aria-hidden="true">↗</span></footer></article>'}).join('')+'</div><a class="text-link" href="#/work" style="margin-top:25px">Back to All Work '+arrow+'</a></section>';
+    }
     if(p.detailLayout==='grouped-gallery'){
       const groupName=item=>{const path=decodeURIComponent(item.src||'');if(path.includes('อัลบั้ม2'))return'Album 02';if(path.includes('อัลบั้ม'))return'Album 01';return'Single Banner'};
       const groups=['Single Banner','Album 01','Album 02'].map(title=>({title,items:p.gallery.filter(x=>asset(x.src)&&groupName(x)===title)})).filter(group=>group.items.length);
