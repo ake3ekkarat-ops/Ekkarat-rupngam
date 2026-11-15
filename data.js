@@ -130,8 +130,7 @@ window.PORTFOLIO = {
         { "type": "single", "format": "portrait", "images": [{ "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/Earth_s-Pearl.jpg", "alt": "NeoFusion — Single Banner 02" }] },
         { "type": "single", "format": "square", "images": [{ "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/Earth_s-Pearl2.jpg", "alt": "NeoFusion — Single Banner 03" }] },
         { "type": "single", "format": "square", "images": [{ "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/Earth_s-Pearl3.jpg", "alt": "NeoFusion — Single Banner 04" }] },
-        { "type": "single", "format": "portrait", "images": [{ "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/NeoFusion-6.jpg", "alt": "NeoFusion — Single Banner 05" }] },
-        { "type": "single", "format": "square", "images": [{ "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/NeoFusion.jpg", "alt": "NeoFusion — Single Banner 06" }] }
+        { "type": "single", "format": "portrait", "images": [{ "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/NeoFusion-6.jpg", "alt": "NeoFusion — Single Banner 05" }] }
       ],
       "gallery": [
         { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/Earth_s-Pearl-04.jpg", "alt": "NeoFusion — Banner 01" },
@@ -139,7 +138,6 @@ window.PORTFOLIO = {
         { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/Earth_s-Pearl2.jpg", "alt": "NeoFusion — Banner 03" },
         { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/Earth_s-Pearl3.jpg", "alt": "NeoFusion — Banner 04" },
         { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/NeoFusion-6.jpg", "alt": "NeoFusion — Banner 05" },
-        { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/NeoFusion.jpg", "alt": "NeoFusion — Banner 06" },
         { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A12/NeoFusion%20(1)-01.jpg", "alt": "NeoFusion — Banner 07" },
         { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A12/NeoFusion%20(1)-02.jpg", "alt": "NeoFusion — Banner 08" },
         { "src": "assets/works/branding%20%26%20Logo/banner/NeoFusion/%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A12/NeoFusion%20(1)-03.jpg", "alt": "NeoFusion — Banner 09" },
