@@ -713,27 +713,27 @@ window.PORTFOLIO = {
   ],
   "services": [
     {
-      "id": "web",
+      "id": "marketing",
       "number": "01",
-      "title": "UX/UI & Website Design",
-      "icon": "layout",
-      "description": "Clear interfaces. Thoughtful interactions. Digital experiences designed around people.",
-      "thai": "ออกแบบหน้าเว็บและประสบการณ์ผู้ใช้ ให้ใช้งานง่ายและสอดคล้องกับแบรนด์",
+      "title": "Marketing & Creative Strategy",
+      "icon": "marketing",
+      "description": "วางแผนการตลาดและกลยุทธ์การสื่อสาร",
+      "thai": "วางแผนการตลาดและกลยุทธ์การสื่อสาร",
       "deliverables": [
-        "UX structure & wireframes",
-        "Responsive website UI",
-        "Interactive prototypes",
-        "Design handoff"
+        "Marketing direction",
+        "Creative campaign planning",
+        "Communication strategy",
+        "Content planning"
       ],
-      "detail": "From the first wireframe to the final interface, define a clear path between your audience and their next action. Development scope is agreed separately."
+      "detail": "Connect business goals, audience insight and creative direction into a practical communication plan."
     },
     {
       "id": "brand",
       "number": "02",
-      "title": "Brand Identity & Logo",
+      "title": "Branding & Logo Design",
       "icon": "brand",
-      "description": "A distinctive visual language that makes your brand feel like itself.",
-      "thai": "สร้างเอกลักษณ์ผ่านโลโก้ สี ตัวอักษร และระบบภาพที่ใช้ร่วมกันได้",
+      "description": "ออกแบบโลโก้และอัตลักษณ์แบรนด์",
+      "thai": "ออกแบบโลโก้และอัตลักษณ์แบรนด์",
       "deliverables": [
         "Logo exploration & refinement",
         "Color & typography system",
@@ -745,10 +745,10 @@ window.PORTFOLIO = {
     {
       "id": "graphic",
       "number": "03",
-      "title": "Graphic & Digital Campaign",
+      "title": "Graphic & Key Visual Design",
       "icon": "spark",
-      "description": "Bring your message into focus through compelling, consistent creative.",
-      "thai": "ออกแบบสื่อและภาพหลักแคมเปญ ให้ข้อความชัดเจนและต่อเนื่องทุกช่องทาง",
+      "description": "ออกแบบสื่อโฆษณา แบนเนอร์ และงานกราฟิก",
+      "thai": "ออกแบบสื่อโฆษณา แบนเนอร์ และงานกราฟิก",
       "deliverables": [
         "Campaign key visuals",
         "Social media graphics",
@@ -758,12 +758,27 @@ window.PORTFOLIO = {
       "detail": "Connect concept, message and visual direction to create a coherent set of materials for your campaign."
     },
     {
-      "id": "motion",
+      "id": "web",
       "number": "04",
-      "title": "Video & Motion",
+      "title": "UX/UI & Website Design",
+      "icon": "layout",
+      "description": "ออกแบบเว็บไซต์และประสบการณ์ผู้ใช้",
+      "thai": "ออกแบบเว็บไซต์และประสบการณ์ผู้ใช้",
+      "deliverables": [
+        "UX structure & wireframes",
+        "Responsive website UI",
+        "Interactive prototypes",
+        "Design handoff"
+      ],
+      "detail": "From the first wireframe to the final interface, define a clear path between your audience and their next action. Development scope is agreed separately."
+    },
+    {
+      "id": "motion",
+      "number": "05",
+      "title": "Video & Motion Design",
       "icon": "play",
-      "description": "Give your story rhythm, movement and a reason to keep watching.",
-      "thai": "เล่าเรื่องผ่านจังหวะภาพ การตัดต่อ และกราฟิกเคลื่อนไหว",
+      "description": "ตัดต่อวิดีโอและโมชั่นกราฟิก",
+      "thai": "ตัดต่อวิดีโอและโมชั่นกราฟิก",
       "deliverables": [
         "Short-form video editing",
         "Social motion graphics",

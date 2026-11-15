@@ -294,6 +294,15 @@ body:has(.hero-stage) {
   letter-spacing: .08em;
   text-transform: uppercase;
 }
+
+/* Remove the availability strapline from the top banner without leaving a gap. */
+.hero { padding-top: 0; }
+.hero-top { display: none; }
+.services-section .section-heading > p,
+.services-section .service-foot { display: none; }
+@media (max-width: 650px) {
+  .hero { padding-top: 0; }
+}
 @media (max-width: 650px) {
   .site-header .logo { font-size: 17px; }
 }

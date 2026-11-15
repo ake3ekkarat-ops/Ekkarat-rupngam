@@ -21,7 +21,8 @@
       refine:'<path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3"/><circle cx="15" cy="17" r="3"/>',
       send:'<path d="m3 3 18 9-18 9 4-9-4-9Zm4 9h14"/>',
       education:'<path d="m2 9 10-5 10 5-10 5L2 9Zm4 2v6l6 3 6-3v-6M22 9v8"/>',
-      image:'<rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8" cy="8" r="2"/><path d="m3 17 6-5 4 3 4-5 4 7"/>'
+      image:'<rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8" cy="8" r="2"/><path d="m3 17 6-5 4 3 4-5 4 7"/>',
+      marketing:'<path d="M4 20V10M10 20V4M16 20v-7M22 20V7"/><path d="m3 8 6-5 6 6 7-7"/>'
     };
     return '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">'+(paths[name]||paths.spark)+'</svg>';
   }
