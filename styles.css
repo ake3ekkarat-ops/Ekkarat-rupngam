@@ -373,8 +373,11 @@ body:has(.hero-stage) {
   background: var(--gradient);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 18px #22b8f52e);
 }
-.portfolio-stats span { color: var(--muted); font-size: 12px; line-height: 1.6; }
+.portfolio-stats span { color: color-mix(in srgb,var(--text) 82%,var(--secondary)); font-size: 12px; font-weight: 500; line-height: 1.6; }
+.portfolio-stats > div:nth-child(odd) strong { background: linear-gradient(135deg,#a879ff 5%,#6f7cff 52%,#31cfff); background-clip:text; -webkit-text-fill-color:transparent; }
+.portfolio-stats > div:nth-child(even) strong { background: linear-gradient(135deg,#62dfff 5%,#7f70ff 55%,#b36fff); background-clip:text; -webkit-text-fill-color:transparent; }
 @media (max-width: 700px) {
   .portfolio-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 0; margin-bottom: 48px; }
   .portfolio-stats > div { padding: 0 18px; }
