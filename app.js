@@ -175,6 +175,8 @@
     main.innerHTML=(views[route]||notFound)();
     const sufLogo=main.querySelector('.brand-logo-image[alt="Sufcreate"]');
     if(sufLogo){sufLogo.src='assets/works/branding%20%26%20Logo/Suf%20create/logo%20suf%20create.jpg';sufLogo.alt='Suf Create'}
+    const collaboratorLogos=main.querySelector('.collaborator-logos');
+    if(collaboratorLogos)collaboratorLogos.insertAdjacentHTML('beforeend','<div class="brand-logo-tile" title="บริษัทป่าใหญ่แลนด์สเคป"><img class="brand-logo-image" src="assets/works/branding%20%26%20Logo/company%20profile/%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%A9%E0%B8%B1%E0%B8%97%E0%B8%9B%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%E0%B9%81%E0%B8%A5%E0%B8%99%E0%B8%94%E0%B9%8C%E0%B8%AA%E0%B9%80%E0%B8%84%E0%B8%9B/company%20profile%20%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%A9%E0%B8%B1%E0%B8%97%E0%B8%9B%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%E0%B9%81%E0%B8%A5%E0%B8%99%E0%B8%94%E0%B9%8C%E0%B8%AA%E0%B9%80%E0%B8%84%E0%B8%9B.png" alt="บริษัทป่าใหญ่แลนด์สเคป" loading="lazy"></div>');
     document.querySelectorAll('[data-nav]').forEach(a=>{const current=a.dataset.nav===route||(route==='project'&&a.dataset.nav==='work');if(current)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
     const title=route==='project'?(projects.find(p=>p.id===parts[1])?.title||'Project'):({home:'Creative Designer & Digital Creator',work:'Work',services:'Services',about:'About',ai:'AI Learning',contact:'Contact'}[route]||'Page not found');
     document.title='AKE EKKARAT — '+title;
