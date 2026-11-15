@@ -587,7 +587,7 @@ a.contact-channel:hover { border-color: var(--secondary); background: #221d4580;
 .home-project-group-head h3 { font-size: clamp(23px, 2.3vw, 31px); }
 .home-project-group-head > span { color: var(--muted); font-size: 10px; letter-spacing: .08em; }
 #main:has(.hero-stage) .home-work-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; gap: 18px; }
-#main:has(.hero-stage) .home-work-grid .project-card { height: 100%; align-self: stretch; }
+#main:has(.hero-stage) .home-work-grid .project-card { height: 100% !important; align-self: stretch !important; }
 #main:has(.hero-stage) .home-project-group--square .thumbnail { aspect-ratio: 1 / 1; }
 #main:has(.hero-stage) .home-project-group--portrait .thumbnail { aspect-ratio: 4 / 5; }
 #main:has(.hero-stage) .home-project-group--landscape .thumbnail { aspect-ratio: 7 / 5; }
