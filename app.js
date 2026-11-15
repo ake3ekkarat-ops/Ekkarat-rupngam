@@ -1,7 +1,7 @@
 (() => {
   'use strict';
   const {profile,projects,categories,services,process:steps}=window.PORTFOLIO;
-  const main=document.getElementById('main'),dialog=document.getElementById('brief-dialog');
+  const main=document.getElementById('main'),dialog=document.getElementById('brief-dialog'),galleryDialog=document.getElementById('gallery-dialog'),galleryDialogTitle=document.getElementById('gallery-dialog-title'),galleryDialogGrid=document.getElementById('gallery-dialog-grid');
   const menu=document.getElementById('mobile-menu'),menuToggle=document.getElementById('menu-toggle');
   let draft={},briefRows=[],activeCategory='All Projects',revealObserver;
   const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -107,7 +107,7 @@
     if(p.detailLayout==='work-sets'){
       let imageIndex=0;
       const sets=(p.workSets||[]).filter(set=>Array.isArray(set.images)&&set.images.some(item=>asset(item.src)));
-      const renderSet=(set,setIndex)=>{const images=set.images.filter(item=>asset(item.src));const isAlbum=set.type==='album';const previewImages=isAlbum&&images.length>4?images.slice(0,4):images;const hiddenCount=images.length-previewImages.length;return '<article class="work-set-card"><header class="work-set-head"><h3>'+esc(isAlbum?'Album Design':'Single Banner')+'</h3><span>'+images.length+' '+(images.length===1?'Image':'Images')+'</span></header><div class="work-set-media '+(isAlbum?'is-album':'is-single')+'">'+previewImages.map((item,itemIndex)=>{const eager=imageIndex++===0;const showMore=hiddenCount>0&&itemIndex===previewImages.length-1;return '<figure class="'+(showMore?'has-more':'')+'"><img src="'+asset(item.src)+'" alt="'+esc(item.alt||p.title)+'" loading="'+(eager?'eager':'lazy')+'">'+(showMore?'<span class="work-set-more" aria-label="มีอีก '+hiddenCount+' ภาพ">+'+hiddenCount+'</span>':isAlbum?'<span class="work-set-order" aria-hidden="true">'+String(itemIndex+1).padStart(2,'0')+'</span>':'')+'</figure>'}).join('')+'</div><footer class="work-set-foot"><span>'+(isAlbum?'Album ':'Single ')+String(setIndex+1).padStart(2,'0')+'</span><span aria-hidden="true">↗</span></footer></article>'};
+      const renderSet=(set,setIndex)=>{const images=set.images.filter(item=>asset(item.src));const isAlbum=set.type==='album';const previewImages=isAlbum&&images.length>4?images.slice(0,4):images;const hiddenCount=images.length-previewImages.length;const albumIndex=sets.indexOf(set);return '<article class="work-set-card"><header class="work-set-head"><h3>'+esc(isAlbum?'Album Design':'Single Banner')+'</h3><span>'+images.length+' '+(images.length===1?'Image':'Images')+'</span></header><div class="work-set-media-wrap"><div class="work-set-media '+(isAlbum?'is-album':'is-single')+'">'+previewImages.map((item,itemIndex)=>{const eager=imageIndex++===0;const showMore=hiddenCount>0&&itemIndex===previewImages.length-1;return '<figure class="'+(showMore?'has-more':'')+'"><img src="'+asset(item.src)+'" alt="'+esc(item.alt||p.title)+'" loading="'+(eager?'eager':'lazy')+'">'+(showMore?'<span class="work-set-more" aria-hidden="true">+'+hiddenCount+'</span>':isAlbum?'<span class="work-set-order" aria-hidden="true">'+String(itemIndex+1).padStart(2,'0')+'</span>':'')+'</figure>'}).join('')+'</div>'+(isAlbum?'<button class="work-set-album-open" type="button" data-open-album="'+albumIndex+'" data-project="'+esc(p.id)+'" aria-label="เปิดดูภาพทั้งหมด '+images.length+' ภาพในอัลบั้ม"></button>':'')+'</div><footer class="work-set-foot"><span>'+(isAlbum?'Album ':'Single ')+String(setIndex+1).padStart(2,'0')+'</span><span aria-hidden="true">↗</span></footer></article>'};
       const groupDefs=p.id==='neofusion'?[{type:'single',format:'square',eyebrow:'INDIVIDUAL ARTWORK · 1:1',title:'ภาพนิ่งสี่เหลี่ยม / Square Banners'},{type:'single',format:'portrait',eyebrow:'INDIVIDUAL ARTWORK · 4:5',title:'ภาพนิ่งแนวตั้ง / Portrait Banners'},{type:'album',eyebrow:'MULTI-IMAGE POSTS',title:'อัลบั้ม / Album Designs'}]:[{type:'single',eyebrow:'INDIVIDUAL ARTWORK',title:'ภาพนิ่ง / Single Banners'},{type:'album',eyebrow:'MULTI-IMAGE POSTS',title:'อัลบั้ม / Album Designs'}];
       const groups=groupDefs.map(group=>({...group,sets:sets.filter(set=>set.type===group.type&&(!group.format||set.format===group.format))})).filter(group=>group.sets.length);
       return heading('CASE STUDY / '+esc(p.category),esc(p.title),esc(p.subtitle))+'<section class="page-body container"><div class="work-set-groups">'+groups.map(group=>'<section class="work-set-group"><header class="work-set-group-head"><div><span class="eyebrow accent">'+group.eyebrow+'</span><h2>'+group.title+'</h2></div><span>'+group.sets.length+' '+(group.sets.length===1?'Work Set':'Work Sets')+'</span></header><div class="work-set-grid">'+group.sets.map(renderSet).join('')+'</div></section>').join('')+'</div><a class="text-link" href="#/work" style="margin-top:25px">Back to All Work '+arrow+'</a></section>';
@@ -155,7 +155,7 @@
   function render(){
     const raw=location.hash.slice(1)||'/';
     if(!raw.startsWith('/'))return;
-    rememberDraft();closeMenu();if(dialog.open)dialog.close();
+    rememberDraft();closeMenu();if(dialog.open)dialog.close();if(galleryDialog.open)galleryDialog.close();
     const [path,query='']=raw.split('?'),parts=path.split('/').filter(Boolean),params=new URLSearchParams(query);
     const route=parts[0]||'home';
     activeCategory=categories.includes(params.get('category'))?params.get('category'):'All Projects';
@@ -199,6 +199,17 @@
   document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!menu.hidden)closeMenu(true)});
   document.getElementById('back-top').addEventListener('click',()=>window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'}));
   main.addEventListener('click',e=>{
+    const albumButton=e.target.closest('[data-open-album]');
+    if(albumButton){
+      const project=projects.find(item=>item.id===albumButton.dataset.project),set=project?.workSets?.[Number(albumButton.dataset.openAlbum)];
+      if(project&&set?.type==='album'){
+        const images=set.images.filter(item=>asset(item.src));
+        galleryDialogTitle.textContent=project.title+' — Album Design';
+        galleryDialogGrid.innerHTML=images.map((item,index)=>'<figure><img src="'+asset(item.src)+'" alt="'+esc(item.alt||project.title)+'" loading="'+(index===0?'eager':'lazy')+'"><figcaption>'+String(index+1).padStart(2,'0')+' / '+String(images.length).padStart(2,'0')+'</figcaption></figure>').join('');
+        galleryDialog.showModal();
+      }
+      return;
+    }
     const scroll=e.target.closest('[data-scroll]');if(scroll){e.preventDefault();document.getElementById(scroll.dataset.scroll)?.scrollIntoView({block:'start'});return}
     const filter=e.target.closest('[data-category]');
     if(filter){
@@ -212,6 +223,8 @@
     }
   });
   document.getElementById('close-dialog').addEventListener('click',()=>dialog.close());
+  document.getElementById('close-gallery-dialog').addEventListener('click',()=>galleryDialog.close());
+  galleryDialog.addEventListener('click',e=>{if(e.target===galleryDialog)galleryDialog.close()});
   document.getElementById('download-brief').addEventListener('click',()=>{
     const status=document.getElementById('download-status');
     try{
