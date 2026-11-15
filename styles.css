@@ -571,43 +571,6 @@ a.contact-channel:hover { border-color: var(--secondary); background: #221d4580;
   }
 }
 
-/* Home projects are grouped by the proportions of their cover artwork. */
-.home-project-groups { display: grid; gap: 54px; }
-.home-project-group { min-width: 0; }
-.home-project-group-head {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 24px;
-  padding-bottom: 17px;
-  margin-bottom: 18px;
-  border-bottom: 1px solid var(--line);
-}
-.home-project-group-head .eyebrow { display: block; margin-bottom: 8px; }
-.home-project-group-head h3 { font-size: clamp(23px, 2.3vw, 31px); }
-.home-project-group-head > span { color: var(--muted); font-size: 10px; letter-spacing: .08em; }
-#main:has(.hero-stage) .home-work-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; gap: 18px; }
-#main:has(.hero-stage) .home-work-grid .project-card { height: 100%; align-self: stretch; }
-#main:has(.hero-stage) .home-project-group--square .thumbnail { aspect-ratio: 1 / 1; }
-#main:has(.hero-stage) .home-project-group--portrait .thumbnail { aspect-ratio: 4 / 5; }
-#main:has(.hero-stage) .home-project-group--landscape .thumbnail { aspect-ratio: 7 / 5; }
-#main:has(.hero-stage) .home-work-grid .thumbnail-image { object-fit: contain; }
-#main:has(.hero-stage) .home-project-group--square .thumbnail:is(.suf-create, .neofusion, .earths-pearl, .fine-nest, .satit-kaset-55, .ruean-long) .thumbnail-image { object-fit: cover; }
-#main:has(.hero-stage) .home-project-group--portrait .project-card,
-#main:has(.hero-stage) .home-project-group--landscape .project-card { grid-template-columns: minmax(0, 46fr) minmax(0, 54fr); }
-#main:has(.hero-stage) .home-project-group--landscape .project-card:has(.thumbnail.bedo-brochure) .thumbnail { aspect-ratio: 7 / 5; border-radius: 11px 0 0 11px; }
-#main:has(.hero-stage) .home-project-group--landscape .project-card .thumbnail.bedo-brochure .thumbnail-image { transform: none; object-fit: cover; }
-@media (max-width: 1000px) {
-  #main:has(.hero-stage) .home-work-grid { grid-template-columns: minmax(0, 1fr); }
-}
-@media (max-width: 650px) {
-  .home-project-groups { gap: 40px; }
-  .home-project-group-head { align-items: start; }
-  #main:has(.hero-stage) .home-project-group--portrait .project-card,
-  #main:has(.hero-stage) .home-project-group--landscape .project-card { grid-template-columns: minmax(0, 1fr); }
-  #main:has(.hero-stage) .home-project-group--landscape .project-card:has(.thumbnail.bedo-brochure) .thumbnail { border-radius: 11px 11px 0 0; }
-}
-
 @media (max-width: 380px) {
   .nav-actions .button-small { display: none; }
 }
