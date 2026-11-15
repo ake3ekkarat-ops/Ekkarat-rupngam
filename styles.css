@@ -287,6 +287,13 @@ body:has(.hero-stage) {
   letter-spacing: -.04em;
   white-space: nowrap;
 }
+.philosophy .signature-caption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
 @media (max-width: 650px) {
   .site-header .logo { font-size: 17px; }
 }
