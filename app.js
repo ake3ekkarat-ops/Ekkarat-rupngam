@@ -26,11 +26,15 @@
     return '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">'+(paths[name]||paths.spark)+'</svg>';
   }
   const btn=(label,href='#/contact',secondary=false)=>'<a class="button'+(secondary?' button-secondary':'')+'" href="'+href+'">'+label+arrow+'</a>';
-  const heading=(eyebrow,title,description='')=>'<section class="page-heading container"><span class="eyebrow accent">'+eyebrow+'</span><h1>'+title+'</h1>'+(description?'<p>'+description+'</p>':'')+'</section>';
+  const heading=(eyebrow,title,description='')=>{const caseProject=String(eyebrow).startsWith('CASE STUDY /')?projects.find(project=>esc(project.title)===title):null;return caseProject?projectDetailIntro(caseProject,caseProject.workSets||[]):'<section class="page-heading container"><span class="eyebrow accent">'+eyebrow+'</span><h1>'+title+'</h1>'+(description?'<p>'+description+'</p>':'')+'</section>'};
   function projectDetailIntro(p,sets){
-    const hasAlbum=sets.some(set=>set.type==='album'),logo=asset(p.image);
-    const contributions=['Banner Design','Social Media Artwork'].concat(hasAlbum?['Album Design']:[]);
-    return '<section class="project-detail-intro container"><div class="project-detail-top"><span class="eyebrow accent">PROJECT DETAIL</span><a href="#/work">BACK TO WORK</a></div><div class="project-detail-brand">'+(logo?'<div class="project-brand-logo"><img src="'+logo+'" alt="โลโก้ '+esc(p.title)+'"></div>':'')+'<div><span class="project-detail-category">'+esc(p.category)+'</span><h1>'+esc(p.title)+' <span>— Banner Designs</span></h1><p>Digital &amp; Social Media Artwork</p></div></div><div class="project-detail-role"><h2>My Role &amp; Contributions</h2><div class="project-contribution-list">'+contributions.map(item=>'<span>✓ '+item+'</span>').join('')+'</div><p lang="th">'+esc(p.description||'ออกแบบแบนเนอร์และสื่อประชาสัมพันธ์สำหรับแบรนด์')+'</p><small>Brand logo and identity provided by the client.</small></div></section>';
+    const hasAlbum=sets.some(set=>set.type==='album'),visual=asset(p.image),isBanner=p.detailLayout==='work-sets';
+    const label=isBanner?'Banner Designs':(p.subtitle||p.category);
+    const baseContributions=p.detailContributions?.length?p.detailContributions:(p.role?p.role.split('/').map(item=>item.trim()):[p.subtitle||p.category]);
+    const contributions=[...new Set(baseContributions.concat(hasAlbum?['Album Design']:[]).filter(Boolean))];
+    const summary=p.detailSummary||(isBanner?'Digital & Social Media Artwork':p.category+' Project');
+    const note=p.detailNote||(isBanner?'Brand logo and identity provided by the client.':'Project-specific role and contribution details will be updated.');
+    return '<section class="project-detail-intro container"><div class="project-detail-top"><span class="eyebrow accent">PROJECT DETAIL</span><a href="#/work">BACK TO WORK</a></div><div class="project-detail-brand">'+(visual?'<div class="project-brand-logo"><img src="'+visual+'" alt="ภาพประจำโปรเจกต์ '+esc(p.title)+'"></div>':'')+'<div><span class="project-detail-category">'+esc(p.category)+'</span><h1>'+esc(p.title)+' <span>— '+esc(label)+'</span></h1><p>'+esc(summary)+'</p></div></div><div class="project-detail-role"><h2>My Role &amp; Contributions</h2><div class="project-contribution-list">'+contributions.map(item=>'<span>✓ '+esc(item)+'</span>').join('')+'</div><p lang="th">'+esc(p.description||'รายละเอียดของโปรเจกต์นี้จะอัปเดตเพิ่มเติมภายหลัง')+'</p><small>'+esc(note)+'</small></div></section>';
   }
   function portrait(){
     const src=asset(profile.portrait);
