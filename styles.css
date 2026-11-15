@@ -265,6 +265,20 @@ body:has(.hero-stage) {
   object-fit: cover;
 }
 
+/* Project-brand artwork follows the same full circular treatment as logo cards. */
+.brand-logo-tile.brand-logo-project {
+  padding: 0;
+  background: transparent;
+}
+.brand-logo-tile.brand-logo-project .brand-logo-image {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .thumbnail.ruean-long .thumbnail-image { object-fit: contain; }
 .thumbnail.ruean-long .thumbnail-content { background: #291b12; }
 
