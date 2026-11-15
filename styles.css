@@ -245,6 +245,22 @@ body:has(.hero-stage) {
 .collaborators { text-align: center; }
 .collaborator-logos { justify-content: center; margin-inline: auto; }
 
+/* Let the two square brand artworks fill their circular collaboration tiles. */
+.brand-logo-tile:has(.brand-logo-image[alt="Neofusion"]),
+.brand-logo-tile:has(.brand-logo-image[alt="Earth's Pearl"]) {
+  padding: 0;
+  background: transparent;
+}
+.brand-logo-tile:has(.brand-logo-image[alt="Neofusion"]) .brand-logo-image,
+.brand-logo-tile:has(.brand-logo-image[alt="Earth's Pearl"]) .brand-logo-image {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .thumbnail.ruean-long .thumbnail-image { object-fit: contain; }
 .thumbnail.ruean-long .thumbnail-content { background: #291b12; }
 
