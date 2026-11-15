@@ -347,6 +347,42 @@ body:has(.hero-stage) {
 .process-card:hover {
   transform: translateY(-3px);
 }
+
+/* Evidence-based portfolio numbers above Featured Projects. */
+.portfolio-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-bottom: 72px;
+  padding: 30px 0;
+  border-block: 1px solid var(--line);
+}
+.portfolio-stats > div {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  padding: 0 28px;
+}
+.portfolio-stats > div:first-child { padding-left: 0; }
+.portfolio-stats > div + div { border-left: 1px solid var(--line); }
+.portfolio-stats strong {
+  font-family: var(--display);
+  font-size: clamp(32px, 4vw, 50px);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -.05em;
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.portfolio-stats span { color: var(--muted); font-size: 12px; line-height: 1.6; }
+@media (max-width: 700px) {
+  .portfolio-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 0; margin-bottom: 48px; }
+  .portfolio-stats > div { padding: 0 18px; }
+  .portfolio-stats > div:nth-child(odd) { padding-left: 0; border-left: 0; }
+  .portfolio-stats > div:nth-child(n+3) { padding-top: 22px; border-top: 1px solid var(--line); }
+  .portfolio-stats strong { font-size: 34px; }
+  .portfolio-stats span { font-size: 10px; }
+}
 .process-card-icon {
   display: grid;
   place-items: center;
