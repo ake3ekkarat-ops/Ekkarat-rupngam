@@ -199,6 +199,20 @@ window.PORTFOLIO = {
       "results": null
     },
     {
+      "id": "payai-landscape-company-profile",
+      "title": "บริษัทป่าใหญ่แลนด์สเคป",
+      "category": "Graphic & Key Visual",
+      "subtitle": "Company Profile Design",
+      "description": "งานออกแบบ Company Profile บริษัทป่าใหญ่แลนด์สเคป",
+      "visual": "payai-landscape",
+      "mark": "PAYAI",
+      "image": "assets/works/branding%20%26%20Logo/company%20profile/%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%A9%E0%B8%B1%E0%B8%97%E0%B8%9B%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%E0%B9%81%E0%B8%A5%E0%B8%99%E0%B8%94%E0%B9%8C%E0%B8%AA%E0%B9%80%E0%B8%84%E0%B8%9B/company%20profile%20%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%A9%E0%B8%B1%E0%B8%97%E0%B8%9B%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%E0%B9%81%E0%B8%A5%E0%B8%99%E0%B8%94%E0%B9%8C%E0%B8%AA%E0%B9%80%E0%B8%84%E0%B8%9B.png",
+      "cardOnly": true,
+      "gallery": [],
+      "overview": null,
+      "deliverables": []
+    },
+    {
       "id": "goodlife-banner",
       "title": "GoodLife Journey",
       "category": "Graphic & Key Visual",

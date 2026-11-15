@@ -318,6 +318,9 @@ body:has(.hero-stage) {
 /* Balanced Home project copy and stable, undistorted arrow icons. */
 .project-arrow { aspect-ratio: 1; box-sizing: border-box; }
 .project-arrow svg { width: 19px; height: 19px; flex: none; }
+.project-card-static { cursor: default; }
+.project-card-static:hover .thumbnail { border-color: #f5f7ff18; box-shadow: none; }
+.project-card-static:hover .thumbnail-content { transform: none; }
 #main:has(.hero-stage) .work-grid .project-card {
   grid-template-columns: minmax(0, 38fr) minmax(0, 62fr);
   gap: 18px;
