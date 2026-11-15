@@ -199,6 +199,68 @@ window.PORTFOLIO = {
       "results": null
     },
     {
+      "id": "goodlife-banner",
+      "title": "GoodLife Journey",
+      "category": "Graphic & Key Visual",
+      "subtitle": "Banner Design",
+      "description": "ออกแบบชุดแบนเนอร์ประชาสัมพันธ์ GoodLife Journey Virtual Runway สำหรับ Shopee Live",
+      "visual": "goodlife-banner",
+      "mark": "GL",
+      "image": "assets/works/branding%20%26%20Logo/banner/GoodLife/cover%20GoodLife.jpg",
+      "detailImage": "assets/works/branding%20%26%20Logo/banner/GoodLife/logo-goodlife.jpg",
+      "detailLayout": "work-sets",
+      "workSets": [
+        { "type": "album", "images": [
+          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201_8.jpg", "alt": "GoodLife Journey — Banner 01" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-07.jpg", "alt": "GoodLife Journey — Banner 02" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-08.jpg", "alt": "GoodLife Journey — Banner 03" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-09.jpg", "alt": "GoodLife Journey — Banner 04" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-10.jpg", "alt": "GoodLife Journey — Banner 05" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-11.jpg", "alt": "GoodLife Journey — Banner 06" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-12.jpg", "alt": "GoodLife Journey — Banner 07" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-13.jpg", "alt": "GoodLife Journey — Banner 08" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-14.jpg", "alt": "GoodLife Journey — Banner 09" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-15.jpg", "alt": "GoodLife Journey — Banner 10" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-16.jpg", "alt": "GoodLife Journey — Banner 11" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-17.jpg", "alt": "GoodLife Journey — Banner 12" },
+          { "src": "assets/works/branding%20%26%20Logo/banner/GoodLife/GoodLife%20Journey%20Shopee%20Live%20-%201-18.jpg", "alt": "GoodLife Journey — Banner 13" }
+        ] }
+      ],
+      "gallery": [],
+      "overview": "ชุดแบนเนอร์ประชาสัมพันธ์ GoodLife Journey วิธีเมืองรอง Virtual Runway",
+      "context": null,
+      "challenge": null,
+      "role": "Banner Design",
+      "approach": null,
+      "deliverables": ["Digital banners", "Shopee Live campaign artwork"],
+      "results": null
+    },
+    {
+      "id": "insightist-banner",
+      "title": "Insightist",
+      "category": "Graphic & Key Visual",
+      "subtitle": "Ads & Page Cover Design",
+      "description": "ออกแบบ Ads Banner 2 ชิ้น และ Page Cover 1 ชิ้นสำหรับ Insightist",
+      "visual": "insightist-banner",
+      "mark": "IN",
+      "image": "assets/works/branding%20%26%20Logo/banner/insightist/cover%20Ads_insightist_1080x1080-04.jpg",
+      "detailImage": "assets/works/branding%20%26%20Logo/banner/insightist/logo%20insightist.jpg",
+      "detailLayout": "work-sets",
+      "workSets": [
+        { "type": "single", "format": "square", "kind": "ads", "images": [{ "src": "assets/works/branding%20%26%20Logo/banner/insightist/Ads_insightist_1080x1080-01.jpg", "alt": "Insightist — Ads Banner 01" }] },
+        { "type": "single", "format": "square", "kind": "ads", "images": [{ "src": "assets/works/branding%20%26%20Logo/banner/insightist/Ads_insightist_1080x1080-02.jpg", "alt": "Insightist — Ads Banner 02" }] },
+        { "type": "single", "format": "landscape", "kind": "cover", "images": [{ "src": "assets/works/branding%20%26%20Logo/banner/insightist/cover%20Ads_insightist_1080x1080-04.jpg", "alt": "Insightist — Page Cover" }] }
+      ],
+      "gallery": [],
+      "overview": "งานออกแบบสื่อโฆษณาและภาพปกเพจสำหรับ Insightist",
+      "context": null,
+      "challenge": null,
+      "role": "Ads Banner Design / Page Cover Design",
+      "approach": null,
+      "deliverables": ["2 Ads banners", "1 Page cover"],
+      "results": null
+    },
+    {
       "id": "bedo-brochure",
       "title": "B MARK by BEDO",
       "category": "Graphic & Key Visual",
