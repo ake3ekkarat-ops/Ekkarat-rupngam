@@ -279,6 +279,39 @@ window.PORTFOLIO = {
       "results": null
     },
     {
+      "id": "yum-yum-sports-day",
+      "title": "YUM YUM — Well-Being Sports Day",
+      "category": "Graphic & Key Visual",
+      "subtitle": "Event Key Visual",
+      "description": "ออกแบบ Key Visual สำหรับงาน YUM YUM Well-Being Sports Day New Year 2026",
+      "visual": "yum-yum",
+      "mark": "YUM YUM",
+      "image": "assets/works/Graphic%20%26%20Key%20Visual/YUM%20YUM/KV-YUM-YUM.jpg",
+      "detailImage": "assets/works/Graphic%20%26%20Key%20Visual/YUM%20YUM/logo-yumyum-th.png",
+      "detailLabel": "Key Visual",
+      "detailLayout": "work-sets",
+      "workSets": [
+        {
+          "type": "single",
+          "format": "portrait",
+          "images": [
+            {
+              "src": "assets/works/Graphic%20%26%20Key%20Visual/YUM%20YUM/KV-YUM-YUM.jpg",
+              "alt": "YUM YUM Well-Being Sports Day New Year 2026 — Key Visual"
+            }
+          ]
+        }
+      ],
+      "gallery": [],
+      "overview": "Key Visual สำหรับกิจกรรม YUM YUM Well-Being Sports Day New Year 2026",
+      "context": null,
+      "challenge": null,
+      "role": "Key Visual Design",
+      "approach": null,
+      "deliverables": ["Event Key Visual"],
+      "results": null
+    },
+    {
       "id": "bedo-brochure",
       "title": "B MARK by BEDO",
       "category": "Graphic & Key Visual",
