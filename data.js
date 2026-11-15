@@ -204,7 +204,7 @@ window.PORTFOLIO = {
     {
       "id": "payai-landscape-company-profile",
       "title": "บริษัทป่าใหญ่แลนด์สเคป",
-      "category": "Graphic & Key Visual",
+      "category": "Branding & Logo",
       "subtitle": "Company Profile Design",
       "description": "งานออกแบบ Company Profile บริษัทป่าใหญ่แลนด์สเคป",
       "visual": "payai-landscape",
