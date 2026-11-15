@@ -339,24 +339,22 @@ body:has(.hero-stage) {
   gap: 20px;
   min-height: 190px;
   padding: 26px;
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  background: linear-gradient(135deg, #151447b8, #10193975);
-  transition: transform .25s, border-color .25s, background .25s;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  transition: transform .25s;
 }
 .process-card:hover {
   transform: translateY(-3px);
-  border-color: #743be870;
-  background: linear-gradient(135deg, #1a174dcc, #10234882);
 }
 .process-card-icon {
   display: grid;
   place-items: center;
   width: 62px;
   height: 62px;
-  border: 1px solid #743be860;
-  border-radius: 12px;
-  background: #08051d66;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
   color: var(--secondary);
   filter: drop-shadow(0 0 14px #743be84c);
 }
