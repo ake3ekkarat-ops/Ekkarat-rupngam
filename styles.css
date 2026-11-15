@@ -279,6 +279,16 @@ body:has(.hero-stage) {
   object-fit: cover;
 }
 
+/* Full portfolio name in the top-left brand position. */
+.site-header .logo {
+  font-size: 22px;
+  letter-spacing: -.04em;
+  white-space: nowrap;
+}
+@media (max-width: 650px) {
+  .site-header .logo { font-size: 17px; }
+}
+
 .thumbnail.ruean-long .thumbnail-image { object-fit: contain; }
 .thumbnail.ruean-long .thumbnail-content { background: #291b12; }
 

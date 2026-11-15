@@ -284,6 +284,78 @@ window.PORTFOLIO = {
       "results": null
     },
     {
+      "id": "kbs-monthly-banner",
+      "title": "KBS — Faculty of Business Administration",
+      "category": "Graphic & Key Visual",
+      "subtitle": "Monthly Banner Design",
+      "description": "ออกแบบแบนเนอร์ประชาสัมพันธ์รายเดือนให้คณะบริหารธุรกิจ มหาวิทยาลัยเกษตรศาสตร์",
+      "visual": "kbs-monthly-banner",
+      "mark": "KBS",
+      "logoCard": true,
+      "image": "assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/Logo_KBS%20%20คณะบริหารธุรกิจ%20มหาวิทยาลับเกษตรศาสตร์.webp",
+      "detailImage": "assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/Logo_KBS%20%20คณะบริหารธุรกิจ%20มหาวิทยาลับเกษตรศาสตร์.webp",
+      "detailLayout": "work-sets",
+      "detailLabel": "Monthly Banner Designs",
+      "detailSummary": "Digital & Social Media Artwork",
+      "detailContributions": ["Banner Design", "Social Media Artwork", "Album Design"],
+      "workSets": [
+        { "type":"album", "month":"ตุลาคม 2567", "title":"อัลบั้มประชาสัมพันธ์", "label":"October Album 01", "images":[
+          {"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/10%20ตุลาคม%202567/KBS-01.jpg","alt":"KBS ตุลาคม 2567 — Album 01"},
+          {"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/10%20ตุลาคม%202567/KBS-02.jpg","alt":"KBS ตุลาคม 2567 — Album 02"},
+          {"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/10%20ตุลาคม%202567/KBS-03.jpg","alt":"KBS ตุลาคม 2567 — Album 03"}
+        ]},
+        { "type":"single", "month":"ตุลาคม 2567", "title":"Banner เดี่ยว", "label":"October Banner 01", "images":[{"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/10%20ตุลาคม%202567/KBS-05.jpg","alt":"KBS ตุลาคม 2567 — Single Banner"}]},
+        { "type":"single", "month":"พฤศจิกายน 2567", "title":"Banner เดี่ยว 01", "label":"November Banner 01", "images":[{"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/11%20พฤสจิกายน%202567/KBS%2011-01.jpg","alt":"KBS พฤศจิกายน 2567 — Single Banner 01"}]},
+        { "type":"single", "month":"พฤศจิกายน 2567", "title":"Banner เดี่ยว 02", "label":"November Banner 02", "images":[{"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/11%20พฤสจิกายน%202567/KBS-10.jpg","alt":"KBS พฤศจิกายน 2567 — Single Banner 02"}]},
+        { "type":"album", "month":"พฤศจิกายน 2567", "title":"อัลบั้มประชาสัมพันธ์", "label":"November Album 01", "images":[
+          {"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/11%20พฤสจิกายน%202567/KBS-12-01.jpg","alt":"KBS พฤศจิกายน 2567 — Album 01"},
+          {"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/11%20พฤสจิกายน%202567/KBS-13.jpg","alt":"KBS พฤศจิกายน 2567 — Album 02"},
+          {"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/11%20พฤสจิกายน%202567/KBS-14.jpg","alt":"KBS พฤศจิกายน 2567 — Album 03"}
+        ]},
+        { "type":"album", "month":"ธันวาคม 2567", "title":"อัลบั้มประชาสัมพันธ์", "label":"December Album 01", "images":[
+          {"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/12%20ธันวาคม%202567/KBS%2020-01.jpg","alt":"KBS ธันวาคม 2567 — Album 01"},
+          {"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/12%20ธันวาคม%202567/KBS%2020-02.jpg","alt":"KBS ธันวาคม 2567 — Album 02"},
+          {"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/12%20ธันวาคม%202567/KBS%2020-03.jpg","alt":"KBS ธันวาคม 2567 — Album 03"},
+          {"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/12%20ธันวาคม%202567/KBS%2020-04.jpg","alt":"KBS ธันวาคม 2567 — Album 04"},
+          {"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/12%20ธันวาคม%202567/KBS%2020-05.jpg","alt":"KBS ธันวาคม 2567 — Album 05"},
+          {"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/12%20ธันวาคม%202567/KBS%2020-06.jpg","alt":"KBS ธันวาคม 2567 — Album 06"},
+          {"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/12%20ธันวาคม%202567/KBS%2020-07.jpg","alt":"KBS ธันวาคม 2567 — Album 07"},
+          {"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/12%20ธันวาคม%202567/KBS%2020-08.jpg","alt":"KBS ธันวาคม 2567 — Album 08"}
+        ]},
+        { "type":"single", "month":"ธันวาคม 2567", "title":"Banner เดี่ยว 01", "label":"December Banner 01", "images":[{"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/12%20ธันวาคม%202567/KBS-15.jpg","alt":"KBS ธันวาคม 2567 — Single Banner 01"}]},
+        { "type":"album", "month":"ธันวาคม 2567", "title":"อัลบั้มประชาสัมพันธ์ 02", "label":"December Album 02", "images":[
+          {"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/12%20ธันวาคม%202567/KBS-16.jpg","alt":"KBS ธันวาคม 2567 — Album 02-01"},
+          {"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/12%20ธันวาคม%202567/KBS-17.jpg","alt":"KBS ธันวาคม 2567 — Album 02-02"},
+          {"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/12%20ธันวาคม%202567/KBS-18.jpg","alt":"KBS ธันวาคม 2567 — Album 02-03"},
+          {"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/12%20ธันวาคม%202567/KBS-21.jpg","alt":"KBS ธันวาคม 2567 — Album 02-04"}
+        ]},
+        { "type":"album", "month":"มกราคม 2568", "title":"อัลบั้มประชาสัมพันธ์ 01", "label":"January Album 01", "images":[
+          {"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/1%20มกราคม%202568/KBS-1.jpg","alt":"KBS มกราคม 2568 — Album 01-01"},
+          {"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/1%20มกราคม%202568/KBS-2.jpg","alt":"KBS มกราคม 2568 — Album 01-02"}
+        ]},
+        { "type":"album", "month":"มกราคม 2568", "title":"อัลบั้มประชาสัมพันธ์ 02", "label":"January Album 02", "images":[
+          {"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/1%20มกราคม%202568/KBS-16.jpg","alt":"KBS มกราคม 2568 — Album 02-01"},
+          {"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/1%20มกราคม%202568/KBS-17.jpg","alt":"KBS มกราคม 2568 — Album 02-02"}
+        ]},
+        { "type":"album", "month":"มกราคม 2568", "title":"อัลบั้มประชาสัมพันธ์ 03", "label":"January Album 03", "images":[
+          {"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/1%20มกราคม%202568/KBS-24.jpg","alt":"KBS มกราคม 2568 — Album 03-01"},
+          {"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/1%20มกราคม%202568/KBS-25.jpg","alt":"KBS มกราคม 2568 — Album 03-02"},
+          {"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/1%20มกราคม%202568/KBS-26.jpg","alt":"KBS มกราคม 2568 — Album 03-03"},
+          {"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/1%20มกราคม%202568/KBS-27.jpg","alt":"KBS มกราคม 2568 — Album 03-04"}
+        ]},
+        { "type":"album", "month":"มีนาคม 2568", "title":"อัลบั้มประชาสัมพันธ์", "label":"March Album 01", "images":[
+          {"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/3%20มีนาคม%202568/KBS-27.jpg","alt":"KBS มีนาคม 2568 — Album 01"},
+          {"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/3%20มีนาคม%202568/KBS-28.jpg","alt":"KBS มีนาคม 2568 — Album 02"},
+          {"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/3%20มีนาคม%202568/KBS-29.jpg","alt":"KBS มีนาคม 2568 — Album 03"},
+          {"src":"assets/works/branding%20%26%20Logo/banner/KBS%20คณะบริหารธุรกิจ%20มหาวิทยาลัยเกษตรศาสตร์/2567/3%20มีนาคม%202568/KBS-30.jpg","alt":"KBS มีนาคม 2568 — Album 04"}
+        ]}
+      ],
+      "gallery": [],
+      "overview": "งานออกแบบแบนเนอร์ประชาสัมพันธ์รายเดือนสำหรับ KBS",
+      "role": "Banner Design / Social Media Artwork",
+      "deliverables": ["Monthly social media banners", "Album posts"]
+    },
+    {
       "id": "ocs-international-symposium-2024",
       "title": "OCS International Symposium 2024",
       "category": "Graphic & Key Visual",
@@ -477,12 +549,14 @@ window.PORTFOLIO = {
     {
       "id": "wuthering-waves",
       "title": "Wuthering Waves",
+      "brandName": "AIS eSports",
       "category": "Graphic & Key Visual",
       "subtitle": "Event Key Visual",
       "description": "งานกราฟิกและ Key Visual สำหรับสื่อประชาสัมพันธ์กิจกรรม Wuthering Waves",
       "visual": "wuthering-waves",
       "mark": "WW",
       "image": "media-28d25da0fb61.jpg",
+      "detailImage": "assets/brands/ais-esports.jpg",
       "gallery": [
         {
           "src": "media-28d25da0fb61.jpg",
