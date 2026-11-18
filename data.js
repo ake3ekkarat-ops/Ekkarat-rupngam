@@ -613,6 +613,32 @@ window.PORTFOLIO = {
       "results": null
     },
     {
+      "id": "mega-we-care",
+      "title": "MEGA We care",
+      "category": "Video & Motion",
+      "subtitle": "Video & Motion",
+      "description": "ผลงานด้านวิดีโอและโมชั่นสำหรับแบรนด์ MEGA We care",
+      "visual": "mega-we-care",
+      "logoCard": true,
+      "mark": "MEGA",
+      "image": "assets/works/Video%20%26%20Motion/megawecare/logo%20megawecare.png",
+      "gallery": [
+        {
+          "src": "assets/works/Video%20%26%20Motion/megawecare/logo%20megawecare.png",
+          "alt": "โลโก้ MEGA We care"
+        }
+      ],
+      "overview": "ผลงานด้าน Video & Motion สำหรับแบรนด์ MEGA We care โดยรายละเอียดและวิดีโอผลงานจะอัปเดตเพิ่มเติมภายหลัง",
+      "context": null,
+      "challenge": null,
+      "role": "Video & Motion",
+      "approach": null,
+      "deliverables": [
+        "Video & Motion"
+      ],
+      "results": null
+    },
+    {
       "id": "satit-kaset-55",
       "title": "55 ปี สาธิตเกษตร",
       "category": "Video & Motion",

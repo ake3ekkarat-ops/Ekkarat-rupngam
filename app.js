@@ -203,11 +203,11 @@
     if(mallLifestoreLogo)mallLifestoreLogo.src='assets/works/Graphic%20%26%20Key%20Visual/The%20Mall%20Lifestore/the%20mall%20lifestore.jpg';
     const collaboratorLogos=main.querySelector('.collaborator-logos');
     if(collaboratorLogos){
-      const projectBrandIds=['jueng-jueng-fishball','onetouch','payai-landscape-company-profile','insightist-banner','kbs-monthly-banner','yum-yum-sports-day','bedo-brochure','sgs-colorful-hawaii-party','fine-nest','satit-kaset-55','udomsap-asokaram','wuthering-waves','ruean-long'];
+      const projectBrandIds=['jueng-jueng-fishball','onetouch','mega-we-care','payai-landscape-company-profile','insightist-banner','kbs-monthly-banner','yum-yum-sports-day','bedo-brochure','sgs-colorful-hawaii-party','fine-nest','satit-kaset-55','udomsap-asokaram','wuthering-waves','ruean-long'];
       const existing=new Set([...collaboratorLogos.querySelectorAll('.brand-logo-image')].map(img=>img.alt.toLocaleLowerCase()));
       const projectBrands=projectBrandIds.map(id=>projects.find(project=>project.id===id)).filter(Boolean).filter(project=>!existing.has((project.brandName||project.title).toLocaleLowerCase()));
       collaboratorLogos.insertAdjacentHTML('beforeend',projectBrands.map(project=>{const src=asset(project.detailImage||project.image),name=project.brandName||project.title;return src?'<div class="brand-logo-tile brand-logo-project" title="'+esc(name)+'"><img class="brand-logo-image" src="'+src+'" alt="'+esc(name)+'" loading="lazy"></div>':''}).join(''));
-      const largeBrandNames=new Set(['medumore','สสส.','the mall lifestore','telescope & astronomy thailand','king long','kfc',"fivb volleyball women's world championship thailand 2025",'sena development','land & houses','true 5g','ocs สำนักงานคณะกรรมการกฤษฎีกา','onetouch','kbs — faculty of business administration','yum yum — well-being sports day','b mark by bedo','sgs — colorful hawaii party','55 ปี สาธิตเกษตร','ais esports']);
+      const largeBrandNames=new Set(['medumore','mega we care','สสส.','the mall lifestore','telescope & astronomy thailand','king long','kfc',"fivb volleyball women's world championship thailand 2025",'sena development','land & houses','true 5g','ocs สำนักงานคณะกรรมการกฤษฎีกา','onetouch','kbs — faculty of business administration','yum yum — well-being sports day','b mark by bedo','sgs — colorful hawaii party','55 ปี สาธิตเกษตร','ais esports']);
       const logoTiles=[...collaboratorLogos.querySelectorAll('.brand-logo-tile')];
       const largeTiles=logoTiles.filter(tile=>largeBrandNames.has((tile.querySelector('.brand-logo-image')?.alt||'').toLocaleLowerCase()));
       const smallTiles=logoTiles.filter(tile=>!largeTiles.includes(tile));
