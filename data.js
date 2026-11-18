@@ -600,12 +600,14 @@ window.PORTFOLIO = {
     {
       "id": "sgs-colorful-hawaii-party",
       "title": "SGS — Colorful Hawaii Party",
+      "brandName": "SGS",
       "category": "Graphic & Key Visual",
       "subtitle": "Event Key Visual",
       "description": "ออกแบบ Key Visual สำหรับงาน SGS Laboratory — Colorful Hawaii Party",
       "visual": "sgs-hawaii",
       "mark": "SGS",
       "image": "media-e0490f2c7719.jpg",
+      "detailImage": "assets/works/Graphic%20%26%20Key%20Visual/Sgs/logo-sgs.jpg",
       "gallery": [
         {
           "src": "media-e0490f2c7719.jpg",
