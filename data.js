@@ -181,6 +181,33 @@ window.PORTFOLIO = {
       "results": null
     },
     {
+      "id": "onetouch",
+      "title": "ONETOUCH",
+      "category": "Graphic & Key Visual",
+      "subtitle": "Graphic & Key Visual",
+      "description": "ผลงานออกแบบสื่อสำหรับแบรนด์ ONETOUCH",
+      "visual": "onetouch",
+      "logoCard": true,
+      "mark": "ONETOUCH",
+      "image": "assets/works/Graphic%20%26%20Key%20Visual/ONETOUCH/logo%20ONETOUCH.png",
+      "gallery": [
+        {
+          "src": "assets/works/Graphic%20%26%20Key%20Visual/ONETOUCH/logo%20ONETOUCH.png",
+          "alt": "โลโก้ ONETOUCH"
+        }
+      ],
+      "overview": "ผลงานออกแบบสื่อ Graphic & Key Visual สำหรับแบรนด์ ONETOUCH",
+      "context": null,
+      "challenge": null,
+      "role": "Graphic Design / Key Visual",
+      "approach": null,
+      "deliverables": [
+        "Graphic design",
+        "Key visual"
+      ],
+      "results": null
+    },
+    {
       "id": "neofusion",
       "title": "NeoFusion",
       "category": "Graphic & Key Visual",
