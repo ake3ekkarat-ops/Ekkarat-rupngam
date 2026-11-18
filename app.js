@@ -201,6 +201,8 @@
     if(kingLongLogo)kingLongLogo.src='assets/works/branding%20%26%20Logo/King%20Long/logo%20king%20long%20cropped.png';
     const mallLifestoreLogo=main.querySelector('.brand-logo-image[alt="The Mall Lifestore"]');
     if(mallLifestoreLogo)mallLifestoreLogo.src='assets/works/Graphic%20%26%20Key%20Visual/The%20Mall%20Lifestore/the%20mall%20lifestore.jpg';
+    const isuLogo=main.querySelector('.brand-logo-image[alt="ISU"]');
+    if(isuLogo){isuLogo.src='assets/brands/isu-congress-2022.jpg';isuLogo.closest('.brand-logo-tile')?.setAttribute('title','ISU 58th Ordinary Congress Phuket 2022')}
     const collaboratorLogos=main.querySelector('.collaborator-logos');
     if(collaboratorLogos){
       const projectBrandIds=['jueng-jueng-fishball','onetouch','mega-we-care','tu-dentistry-kv','payai-landscape-company-profile','insightist-banner','kbs-monthly-banner','yum-yum-sports-day','bedo-brochure','sgs-colorful-hawaii-party','fine-nest','satit-kaset-55','udomsap-asokaram','wuthering-waves','ruean-long'];
