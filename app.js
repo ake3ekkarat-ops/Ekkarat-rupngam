@@ -201,7 +201,7 @@
     if(kingLongLogo)kingLongLogo.src='assets/works/branding%20%26%20Logo/King%20Long/logo%20king%20long.jpg';
     const collaboratorLogos=main.querySelector('.collaborator-logos');
     if(collaboratorLogos){
-      const projectBrandIds=['payai-landscape-company-profile','goodlife-banner','insightist-banner','kbs-monthly-banner','yum-yum-sports-day','bedo-brochure','sgs-colorful-hawaii-party','fine-nest','satit-kaset-55','udomsap-asokaram','wuthering-waves','ruean-long'];
+      const projectBrandIds=['payai-landscape-company-profile','insightist-banner','kbs-monthly-banner','yum-yum-sports-day','bedo-brochure','sgs-colorful-hawaii-party','fine-nest','satit-kaset-55','udomsap-asokaram','wuthering-waves','ruean-long'];
       const existing=new Set([...collaboratorLogos.querySelectorAll('.brand-logo-image')].map(img=>img.alt.toLocaleLowerCase()));
       const projectBrands=projectBrandIds.map(id=>projects.find(project=>project.id===id)).filter(Boolean).filter(project=>!existing.has((project.brandName||project.title).toLocaleLowerCase()));
       collaboratorLogos.insertAdjacentHTML('beforeend',projectBrands.map(project=>{const src=asset(project.detailImage||project.image),name=project.brandName||project.title;return src?'<div class="brand-logo-tile brand-logo-project" title="'+esc(name)+'"><img class="brand-logo-image" src="'+src+'" alt="'+esc(name)+'" loading="lazy"></div>':''}).join(''));

@@ -3,7 +3,7 @@ window.PORTFOLIO = {
     "name": "AKE EKKARAT",
     "fullName": "Ekkarat Rupngam",
     "experienceYears": 5,
-    "additionalCollaborations": 13,
+    "additionalCollaborations": 12,
     "thaiName": "เอกราช รูปงาม",
     "role": "Creative Designer & Digital Creator",
     "available": true,
