@@ -3,7 +3,7 @@ window.PORTFOLIO = {
     "name": "AKE EKKARAT",
     "fullName": "Ekkarat Rupngam",
     "experienceYears": 5,
-    "additionalCollaborations": 14,
+    "additionalCollaborations": 13,
     "thaiName": "เอกราช รูปงาม",
     "role": "Creative Designer & Digital Creator",
     "available": true,
@@ -90,6 +90,33 @@ window.PORTFOLIO = {
       ],
       "overview": "ผลงานออกแบบโลโก้และพัฒนาอัตลักษณ์ภาพสำหรับ Suf Create เพื่อให้แบรนด์มีภาพจำที่ชัดเจนและนำไปใช้งานต่อได้อย่างสม่ำเสมอ",
       "context": "งานพัฒนาอัตลักษณ์สำหรับธุรกิจครีเอทีฟ",
+      "challenge": null,
+      "role": "Logo Design / Visual Identity",
+      "approach": null,
+      "deliverables": [
+        "Logo design",
+        "Visual identity"
+      ],
+      "results": null
+    },
+    {
+      "id": "king-long-logo",
+      "title": "King Long",
+      "category": "Branding & Logo",
+      "subtitle": "Logo Design",
+      "description": "ผลงานออกแบบโลโก้และอัตลักษณ์สำหรับ King Long",
+      "visual": "king-long-logo",
+      "logoCard": true,
+      "mark": "KL",
+      "image": "assets/works/branding%20%26%20Logo/King%20Long/logo%20king%20long.jpg",
+      "gallery": [
+        {
+          "src": "assets/works/branding%20%26%20Logo/King%20Long/logo%20king%20long.jpg",
+          "alt": "โลโก้ King Long"
+        }
+      ],
+      "overview": "ผลงานออกแบบโลโก้ King Long เพื่อสร้างภาพจำของแบรนด์ให้ชัดเจนและรองรับการนำไปใช้งานในสื่อต่าง ๆ",
+      "context": "งานออกแบบอัตลักษณ์สำหรับแบรนด์ King Long",
       "challenge": null,
       "role": "Logo Design / Visual Identity",
       "approach": null,
