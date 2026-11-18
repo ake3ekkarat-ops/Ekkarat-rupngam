@@ -198,7 +198,9 @@
     const sufLogo=main.querySelector('.brand-logo-image[alt="Sufcreate"]');
     if(sufLogo){sufLogo.src='assets/works/branding%20%26%20Logo/Suf%20create/logo%20suf%20create.jpg';sufLogo.alt='Suf Create'}
     const kingLongLogo=main.querySelector('.brand-logo-image[alt="King Long"]');
-    if(kingLongLogo)kingLongLogo.src='assets/works/branding%20%26%20Logo/King%20Long/logo%20king%20long.jpg';
+    if(kingLongLogo)kingLongLogo.src='assets/works/branding%20%26%20Logo/King%20Long/logo%20king%20long%20cropped.png';
+    const mallLifestoreLogo=main.querySelector('.brand-logo-image[alt="The Mall Lifestore"]');
+    if(mallLifestoreLogo)mallLifestoreLogo.src='assets/works/Graphic%20%26%20Key%20Visual/The%20Mall%20Lifestore/the%20mall%20lifestore.jpg';
     const collaboratorLogos=main.querySelector('.collaborator-logos');
     if(collaboratorLogos){
       const projectBrandIds=['payai-landscape-company-profile','insightist-banner','kbs-monthly-banner','yum-yum-sports-day','bedo-brochure','sgs-colorful-hawaii-party','fine-nest','satit-kaset-55','udomsap-asokaram','wuthering-waves','ruean-long'];

@@ -3,7 +3,7 @@ window.PORTFOLIO = {
     "name": "AKE EKKARAT",
     "fullName": "Ekkarat Rupngam",
     "experienceYears": 5,
-    "additionalCollaborations": 12,
+    "additionalCollaborations": 11,
     "thaiName": "เอกราช รูปงาม",
     "role": "Creative Designer & Digital Creator",
     "available": true,
@@ -123,6 +123,33 @@ window.PORTFOLIO = {
       "deliverables": [
         "Logo design",
         "Visual identity"
+      ],
+      "results": null
+    },
+    {
+      "id": "the-mall-lifestore",
+      "title": "The Mall Lifestore",
+      "category": "Graphic & Key Visual",
+      "subtitle": "Graphic & Key Visual",
+      "description": "ผลงานออกแบบสื่อสำหรับ The Mall Lifestore",
+      "visual": "the-mall-lifestore",
+      "logoCard": true,
+      "mark": "M",
+      "image": "assets/works/Graphic%20%26%20Key%20Visual/The%20Mall%20Lifestore/the%20mall%20lifestore.jpg",
+      "gallery": [
+        {
+          "src": "assets/works/Graphic%20%26%20Key%20Visual/The%20Mall%20Lifestore/the%20mall%20lifestore.jpg",
+          "alt": "โลโก้ The Mall Lifestore"
+        }
+      ],
+      "overview": "ผลงานออกแบบสื่อ Graphic & Key Visual สำหรับ The Mall Lifestore",
+      "context": null,
+      "challenge": null,
+      "role": "Graphic Design / Key Visual",
+      "approach": null,
+      "deliverables": [
+        "Graphic design",
+        "Key visual"
       ],
       "results": null
     },
