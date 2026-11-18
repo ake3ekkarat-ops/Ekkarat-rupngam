@@ -466,6 +466,42 @@ window.PORTFOLIO = {
       "deliverables": ["Monthly social media banners", "Album posts"]
     },
     {
+      "id": "tu-dentistry-kv",
+      "title": "คณะทันตแพทยศาสตร์ มธ.",
+      "brandName": "คณะทันตแพทยศาสตร์ มหาวิทยาลัยธรรมศาสตร์",
+      "category": "Graphic & Key Visual",
+      "subtitle": "Key Visual Design",
+      "description": "ออกแบบ Key Visual สำหรับคณะทันตแพทยศาสตร์ มหาวิทยาลัยธรรมศาสตร์",
+      "visual": "tu-dentistry",
+      "mark": "TU",
+      "image": "assets/works/Graphic%20%26%20Key%20Visual/%E0%B8%97%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B9%81%E0%B8%9E%E0%B8%97%E0%B8%A2%E0%B9%8C%20%E0%B8%A1%E0%B8%98/KV%20%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%97%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B9%81%E0%B8%9E%E0%B8%97%E0%B8%A2%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C.jpg",
+      "detailImage": "assets/works/Graphic%20%26%20Key%20Visual/%E0%B8%97%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B9%81%E0%B8%9E%E0%B8%97%E0%B8%A2%E0%B9%8C%20%E0%B8%A1%E0%B8%98/logo%20%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%97%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B9%81%E0%B8%9E%E0%B8%97%E0%B8%A2%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C.png",
+      "detailLabel": "Key Visual",
+      "detailLayout": "work-sets",
+      "workSets": [
+        {
+          "type": "single",
+          "format": "portrait",
+          "title": "Key Visual",
+          "label": "KV Design",
+          "images": [
+            {
+              "src": "assets/works/Graphic%20%26%20Key%20Visual/%E0%B8%97%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B9%81%E0%B8%9E%E0%B8%97%E0%B8%A2%E0%B9%8C%20%E0%B8%A1%E0%B8%98/KV%20%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%97%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B9%81%E0%B8%9E%E0%B8%97%E0%B8%A2%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C.jpg",
+              "alt": "คณะทันตแพทยศาสตร์ มหาวิทยาลัยธรรมศาสตร์ — Key Visual"
+            }
+          ]
+        }
+      ],
+      "gallery": [],
+      "overview": "ผลงานออกแบบ Key Visual สำหรับคณะทันตแพทยศาสตร์ มหาวิทยาลัยธรรมศาสตร์",
+      "context": null,
+      "challenge": null,
+      "role": "Key Visual Design",
+      "approach": null,
+      "deliverables": ["Key Visual Design"],
+      "results": null
+    },
+    {
       "id": "ocs-international-symposium-2024",
       "title": "OCS International Symposium 2024",
       "category": "Graphic & Key Visual",
