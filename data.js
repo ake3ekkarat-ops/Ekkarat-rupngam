@@ -459,6 +459,7 @@ window.PORTFOLIO = {
       "visual": "bedo-brochure",
       "mark": "BEDO",
       "image": "media-7d4fca733bc9.png",
+      "detailImage": "assets/works/Graphic%20%26%20Key%20Visual/Brochure_BEDO/B%20MARK%20by%20BEDO%20logo.png",
       "detailLayout": "image-stack",
       "gallery": [
         {
