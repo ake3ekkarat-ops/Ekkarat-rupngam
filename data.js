@@ -127,6 +127,33 @@ window.PORTFOLIO = {
       "results": null
     },
     {
+      "id": "jueng-jueng-fishball",
+      "title": "จึง จึง ลูกชิ้นปลา",
+      "category": "Branding & Logo",
+      "subtitle": "Logo Design",
+      "description": "ผลงานออกแบบโลโก้และอัตลักษณ์สำหรับแบรนด์จึง จึง ลูกชิ้นปลา",
+      "visual": "jueng-jueng-fishball",
+      "logoCard": true,
+      "mark": "จึง จึง",
+      "image": "assets/works/branding%20%26%20Logo/%E0%B8%88%E0%B8%B6%E0%B8%87%20%E0%B8%88%E0%B8%B6%E0%B8%87%20%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B8%8A%E0%B8%B4%E0%B9%89%E0%B8%99%E0%B8%9B%E0%B8%A5%E0%B8%B2/%E0%B8%88%E0%B8%B6%E0%B8%87%20%E0%B8%88%E0%B8%B6%E0%B8%87%20%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B8%8A%E0%B8%B4%E0%B9%89%E0%B8%99%E0%B8%9B%E0%B8%A5%E0%B8%B2.jpg",
+      "gallery": [
+        {
+          "src": "assets/works/branding%20%26%20Logo/%E0%B8%88%E0%B8%B6%E0%B8%87%20%E0%B8%88%E0%B8%B6%E0%B8%87%20%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B8%8A%E0%B8%B4%E0%B9%89%E0%B8%99%E0%B8%9B%E0%B8%A5%E0%B8%B2/%E0%B8%88%E0%B8%B6%E0%B8%87%20%E0%B8%88%E0%B8%B6%E0%B8%87%20%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B8%8A%E0%B8%B4%E0%B9%89%E0%B8%99%E0%B8%9B%E0%B8%A5%E0%B8%B2.jpg",
+          "alt": "โลโก้จึง จึง ลูกชิ้นปลา"
+        }
+      ],
+      "overview": "ผลงานออกแบบโลโก้และพัฒนาอัตลักษณ์ภาพสำหรับแบรนด์จึง จึง ลูกชิ้นปลา",
+      "context": "งานออกแบบอัตลักษณ์สำหรับแบรนด์อาหาร",
+      "challenge": null,
+      "role": "Logo Design / Visual Identity",
+      "approach": null,
+      "deliverables": [
+        "Logo design",
+        "Visual identity"
+      ],
+      "results": null
+    },
+    {
       "id": "the-mall-lifestore",
       "title": "The Mall Lifestore",
       "category": "Graphic & Key Visual",
