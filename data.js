@@ -156,9 +156,9 @@ window.PORTFOLIO = {
     {
       "id": "big-bike-shop",
       "title": "Big Bike Shop",
-      "category": "Branding & Logo",
-      "subtitle": "Logo Design",
-      "description": "ผลงานออกแบบโลโก้สำหรับ Big Bike Shop",
+      "category": "Marketing",
+      "subtitle": "Marketing Creative / Logo Design",
+      "description": "ผลงานครีเอทีฟสำหรับการตลาดและออกแบบโลโก้ Big Bike Shop",
       "visual": "big-bike-shop",
       "logoCard": true,
       "mark": "BIG BIKE",
@@ -170,9 +170,9 @@ window.PORTFOLIO = {
         }
       ],
       "overview": "ผลงานออกแบบโลโก้ Big Bike Shop ถ่ายทอดเอกลักษณ์ของธุรกิจมอเตอร์ไซค์ผ่านองค์ประกอบเฟือง โซ่ และลูกสูบ",
-      "context": "งานออกแบบอัตลักษณ์สำหรับธุรกิจมอเตอร์ไซค์",
+      "context": "งานครีเอทีฟการตลาดและอัตลักษณ์สำหรับธุรกิจมอเตอร์ไซค์",
       "challenge": null,
-      "role": "Logo Design / Visual Identity",
+      "role": "Marketing Creative / Logo Design / Visual Identity",
       "approach": null,
       "deliverables": [
         "Logo design",
@@ -526,6 +526,41 @@ window.PORTFOLIO = {
       "role": "Key Visual Design",
       "approach": null,
       "deliverables": ["Key Visual Design"],
+      "results": null
+    },
+    {
+      "id": "lenormand-book-cover",
+      "title": "The Tokens of Lenormand",
+      "brandName": "HOME 61 FORTUNE Cafe",
+      "category": "Graphic & Key Visual",
+      "subtitle": "Book Cover Design",
+      "description": "ออกแบบปกหนังสือเหรียญพยากรณ์เลอนอร์มองด์",
+      "visual": "lenormand-book",
+      "mark": "LENORMAND",
+      "image": "assets/works/Graphic%20%26%20Key%20Visual/%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B7%E0%B8%AD/%E0%B8%94%E0%B8%B9%E0%B8%94%E0%B8%A7%E0%B8%87%20%E0%B9%80%E0%B8%A5%E0%B8%AD%E0%B8%99%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%A1%E0%B8%AD%E0%B8%87%E0%B8%94%E0%B9%8C/%E0%B8%94%E0%B8%B9%E0%B8%94%E0%B8%A7%E0%B8%87%20%E0%B9%80%E0%B8%A5%E0%B8%AD%E0%B8%99%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%A1%E0%B8%AD%E0%B8%87%E0%B8%94%E0%B9%8C.jpg",
+      "detailLabel": "Book Cover Design",
+      "detailLayout": "work-sets",
+      "workSets": [
+        {
+          "type": "single",
+          "format": "portrait",
+          "title": "Book Cover",
+          "label": "The Tokens of Lenormand",
+          "images": [
+            {
+              "src": "assets/works/Graphic%20%26%20Key%20Visual/%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B7%E0%B8%AD/%E0%B8%94%E0%B8%B9%E0%B8%94%E0%B8%A7%E0%B8%87%20%E0%B9%80%E0%B8%A5%E0%B8%AD%E0%B8%99%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%A1%E0%B8%AD%E0%B8%87%E0%B8%94%E0%B9%8C/%E0%B8%94%E0%B8%B9%E0%B8%94%E0%B8%A7%E0%B8%87%20%E0%B9%80%E0%B8%A5%E0%B8%AD%E0%B8%99%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%A1%E0%B8%AD%E0%B8%87%E0%B8%94%E0%B9%8C.jpg",
+              "alt": "The Tokens of Lenormand — Book Cover"
+            }
+          ]
+        }
+      ],
+      "gallery": [],
+      "overview": "ผลงานออกแบบปกหนังสือ The Tokens of Lenormand หรือเหรียญพยากรณ์เลอนอร์มองด์ สำหรับ HOME 61 FORTUNE Cafe",
+      "context": "งานออกแบบปกหนังสือและสื่อสิ่งพิมพ์",
+      "challenge": null,
+      "role": "Book Cover Design / Graphic Design",
+      "approach": null,
+      "deliverables": ["Book Cover Design"],
       "results": null
     },
     {
