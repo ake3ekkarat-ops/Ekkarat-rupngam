@@ -418,6 +418,9 @@ body:has(.hero-stage) {
   max-height: none;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center;
+  transform: scale(1.5);
+  transform-origin: center;
 }
 
 /* Full portfolio name in the top-left brand position. */
