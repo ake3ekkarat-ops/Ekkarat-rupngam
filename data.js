@@ -354,6 +354,41 @@ window.PORTFOLIO = {
       "deliverables": []
     },
     {
+      "id": "flourish-company-profile",
+      "title": "Flourish Tech",
+      "brandName": "Flourish Tech",
+      "category": "Branding & Logo",
+      "subtitle": "Company Profile Design",
+      "description": "ออกแบบปก Company Profile สำหรับ Flourish Tech",
+      "visual": "flourish-company-profile",
+      "mark": "FLOURISH",
+      "image": "assets/works/Graphic%20%26%20Key%20Visual/Copany%20Profile/Flourish/Flourish%20_Company%20Profile.jpg",
+      "detailLabel": "Company Profile Design",
+      "detailLayout": "work-sets",
+      "workSets": [
+        {
+          "type": "single",
+          "format": "portrait",
+          "title": "Company Profile Cover",
+          "label": "Flourish Tech",
+          "images": [
+            {
+              "src": "assets/works/Graphic%20%26%20Key%20Visual/Copany%20Profile/Flourish/Flourish%20_Company%20Profile.jpg",
+              "alt": "Flourish Tech — Company Profile Cover"
+            }
+          ]
+        }
+      ],
+      "gallery": [],
+      "overview": "ผลงานออกแบบปก Company Profile สำหรับ Flourish Tech ธุรกิจด้านการจัดจำหน่าย ออกแบบ และติดตั้ง",
+      "context": "งานออกแบบ Company Profile และสื่อองค์กร",
+      "challenge": null,
+      "role": "Company Profile Design / Graphic Design",
+      "approach": null,
+      "deliverables": ["Company Profile Cover Design"],
+      "results": null
+    },
+    {
       "id": "goodlife-banner",
       "title": "GoodLife Journey",
       "category": "Graphic & Key Visual",
