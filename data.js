@@ -154,6 +154,33 @@ window.PORTFOLIO = {
       "results": null
     },
     {
+      "id": "big-bike-shop",
+      "title": "Big Bike Shop",
+      "category": "Branding & Logo",
+      "subtitle": "Logo Design",
+      "description": "ผลงานออกแบบโลโก้สำหรับ Big Bike Shop",
+      "visual": "big-bike-shop",
+      "logoCard": true,
+      "mark": "BIG BIKE",
+      "image": "assets/works/branding%20%26%20Logo/Big%20Bike%20shop/Logo%20Big%20Bike%20shop.jpg",
+      "gallery": [
+        {
+          "src": "assets/works/branding%20%26%20Logo/Big%20Bike%20shop/Logo%20Big%20Bike%20shop.jpg",
+          "alt": "โลโก้ Big Bike Shop"
+        }
+      ],
+      "overview": "ผลงานออกแบบโลโก้ Big Bike Shop ถ่ายทอดเอกลักษณ์ของธุรกิจมอเตอร์ไซค์ผ่านองค์ประกอบเฟือง โซ่ และลูกสูบ",
+      "context": "งานออกแบบอัตลักษณ์สำหรับธุรกิจมอเตอร์ไซค์",
+      "challenge": null,
+      "role": "Logo Design / Visual Identity",
+      "approach": null,
+      "deliverables": [
+        "Logo design",
+        "Visual identity"
+      ],
+      "results": null
+    },
+    {
       "id": "the-mall-lifestore",
       "title": "The Mall Lifestore",
       "category": "Graphic & Key Visual",

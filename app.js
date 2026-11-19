@@ -205,7 +205,7 @@
     if(isuLogo){isuLogo.src='assets/brands/isu-congress-2022.jpg';isuLogo.closest('.brand-logo-tile')?.setAttribute('title','ISU 58th Ordinary Congress Phuket 2022')}
     const collaboratorLogos=main.querySelector('.collaborator-logos');
     if(collaboratorLogos){
-      const projectBrandIds=['jueng-jueng-fishball','onetouch','mega-we-care','tu-dentistry-kv','payai-landscape-company-profile','insightist-banner','kbs-monthly-banner','yum-yum-sports-day','bedo-brochure','sgs-colorful-hawaii-party','fine-nest','satit-kaset-55','udomsap-asokaram','wuthering-waves','ruean-long'];
+      const projectBrandIds=['jueng-jueng-fishball','big-bike-shop','onetouch','mega-we-care','tu-dentistry-kv','payai-landscape-company-profile','insightist-banner','kbs-monthly-banner','yum-yum-sports-day','bedo-brochure','sgs-colorful-hawaii-party','fine-nest','satit-kaset-55','udomsap-asokaram','wuthering-waves','ruean-long'];
       const existing=new Set([...collaboratorLogos.querySelectorAll('.brand-logo-image')].map(img=>img.alt.toLocaleLowerCase()));
       const projectBrands=projectBrandIds.map(id=>projects.find(project=>project.id===id)).filter(Boolean).filter(project=>!existing.has((project.brandName||project.title).toLocaleLowerCase()));
       collaboratorLogos.insertAdjacentHTML('beforeend',projectBrands.map(project=>{const src=asset(project.detailImage||project.image),name=project.brandName||project.title;return src?'<div class="brand-logo-tile brand-logo-project" title="'+esc(name)+'"><img class="brand-logo-image" src="'+src+'" alt="'+esc(name)+'" loading="lazy"></div>':''}).join(''));
