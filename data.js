@@ -155,10 +155,15 @@ window.PORTFOLIO = {
     },
     {
       "id": "big-bike-shop",
-      "title": "Big Bike Shop",
+      "title": "BIG BIKE SHOP",
       "category": "Marketing",
-      "subtitle": "Marketing Creative / Logo Design",
-      "description": "ผลงานครีเอทีฟสำหรับการตลาดและออกแบบโลโก้ Big Bike Shop",
+      "subtitle": "Brand Identity & Creative Direction",
+      "description": "ออกแบบอัตลักษณ์และวางทิศทางภาพลักษณ์ให้ BIG BIKE SHOP สื่อสารได้อย่างเป็นเอกภาพทั้งบนสื่อออนไลน์และหน้าร้าน",
+      "disciplines": [
+        "Branding & Logo",
+        "Marketing",
+        "Graphic & Key Visual"
+      ],
       "visual": "big-bike-shop",
       "logoCard": true,
       "mark": "BIG BIKE",
@@ -169,14 +174,19 @@ window.PORTFOLIO = {
           "alt": "โลโก้ Big Bike Shop"
         }
       ],
-      "overview": "ผลงานออกแบบโลโก้ Big Bike Shop ถ่ายทอดเอกลักษณ์ของธุรกิจมอเตอร์ไซค์ผ่านองค์ประกอบเฟือง โซ่ และลูกสูบ",
-      "context": "งานครีเอทีฟการตลาดและอัตลักษณ์สำหรับธุรกิจมอเตอร์ไซค์",
-      "challenge": null,
-      "role": "Marketing Creative / Logo Design / Visual Identity",
-      "approach": null,
+      "overview": "ออกแบบอัตลักษณ์และวางแนวทางการสื่อสารภาพลักษณ์สำหรับ BIG BIKE SHOP โดยพัฒนารูปแบบงานออกแบบที่เป็นเอกภาพและสามารถนำไปใช้งานได้จริง ทั้งบนสื่อออนไลน์และหน้าร้าน",
+      "context": "สาขางานที่เกี่ยวข้อง ได้แก่ Branding & Logo, Marketing และ Graphic & Key Visual โดยโปรเจกต์ครอบคลุมตั้งแต่โลโก้ ภาพปกเพจ เทมเพลตโซเชียลมีเดีย แนวทางการนำเสนอคอนเทนต์และการถ่ายภาพ ไปจนถึงป้ายหน้าร้านสำหรับนำไปผลิตจริง",
+      "challenge": "สร้างระบบภาพลักษณ์ที่สะท้อนคาแรกเตอร์ของธุรกิจมอเตอร์ไซค์ พร้อมรักษาความสม่ำเสมอของแบรนด์ในสื่อหลายรูปแบบและรองรับการใช้งานต่อเนื่อง",
+      "role": "Logo Design / Brand Visual Direction / Social Media Guidelines / Photography Direction / Social Media Template Design / Cover Design / Storefront Signage Design",
+      "approach": "กำหนดทิศทางภาพรวมของแบรนด์ก่อนพัฒนาองค์ประกอบแต่ละส่วนให้ทำงานร่วมกัน ตั้งแต่โลโก้ สไตล์ภาพและการถ่ายภาพ ไปจนถึงเทมเพลตและสื่อหน้าร้าน เพื่อให้ทีมสามารถนำระบบที่วางไว้ไปใช้งานต่อได้อย่างสอดคล้องกัน",
       "deliverables": [
-        "Logo design",
-        "Visual identity"
+        "Logo Design",
+        "Brand Visual Direction",
+        "Social Media Guidelines",
+        "Photography Direction",
+        "Social Media Template Design",
+        "Page Cover Design",
+        "Storefront Signage Design"
       ],
       "results": null
     },
