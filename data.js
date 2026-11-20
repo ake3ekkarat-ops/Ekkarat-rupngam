@@ -704,6 +704,7 @@ window.PORTFOLIO = {
       "visual": "sgs-hawaii",
       "mark": "SGS",
       "image": "media-sgs-2023-key-visual.jpg",
+      "detailCover": "media-sgs-2023-banner.png",
       "detailImage": "assets/works/Graphic%20%26%20Key%20Visual/Sgs/logo-sgs.jpg",
       "detailLayout": "year-groups",
       "detailTitle": "SGS 2023 — Colorful Hawaii Party",
@@ -721,10 +722,6 @@ window.PORTFOLIO = {
           "year": "2023",
           "title": "SGS Colorful Hawaii Party",
           "images": [
-            {
-              "src": "media-sgs-2023-banner.png",
-              "alt": "SGS 2023 — Colorful Hawaii Party Banner"
-            },
             {
               "src": "media-sgs-2023-key-visual.jpg",
               "alt": "SGS 2023 — Colorful Hawaii Party Key Visual"
