@@ -830,13 +830,7 @@ window.PORTFOLIO = {
       "image": "media-28d25da0fb61.jpg",
       "detailCover": "media-wuthering-waves-banner.png",
       "detailImage": "assets/brands/ais-esports.jpg",
-      "gallery": [
-        {
-          "src": "media-wuthering-waves-banner.png",
-          "alt": "แบนเนอร์กิจกรรม Wuthering Waves",
-          "caption": "Wuthering Waves — Event Banner"
-        }
-      ],
+      "gallery": [],
       "overview": "นำเสนอภาพผลงาน Key Visual กิจกรรม Wuthering Waves จากไฟล์ผลงานที่จัดเก็บในหมวด Graphic & Key Visual",
       "context": null,
       "challenge": null,

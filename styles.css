@@ -794,6 +794,8 @@ a.contact-channel:hover { border-color: var(--secondary); background: #221d4580;
 .case-gallery:has(> figure:only-child) { grid-template-columns: minmax(0, 1fr); }
 .case-gallery > figure:only-child { width: min(100%, 800px); margin: 0 auto; }
 .case-gallery > figure:has(> img[src="media-wuthering-waves-banner.png"]) { width: 100%; }
+body:has(.case-hero img[src="media-wuthering-waves-banner.png"]) .case-section:has(+ .case-gallery),
+body:has(.case-hero img[src="media-wuthering-waves-banner.png"]) .case-gallery { display: none; }
 .case-gallery > figure img { height: auto; object-fit: contain; }
 .case-gallery figcaption { margin-top: 12px; font-size: 12px; color: var(--muted); text-align: center; }
 

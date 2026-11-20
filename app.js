@@ -63,6 +63,7 @@
       const media=[];
       (project.gallery||[]).forEach(item=>media.push(source(item)));
       (project.workSets||[]).forEach(set=>(set.images||[]).forEach(item=>media.push(source(item))));
+      if(project.detailCover)media.push(project.detailCover);
       if(project.videoUrl)media.push(project.videoUrl);
       if(!media.filter(Boolean).length&&project.image)media.push(source(project.image));
       return [...new Set(media.filter(Boolean))];
