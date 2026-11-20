@@ -47,7 +47,7 @@
     return `<div class="portrait-placeholder"><svg class="portrait-shape" viewBox="0 0 420 520" aria-hidden="true"><defs><linearGradient id="person-fill" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#151447"/><stop offset=".55" stop-color="#08051D"/><stop offset="1" stop-color="#151447"/></linearGradient></defs><path d="M210 34c-62 0-89 45-87 104 1 34 11 62 26 80v37c-13 18-30 28-59 39C32 316 10 361 4 520h412c-6-159-28-204-86-226-29-11-46-21-59-39v-37c15-18 25-46 26-80 2-59-25-104-87-104Z" fill="url(#person-fill)" stroke="#743BE8" stroke-opacity=".35"/><path d="M149 255c17 17 36 27 61 27s44-10 61-27M90 294l55 226M330 294l-55 226" fill="none" stroke="#22B8F5" stroke-opacity=".13"/></svg><span class="portrait-label">PERSONAL PORTRAIT<small>Photo to be added · รอเพิ่มรูปจริง</small></span></div>`;
   }
   function thumbnail(p,caption=true){
-    const src=asset(p.image);
+    const src=asset((location.hash==='#/project/'+p.id&&p.detailCover)||p.image);
     if(!src&&asset(p.videoUrl))return `<div class="thumbnail video"><div class="thumbnail-content"><video class="thumbnail-video" src="${asset(p.videoUrl)}#t=1" preload="metadata" muted playsinline aria-hidden="true" tabindex="-1"></video><span class="video-card-play">${icon('play')}</span></div></div>`;
     return `<div class="thumbnail ${p.visual}${p.logoCard?' logo-card-image':''}">${src?'<div class="thumbnail-content"><img class="thumbnail-image" src="'+src+'" alt="'+esc(p.title)+'" loading="lazy"></div>':'<span class="placeholder-pill">VISUAL PLACEHOLDER</span><div class="thumbnail-content" aria-hidden="true"><div class="visual-object"></div><span class="visual-mark">'+esc(p.mark)+'</span><span class="visual-caption">PROJECT IMAGERY TO BE ADDED</span></div>'}</div>`;
   }
