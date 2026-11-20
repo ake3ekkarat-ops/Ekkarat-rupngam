@@ -696,22 +696,51 @@ window.PORTFOLIO = {
     },
     {
       "id": "sgs-colorful-hawaii-party",
-      "title": "SGS — Colorful Hawaii Party",
+      "title": "SGS 2023 — Colorful Hawaii Party",
       "brandName": "SGS",
       "category": "Graphic & Key Visual",
       "subtitle": "Event Key Visual",
-      "description": "ออกแบบ Key Visual สำหรับงาน SGS Laboratory — Colorful Hawaii Party",
+      "description": "ออกแบบ Key Visual และสื่อประชาสัมพันธ์กิจกรรม SGS ต่อเนื่องในปี 2023–2024",
       "visual": "sgs-hawaii",
       "mark": "SGS",
-      "image": "media-e0490f2c7719.jpg",
+      "image": "media-sgs-2023-key-visual.jpg",
       "detailImage": "assets/works/Graphic%20%26%20Key%20Visual/Sgs/logo-sgs.jpg",
-      "gallery": [
+      "detailLayout": "year-groups",
+      "detailTitle": "SGS — Event Key Visual Archive",
+      "detailLabel": "Event Key Visuals · 2023–2024",
+      "detailContributions": [
+        "Key Visual Design",
+        "Event Artwork",
+        "Campaign Banner"
+      ],
+      "gallery": [],
+      "yearGroups": [
         {
-          "src": "media-e0490f2c7719.jpg",
-          "alt": "SGS Laboratory — Colorful Hawaii Party Key Visual"
+          "year": "2023",
+          "title": "SGS Colorful Hawaii Party",
+          "images": [
+            {
+              "src": "media-sgs-2023-banner.png",
+              "alt": "SGS 2023 — Colorful Hawaii Party Banner"
+            },
+            {
+              "src": "media-sgs-2023-key-visual.jpg",
+              "alt": "SGS 2023 — Colorful Hawaii Party Key Visual"
+            }
+          ]
+        },
+        {
+          "year": "2024",
+          "title": "SGS Wonderland by SGS Wonder Hands",
+          "images": [
+            {
+              "src": "media-sgs-2024-wonderland.jpg",
+              "alt": "SGS 2024 — Wonderland by SGS Wonder Hands"
+            }
+          ]
         }
       ],
-      "overview": "ผลงานออกแบบ Key Visual งาน Colorful Hawaii Party ของ SGS Laboratory ในบรรยากาศทรอปิคอลสีสันสดใส",
+      "overview": "ผลงานออกแบบสื่อกิจกรรมของ SGS แยกตามปี ตั้งแต่งาน Colorful Hawaii Party ในปี 2023 ถึงงาน Wonderland by SGS Wonder Hands ในปี 2024",
       "context": null,
       "challenge": null,
       "role": null,
@@ -720,6 +749,29 @@ window.PORTFOLIO = {
         "Event key visual"
       ],
       "results": null
+    },
+    {
+      "id": "sgs-wonderland-2024",
+      "title": "SGS 2024 — Wonderland by SGS Wonder Hands",
+      "brandName": "SGS",
+      "category": "Graphic & Key Visual",
+      "subtitle": "Wonderland by SGS Wonder Hands",
+      "description": "ออกแบบ Key Visual สำหรับงาน SGS Wonderland by SGS Wonder Hands ปี 2024",
+      "visual": "sgs-wonderland",
+      "mark": "SGS",
+      "image": "media-sgs-2024-wonderland.jpg",
+      "detailImage": "assets/works/Graphic%20%26%20Key%20Visual/Sgs/logo-sgs.jpg",
+      "detailTarget": "sgs-colorful-hawaii-party",
+      "gallery": [
+        {
+          "src": "media-sgs-2024-wonderland.jpg",
+          "alt": "SGS 2024 — Wonderland by SGS Wonder Hands"
+        }
+      ],
+      "overview": "ผลงานออกแบบ Key Visual งาน SGS Wonderland by SGS Wonder Hands ปี 2024",
+      "deliverables": [
+        "Event key visual"
+      ]
     },
     {
       "id": "fine-nest",

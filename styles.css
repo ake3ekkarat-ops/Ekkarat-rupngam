@@ -781,8 +781,8 @@ a.contact-channel:hover { border-color: var(--secondary); background: #221d4580;
 .work-grid .project-card .thumbnail.tu-dentistry { aspect-ratio: 1263 / 1787; }
 .work-grid .project-card .thumbnail.lenormand-book { aspect-ratio: 1240 / 1754; }
 .work-grid .project-card .thumbnail.flourish-company-profile { aspect-ratio: 1240 / 1754; }
-.thumbnail:is(.wuthering-waves, .sgs-hawaii) .thumbnail-content { background: #101624; min-width: 0; min-height: 0; }
-.thumbnail:is(.wuthering-waves, .sgs-hawaii, .yum-yum, .ocs-symposium, .tu-dentistry, .lenormand-book, .flourish-company-profile) .thumbnail-image {
+.thumbnail:is(.wuthering-waves, .sgs-hawaii, .sgs-wonderland) .thumbnail-content { background: #101624; min-width: 0; min-height: 0; }
+.thumbnail:is(.wuthering-waves, .sgs-hawaii, .sgs-wonderland, .yum-yum, .ocs-symposium, .tu-dentistry, .lenormand-book, .flourish-company-profile) .thumbnail-image {
   position: absolute; inset: 0; width: 100%; height: 100%;
   object-fit: contain; object-position: center;
 }
@@ -842,6 +842,25 @@ body:has(.case-hero img[src="media-wuthering-waves-banner.png"]) .case-gallery {
 
 /* SGS detail: border follows the original artwork without side gaps. */
 .case-hero .thumbnail.sgs-hawaii { aspect-ratio: 893 / 1264; }
+
+.year-project-groups { display: grid; gap: clamp(64px, 9vw, 110px); }
+.year-project-group { min-width: 0; }
+.year-project-heading { display: flex; align-items: end; justify-content: space-between; gap: 28px; padding-bottom: 22px; margin-bottom: 28px; border-bottom: 1px solid var(--line); }
+.year-project-heading > div { display: flex; align-items: center; gap: clamp(20px, 4vw, 46px); min-width: 0; }
+.year-project-number { font-family: var(--display); font-size: clamp(46px, 7vw, 86px); font-weight: 600; line-height: .8; letter-spacing: -.06em; color: var(--secondary); }
+.year-project-heading .eyebrow { display: block; margin-bottom: 9px; }
+.year-project-heading h2 { font-size: clamp(26px, 3.5vw, 44px); line-height: 1.1; }
+.year-project-count { flex-shrink: 0; color: var(--muted); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
+.year-project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: start; }
+.year-project-grid:has(> figure:only-child) { grid-template-columns: minmax(0, 1fr); }
+.year-project-grid figure { min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+.year-project-grid:has(> figure:only-child) figure { width: min(100%, 1000px); margin-inline: auto; }
+.year-project-grid img { display: block; width: 100%; height: auto; object-fit: contain; }
+@media (max-width: 700px) {
+  .year-project-heading, .year-project-heading > div { align-items: flex-start; }
+  .year-project-heading { flex-direction: column; }
+  .year-project-grid { grid-template-columns: minmax(0, 1fr); }
+}
 
 .case-image-stack { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; }
 .case-image-stack figure { width: min(100%, 800px); margin: 0 auto; min-width: 0; }

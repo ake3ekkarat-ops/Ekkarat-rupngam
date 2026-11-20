@@ -52,6 +52,7 @@
     return `<div class="thumbnail ${p.visual}${p.logoCard?' logo-card-image':''}">${src?'<div class="thumbnail-content"><img class="thumbnail-image" src="'+src+'" alt="'+esc(p.title)+'" loading="lazy"></div>':'<span class="placeholder-pill">VISUAL PLACEHOLDER</span><div class="thumbnail-content" aria-hidden="true"><div class="visual-object"></div><span class="visual-mark">'+esc(p.mark)+'</span><span class="visual-caption">PROJECT IMAGERY TO BE ADDED</span></div>'}</div>`;
   }
   function card(p){
+    if(p.detailTarget)p={...p,id:p.detailTarget};
     const content=`${thumbnail(p)}<div class="project-meta"><div><p class="category">${esc(p.category)}</p><h3>${esc(p.title)}</h3>${p.subtitle?`<p class="project-subtitle">${esc(p.subtitle)}</p>`:""}<p class="project-description">${esc(p.description)}</p></div>${p.cardOnly?'':'<span class="project-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>'}</div>`;
     return p.cardOnly?`<article class="project-card project-card-static reveal" aria-label="${esc(p.title)} — รายละเอียดผลงานจะอัปเดตภายหลัง">${content}</article>`:`<a class="project-card reveal" href="#/project/${p.id}" aria-label="View ${esc(p.title)} case study">${content}</a>`;
   }
@@ -63,6 +64,7 @@
       const media=[];
       (project.gallery||[]).forEach(item=>media.push(source(item)));
       (project.workSets||[]).forEach(set=>(set.images||[]).forEach(item=>media.push(source(item))));
+      (project.yearGroups||[]).forEach(group=>(group.images||[]).forEach(item=>media.push(source(item))));
       if(project.detailCover)media.push(project.detailCover);
       if(project.videoUrl)media.push(project.videoUrl);
       if(!media.filter(Boolean).length&&project.image)media.push(source(project.image));
@@ -155,6 +157,11 @@
     }
     if(p.detailLayout==='image-stack'){
       return heading('CASE STUDY / '+esc(p.category),esc(p.title),esc(p.subtitle))+'<section class="page-body container"><div class="case-image-stack">'+p.gallery.filter(x=>asset(x.src)).map((x,i)=>'<figure class="'+(i===0?'case-stack-banner':'case-stack-detail')+'"><img src="'+asset(x.src)+'" alt="'+esc(x.alt||p.title)+'" loading="'+(i===0?'eager':'lazy')+'"></figure>').join('')+'</div><a class="text-link" href="#/work" style="margin-top:25px">Back to All Work '+arrow+'</a></section>';
+    }
+    if(p.detailLayout==='year-groups'){
+      const groups=(p.yearGroups||[]).filter(group=>Array.isArray(group.images)&&group.images.some(item=>asset(item.src)));
+      let imageIndex=0;
+      return projectDetailIntro({...p,title:p.detailTitle||p.title},[])+'<section class="page-body container"><div class="year-project-groups">'+groups.map(group=>{const images=group.images.filter(item=>asset(item.src));return '<section class="year-project-group"><header class="year-project-heading"><div><span class="year-project-number">'+esc(group.year)+'</span><div><span class="eyebrow accent">SGS PROJECT ARCHIVE</span><h2>'+esc(group.title)+'</h2></div></div><span class="year-project-count">'+images.length+' '+(images.length===1?'Artwork':'Artworks')+'</span></header><div class="year-project-grid">'+images.map(item=>'<figure><img src="'+asset(item.src)+'" alt="'+esc(item.alt||p.title)+'" loading="'+(imageIndex++===0?'eager':'lazy')+'"></figure>').join('')+'</div></section>'}).join('')+'</div><a class="text-link" href="#/work" style="margin-top:25px">Back to All Work '+arrow+'</a></section>';
     }
     if(p.category==='Video & Motion'&&asset(p.videoUrl)){
       return heading('CASE STUDY / '+esc(p.category),esc(p.title),esc(p.subtitle))+`<section class="page-body container"><video class="case-video" controls playsinline preload="metadata" src="${asset(p.videoUrl)}">Your browser does not support this video.</video>${asset(p.image)?'<div class="case-gallery"><figure><img src="'+asset(p.image)+'" alt="โลโก้ / ภาพปก '+esc(p.title)+'" loading="lazy"></figure></div>':''}${p.overview?'<div class="case-section"><h2>Project overview</h2><p>'+esc(p.overview)+'</p></div>':''}${p.gallery.length?'<div class="case-gallery">'+p.gallery.filter(x=>asset(x.src)).map(x=>'<figure><img src="'+asset(x.src)+'" alt="'+esc(x.alt||p.title)+'" loading="lazy"></figure>').join('')+'</div>':''}<a class="next-project" href="#/project/${next.id}"><div><span class="eyebrow">NEXT PROJECT</span><h2>${esc(next.title)}</h2></div><span aria-hidden="true">↗</span></a><a class="text-link" href="#/work" style="margin-top:25px">Back to All Work ${arrow}</a></section>`;
