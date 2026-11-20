@@ -706,6 +706,7 @@ window.PORTFOLIO = {
       "image": "media-sgs-2023-key-visual.jpg",
       "detailImage": "assets/works/Graphic%20%26%20Key%20Visual/Sgs/logo-sgs.jpg",
       "detailLayout": "year-groups",
+      "detailYear": "2023",
       "detailTitle": "SGS — Event Key Visual Archive",
       "detailLabel": "Event Key Visuals · 2023–2024",
       "detailContributions": [
@@ -762,6 +763,7 @@ window.PORTFOLIO = {
       "image": "media-sgs-2024-wonderland.jpg",
       "detailImage": "assets/works/Graphic%20%26%20Key%20Visual/Sgs/logo-sgs.jpg",
       "detailTarget": "sgs-colorful-hawaii-party",
+      "detailYear": "2024",
       "gallery": [
         {
           "src": "media-sgs-2024-wonderland.jpg",
