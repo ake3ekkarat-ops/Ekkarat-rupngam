@@ -787,8 +787,13 @@ a.contact-channel:hover { border-color: var(--secondary); background: #221d4580;
   object-fit: contain; object-position: center;
 }
 .case-hero .thumbnail:is(.wuthering-waves, .sgs-hawaii) { aspect-ratio: 4 / 5; width: min(100%, 640px); margin-inline: auto; }
+.case-hero .thumbnail.wuthering-waves:has(.thumbnail-image[src="media-wuthering-waves-banner.png"]) {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
 .case-gallery:has(> figure:only-child) { grid-template-columns: minmax(0, 1fr); }
 .case-gallery > figure:only-child { width: min(100%, 800px); margin: 0 auto; }
+.case-gallery > figure:has(> img[src="media-wuthering-waves-banner.png"]) { width: 100%; }
 .case-gallery > figure img { height: auto; object-fit: contain; }
 .case-gallery figcaption { margin-top: 12px; font-size: 12px; color: var(--muted); text-align: center; }
 
