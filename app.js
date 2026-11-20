@@ -56,7 +56,7 @@
     return p.cardOnly?`<article class="project-card project-card-static reveal" aria-label="${esc(p.title)} — รายละเอียดผลงานจะอัปเดตภายหลัง">${content}</article>`:`<a class="project-card reveal" href="#/project/${p.id}" aria-label="View ${esc(p.title)} case study">${content}</a>`;
   }
   function gallery(){return `<div class="filter-bar" role="group" aria-label="Project categories">${categories.map(c=>'<button class="filter" data-category="'+esc(c)+'" aria-pressed="'+(c===activeCategory)+'">'+esc(c)+'</button>').join('')}</div><div class="work-grid" id="project-grid">${filtered().map(card).join('')}</div><p class="result-count" id="result-count" role="status" aria-live="polite">${filtered().length} projects · ${esc(activeCategory)}</p>`}
-  function visibleProjects(){return projects.filter(project=>!project.cardOnly&&Boolean(asset(project.image)||asset(project.videoUrl)))}
+  function visibleProjects(){return projects.filter(project=>Boolean(asset(project.image)||asset(project.videoUrl)))}
   function filtered(){const visible=visibleProjects();return activeCategory==='All Projects'?visible:visible.filter(p=>p.category===activeCategory)}
   function portfolioStats(){
     const source=item=>typeof item==='string'?item:item?.src;
