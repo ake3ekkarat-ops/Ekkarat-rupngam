@@ -851,6 +851,9 @@ body:has(.case-hero img[src="media-wuthering-waves-banner.png"]) .case-gallery {
 .year-project-filters strong { font-family: var(--display); font-size: 17px; }
 .year-project-filters span { color: var(--muted); font-size: 10px; line-height: 1.45; }
 .year-project-filters a[aria-current="page"] span { color: #fff; }
+.kbs-month-filters { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); margin-bottom: clamp(38px, 6vw, 68px); }
+.kbs-month-filters a { min-height: 82px; }
+.kbs-month-filters strong { line-height: 1.35; }
 .sgs-project-hub { margin-top: 0; }
 .sgs-project-hub .project-card { min-width: 0; }
 .sgs-detail-hero { width: 100%; margin: 0 0 clamp(42px, 6vw, 70px); overflow: hidden; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
