@@ -969,3 +969,20 @@ body:has(.case-hero img[src="media-wuthering-waves-banner.png"]) .case-gallery {
   object-fit: cover !important;
   object-position: center !important;
 }
+.work-grid .thumbnail.dohome .thumbnail-content { background: #f5662a; }
+.work-grid .thumbnail.dohome .thumbnail-image {
+  object-fit: contain !important;
+  transform: scale(1.06);
+}
+.brand-logo-tile:has(.brand-logo-image[alt="Dohome"]) {
+  padding: 0;
+  background: #f5662a;
+}
+.brand-logo-tile:has(.brand-logo-image[alt="Dohome"]) .brand-logo-image {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  object-fit: contain;
+  transform: scale(.9);
+}

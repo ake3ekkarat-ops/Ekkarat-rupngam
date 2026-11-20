@@ -56,7 +56,8 @@
     return p.cardOnly?`<article class="project-card project-card-static reveal" aria-label="${esc(p.title)} — รายละเอียดผลงานจะอัปเดตภายหลัง">${content}</article>`:`<a class="project-card reveal" href="#/project/${p.id}" aria-label="View ${esc(p.title)} case study">${content}</a>`;
   }
   function gallery(){return `<div class="filter-bar" role="group" aria-label="Project categories">${categories.map(c=>'<button class="filter" data-category="'+esc(c)+'" aria-pressed="'+(c===activeCategory)+'">'+esc(c)+'</button>').join('')}</div><div class="work-grid" id="project-grid">${filtered().map(card).join('')}</div><p class="result-count" id="result-count" role="status" aria-live="polite">${filtered().length} projects · ${esc(activeCategory)}</p>`}
-  function filtered(){return activeCategory==='All Projects'?projects:projects.filter(p=>p.category===activeCategory)}
+  function visibleProjects(){return projects.filter(project=>!project.cardOnly&&Boolean(asset(project.image)||asset(project.videoUrl)))}
+  function filtered(){const visible=visibleProjects();return activeCategory==='All Projects'?visible:visible.filter(p=>p.category===activeCategory)}
   function portfolioStats(){
     const source=item=>typeof item==='string'?item:item?.src;
     const mediaFor=project=>{
@@ -69,7 +70,7 @@
       if(!media.filter(Boolean).length&&project.image)media.push(source(project.image));
       return [...new Set(media.filter(Boolean))];
     };
-    const completedProjects=projects.filter(project=>mediaFor(project).length);
+    const completedProjects=visibleProjects().filter(project=>mediaFor(project).length);
     const mediaCount=new Set(completedProjects.flatMap(mediaFor)).size;
     const experienceYears=Number(profile.experienceYears)||5;
     const additionalBrands=Number(profile.additionalCollaborations)||0;
@@ -223,12 +224,12 @@
     if(isuLogo){isuLogo.src='assets/brands/isu-congress-2022.jpg';isuLogo.closest('.brand-logo-tile')?.setAttribute('title','ISU 58th Ordinary Congress Phuket 2022')}
     const collaboratorLogos=main.querySelector('.collaborator-logos');
     if(collaboratorLogos){
-      const projectBrandIds=['jueng-jueng-fishball','big-bike-shop','onetouch','mega-we-care','tu-dentistry-kv','payai-landscape-company-profile','insightist-banner','kbs-monthly-banner','yum-yum-sports-day','bedo-brochure','sgs-colorful-hawaii-party','fine-nest','satit-kaset-55','udomsap-asokaram','wuthering-waves','ruean-long'];
+      const projectBrandIds=['jueng-jueng-fishball','big-bike-shop','onetouch','mega-we-care','tu-dentistry-kv','payai-landscape-company-profile','insightist-banner','kbs-monthly-banner','yum-yum-sports-day','bedo-brochure','sgs-colorful-hawaii-party','dohome','fine-nest','udomsap-asokaram','wuthering-waves','ruean-long'];
       const existing=new Set([...collaboratorLogos.querySelectorAll('.brand-logo-image')].map(img=>img.alt.toLocaleLowerCase()));
       const projectBrands=projectBrandIds.map(id=>projects.find(project=>project.id===id)).filter(Boolean).filter(project=>!existing.has((project.brandName||project.title).toLocaleLowerCase()));
       collaboratorLogos.insertAdjacentHTML('beforeend',projectBrands.map(project=>{const src=asset(project.detailImage||project.image),name=project.brandName||project.title;return src?'<div class="brand-logo-tile brand-logo-project" title="'+esc(name)+'"><img class="brand-logo-image" src="'+src+'" alt="'+esc(name)+'" loading="lazy"></div>':''}).join(''));
       if(!collaboratorLogos.querySelector('.brand-logo-image[alt="Takeda"]'))collaboratorLogos.insertAdjacentHTML('beforeend','<div class="brand-logo-tile" title="Takeda"><img class="brand-logo-image" src="assets/brands/takeda.jpg" alt="Takeda" loading="lazy"></div>');
-      const largeBrandNames=new Set(['medumore','mega we care','takeda','คณะทันตแพทยศาสตร์ มหาวิทยาลัยธรรมศาสตร์','สสส.','the mall lifestore','telescope & astronomy thailand','king long','kfc',"fivb volleyball women's world championship thailand 2025",'sena development','land & houses','true 5g','ocs สำนักงานคณะกรรมการกฤษฎีกา','onetouch','kbs — faculty of business administration','yum yum — well-being sports day','b mark by bedo','sgs','55 ปี สาธิตเกษตร','ais esports']);
+      const largeBrandNames=new Set(['medumore','mega we care','takeda','คณะทันตแพทยศาสตร์ มหาวิทยาลัยธรรมศาสตร์','สสส.','the mall lifestore','telescope & astronomy thailand','king long','kfc',"fivb volleyball women's world championship thailand 2025",'sena development','land & houses','true 5g','ocs สำนักงานคณะกรรมการกฤษฎีกา','onetouch','kbs — faculty of business administration','yum yum — well-being sports day','b mark by bedo','sgs','ais esports']);
       const logoTiles=[...collaboratorLogos.querySelectorAll('.brand-logo-tile')];
       const largeTiles=logoTiles.filter(tile=>largeBrandNames.has((tile.querySelector('.brand-logo-image')?.alt||'').toLocaleLowerCase()));
       const smallTiles=logoTiles.filter(tile=>!largeTiles.includes(tile));
