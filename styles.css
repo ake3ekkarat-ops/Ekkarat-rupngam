@@ -993,6 +993,12 @@ body:has(.case-hero img[src="media-wuthering-waves-banner.png"]) .case-gallery {
   object-fit: contain !important;
   transform: scale(1.06);
 }
+
+/* SGS Wonderland KV fills the complete visual area of its project card. */
+.work-grid .thumbnail.sgs-wonderland .thumbnail-image {
+  object-fit: cover !important;
+  object-position: center !important;
+}
 .brand-logo-tile:has(.brand-logo-image[alt="Dohome"]) {
   padding: 0;
   background: #f5662a;
