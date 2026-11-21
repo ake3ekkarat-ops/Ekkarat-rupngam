@@ -914,8 +914,8 @@ window.PORTFOLIO = {
       "mediaGroups": [
         {
           "id": "online",
-          "title": "Online Media",
-          "label": "Digital Media",
+          "title": "Online",
+          "label": "",
           "description": "Key Visual สำหรับประชาสัมพันธ์กิจกรรมบนช่องทางออนไลน์",
           "items": [
             { "type": "image", "src": "media-28d25da0fb61.jpg", "alt": "Wuthering Waves — Online Event Key Visual" }
@@ -923,15 +923,15 @@ window.PORTFOLIO = {
         },
         {
           "id": "production",
-          "title": "Production Media",
-          "label": "Production Assets",
+          "title": "Production",
+          "label": "",
           "description": "ไฟล์กราฟิกและสื่อสำหรับนำไปผลิตและติดตั้งในพื้นที่จัดกิจกรรม",
           "items": []
         },
         {
           "id": "motion",
-          "title": "On-screen Motion",
-          "label": "Motion Graphics",
+          "title": "Motion",
+          "label": "",
           "description": "งาน Motion Graphic สำหรับนำเสนอขึ้นจอภายในพื้นที่จัดกิจกรรม",
           "items": []
         }
