@@ -186,7 +186,7 @@
       const items=(activeGroup?.items||[]).filter(item=>asset(item.src));
       const mediaNav='<nav class="year-project-filters wuthering-media-filters" aria-label="เลือกประเภทสื่อ Wuthering Waves">'+groups.map(group=>'<a href="#/project/'+esc(p.id)+'?media='+encodeURIComponent(group.id)+'"'+(group.id===activeId?' aria-current="page"':'')+'><strong>'+esc(group.title)+'</strong>'+(group.label?'<span>'+esc(group.label)+'</span>':'')+'</a>').join('')+'</nav>';
       const caseOverview='<section class="wuthering-case-overview"><div class="wuthering-project-meta"><div><span>PROJECT TYPE</span><strong>'+esc(p.projectType||'')+'</strong></div><div><span>CLIENT / EVENT</span><strong>'+esc(p.clientEvent||'')+'</strong></div><div><span>DISCIPLINES</span><strong>'+esc(p.disciplines||'')+'</strong></div></div><div class="wuthering-case-copy"><div><span class="eyebrow accent">PROJECT OVERVIEW</span><h2>Event Key Visual &amp; Creative Production</h2>'+(p.overviewParagraphs||[]).map(paragraph=>'<p>'+esc(paragraph)+'</p>').join('')+'</div><aside><span class="eyebrow accent">PROJECT HIGHLIGHTS</span><h3>One visual system, multiple formats.</h3><p>'+esc(p.projectHighlights||'')+'</p></aside></div></section>';
-      const mediaContent=items.length?'<div class="wuthering-media-grid">'+items.map((item,index)=>item.type==='video'?'<figure class="wuthering-media-item"><video controls playsinline preload="metadata" src="'+asset(item.src)+'" aria-label="'+esc(item.alt||activeGroup.title)+'"></video></figure>':'<figure class="wuthering-media-item"><img src="'+asset(item.src)+'" alt="'+esc(item.alt||activeGroup.title)+'" loading="'+(index===0?'eager':'lazy')+'"></figure>').join('')+'</div>':'<div class="wuthering-media-empty"><span class="eyebrow accent">COMING SOON</span><h3>กำลังเตรียมไฟล์ '+esc(activeGroup?.title||'ผลงาน')+'</h3><p>โครงสร้างหมวดนี้พร้อมใช้งาน และจะแสดงผลงานทันทีเมื่อเพิ่มไฟล์สื่อเข้ามา</p></div>';
+      const mediaContent=items.length?'<div class="wuthering-media-grid">'+items.map((item,index)=>item.type==='video'?'<figure class="wuthering-media-item"><video controls playsinline preload="metadata" src="'+asset(item.src)+'" aria-label="'+esc(item.alt||activeGroup.title)+'"></video></figure>':'<figure class="wuthering-media-item"><button class="wuthering-lightbox-open" type="button" data-lightbox-src="'+asset(item.src)+'" data-lightbox-alt="'+esc(item.alt||activeGroup.title)+'" data-lightbox-title="'+esc(activeGroup?.title||p.title)+'" aria-label="เปิดดูภาพขนาดใหญ่ '+esc(item.alt||activeGroup.title)+'"><img src="'+asset(item.src)+'" alt="'+esc(item.alt||activeGroup.title)+'" loading="'+(index===0?'eager':'lazy')+'"></button></figure>').join('')+'</div>':'<div class="wuthering-media-empty"><span class="eyebrow accent">COMING SOON</span><h3>กำลังเตรียมไฟล์ '+esc(activeGroup?.title||'ผลงาน')+'</h3><p>โครงสร้างหมวดนี้พร้อมใช้งาน และจะแสดงผลงานทันทีเมื่อเพิ่มไฟล์สื่อเข้ามา</p></div>';
       return heading('CASE STUDY / '+esc(p.category),esc(p.title),esc(p.subtitle))+'<section class="page-body container">'+caseOverview+'<figure class="wuthering-detail-banner"><img src="'+asset(p.detailCover||p.image)+'" alt="แบนเนอร์หลัก '+esc(p.title)+'" loading="eager"></figure>'+mediaNav+'<section class="wuthering-media-section"><header class="case-gallery-group-heading"><div><span class="eyebrow accent">'+esc(activeGroup?.label||'PROJECT MEDIA')+'</span><h2>'+esc(activeGroup?.title||'Project Media')+'</h2></div><span class="case-gallery-count">'+items.length+' '+(items.length===1?'item':'items')+'</span></header><p class="wuthering-media-description">'+esc(activeGroup?.description||'')+'</p>'+mediaContent+'</section><a class="text-link" href="#/work" style="margin-top:25px">Back to All Work '+arrow+'</a></section>';
     }
     if(p.category==='Video & Motion'&&asset(p.videoUrl)){
@@ -287,12 +287,24 @@
   document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!menu.hidden)closeMenu(true)});
   document.getElementById('back-top').addEventListener('click',()=>window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'}));
   main.addEventListener('click',e=>{
+    const lightboxButton=e.target.closest('[data-lightbox-src]');
+    if(lightboxButton){
+      const src=asset(lightboxButton.dataset.lightboxSrc),alt=lightboxButton.dataset.lightboxAlt||'Project image';
+      if(src){
+        galleryDialogTitle.textContent=lightboxButton.dataset.lightboxTitle||'Project Image';
+        galleryDialogGrid.classList.add('is-lightbox');
+        galleryDialogGrid.innerHTML='<figure><img src="'+src+'" alt="'+esc(alt)+'"></figure>';
+        galleryDialog.showModal();
+      }
+      return;
+    }
     const albumButton=e.target.closest('[data-open-album]');
     if(albumButton){
       const project=projects.find(item=>item.id===albumButton.dataset.project),set=project?.workSets?.[Number(albumButton.dataset.openAlbum)];
       if(project&&set?.type==='album'){
         const images=set.images.filter(item=>asset(item.src));
         galleryDialogTitle.textContent=project.title+' — Album Design';
+        galleryDialogGrid.classList.remove('is-lightbox');
         galleryDialogGrid.innerHTML=images.map((item,index)=>'<figure><img src="'+asset(item.src)+'" alt="'+esc(item.alt||project.title)+'" loading="'+(index===0?'eager':'lazy')+'"><figcaption>'+String(index+1).padStart(2,'0')+' / '+String(images.length).padStart(2,'0')+'</figcaption></figure>').join('');
         galleryDialog.showModal();
       }
