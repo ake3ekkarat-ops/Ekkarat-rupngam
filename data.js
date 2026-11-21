@@ -914,6 +914,7 @@ window.PORTFOLIO = {
       "detailLabel": "Event Key Visual & Creative Production",
       "detailSummary": "Freelance Project · AIS Esports",
       "detailNote": "Graphic & Key Visual · Video & Motion",
+      "hideIntroRoleCopy": true,
       "detailContributions": [
         "Event Key Visual Design",
         "Event Production Artwork",
