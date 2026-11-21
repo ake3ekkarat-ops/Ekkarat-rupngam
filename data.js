@@ -903,14 +903,32 @@ window.PORTFOLIO = {
       "title": "Wuthering Waves",
       "brandName": "AIS eSports",
       "category": "Graphic & Key Visual",
-      "subtitle": "Event Key Visual",
-      "description": "งานกราฟิกและ Key Visual สำหรับสื่อประชาสัมพันธ์กิจกรรม Wuthering Waves",
+      "subtitle": "Event Key Visual & Creative Production",
+      "description": "รับผิดชอบงานออกแบบกราฟิกและสื่อสร้างสรรค์สำหรับกิจกรรม Wuthering Waves ในฐานะฟรีแลนซ์ ครอบคลุมทั้งสื่อประชาสัมพันธ์ออนไลน์และสื่อภายในพื้นที่จัดกิจกรรม",
       "visual": "wuthering-waves",
       "mark": "WW",
       "image": "media-28d25da0fb61.jpg",
       "detailCover": "media-wuthering-waves-banner.png",
       "detailImage": "assets/brands/ais-esports.jpg",
       "detailLayout": "media-categories",
+      "detailLabel": "Event Key Visual & Creative Production",
+      "detailSummary": "Freelance Project · AIS Esports",
+      "detailNote": "Graphic & Key Visual · Video & Motion",
+      "detailContributions": [
+        "Event Key Visual Design",
+        "Event Production Artwork",
+        "Online Banner Ads Design",
+        "Event Screen Motion Graphics"
+      ],
+      "projectType": "Freelance Project",
+      "clientEvent": "AIS Esports",
+      "disciplines": "Graphic & Key Visual · Video & Motion",
+      "overviewParagraphs": [
+        "รับผิดชอบงานออกแบบกราฟิกและสื่อสร้างสรรค์สำหรับกิจกรรม Wuthering Waves ในฐานะฟรีแลนซ์ ครอบคลุมทั้งสื่อประชาสัมพันธ์ออนไลน์และสื่อสำหรับใช้งานภายในพื้นที่จัดกิจกรรม",
+        "ขอบเขตงานประกอบด้วยการออกแบบ Key Visual หลักของกิจกรรม การพัฒนา Artwork สำหรับงานผลิตและสื่อประชาสัมพันธ์ภายในงาน การออกแบบ Banner Ads สำหรับเผยแพร่ผ่านเพจ AIS Esports Tournament รวมถึงการจัดทำ Motion Graphics สำหรับแสดงผลบนจอภายในงาน",
+        "มุ่งเน้นการถ่ายทอดบรรยากาศและเอกลักษณ์ของเกมผ่านงานภาพให้มีความสอดคล้องกันในทุกช่องทางการใช้งาน"
+      ],
+      "projectHighlights": "โปรเจกต์นี้นำงานออกแบบ Key Visual ไปพัฒนาต่อยอดเป็นสื่อหลากหลายรูปแบบ ทั้งภาพนิ่งสำหรับโฆษณาออนไลน์ งานกราฟิกสำหรับผลิตจริง และโมชั่นกราฟิกบนจอภายในงาน เพื่อสร้างความต่อเนื่องของภาพลักษณ์และบรรยากาศกิจกรรม",
       "mediaGroups": [
         {
           "id": "online",
@@ -937,13 +955,16 @@ window.PORTFOLIO = {
         }
       ],
       "gallery": [],
-      "overview": "นำเสนอภาพผลงาน Key Visual กิจกรรม Wuthering Waves จากไฟล์ผลงานที่จัดเก็บในหมวด Graphic & Key Visual",
-      "context": null,
-      "challenge": null,
-      "role": null,
-      "approach": null,
+      "overview": "ออกแบบ Key Visual และพัฒนาสื่อสร้างสรรค์สำหรับกิจกรรม Wuthering Waves ทั้งสื่อออนไลน์ งานผลิต และโมชั่นกราฟิกสำหรับจอภายในงาน",
+      "context": "Freelance Project สำหรับ AIS Esports",
+      "challenge": "ถ่ายทอดบรรยากาศและเอกลักษณ์ของเกมให้สอดคล้องกันในทุกช่องทางและรูปแบบสื่อ",
+      "role": "Event Key Visual Design / Event Production Artwork / Online Banner Ads Design / Event Screen Motion Graphics",
+      "approach": "พัฒนา Key Visual หลักเป็นระบบภาพที่ต่อยอดได้ทั้ง Banner Ads งานผลิตภายในพื้นที่ และ Motion Graphics โดยรักษาความต่อเนื่องขององค์ประกอบ สี และบรรยากาศกิจกรรม",
       "deliverables": [
-        "Key Visual"
+        "Event Key Visual",
+        "Event Production Artwork",
+        "Online Banner Ads",
+        "Event Screen Motion Graphics"
       ],
       "results": null
     },
