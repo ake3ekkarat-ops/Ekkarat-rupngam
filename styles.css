@@ -775,7 +775,7 @@ a.contact-channel:hover { border-color: var(--secondary); background: #221d4580;
 @media (max-width: 1000px) { .contact-grid-direct .contact-channels { grid-template-columns: minmax(0, 1fr); } }
 
 /* Fit real artwork to its original format without cropping. */
-.work-grid .project-card .thumbnail:is(.wuthering-waves, .sgs-hawaii) { aspect-ratio: 4 / 5; }
+.work-grid .project-card .thumbnail:is(.wuthering-waves, .sgs-hawaii, .sgs-wonderland) { aspect-ratio: 4 / 5; }
 .work-grid .project-card .thumbnail.yum-yum { aspect-ratio: 714 / 1008; }
 .work-grid .project-card .thumbnail.ocs-symposium { aspect-ratio: 595 / 842; }
 .work-grid .project-card .thumbnail.tu-dentistry { aspect-ratio: 1263 / 1787; }
@@ -994,11 +994,6 @@ body:has(.case-hero img[src="media-wuthering-waves-banner.png"]) .case-gallery {
   transform: scale(1.06);
 }
 
-/* SGS Wonderland KV fills the complete visual area of its project card. */
-.work-grid .thumbnail.sgs-wonderland .thumbnail-image {
-  object-fit: cover !important;
-  object-position: center !important;
-}
 .brand-logo-tile:has(.brand-logo-image[alt="Dohome"]) {
   padding: 0;
   background: #f5662a;
