@@ -803,6 +803,8 @@ body:has(.case-hero img[src="media-wuthering-waves-banner.png"]) .case-gallery {
 .wuthering-detail-banner{margin:0 0 24px;overflow:hidden;border:1px solid var(--line);border-radius:14px;background:#08061e}
 .wuthering-detail-banner img{display:block;width:100%;height:auto}
 .wuthering-media-filters{margin-bottom:clamp(48px,7vw,76px);grid-template-columns:repeat(3,minmax(0,1fr))}
+.wuthering-media-filters a{place-items:center;text-align:center}
+.wuthering-media-filters strong{line-height:1}
 .wuthering-media-section{min-width:0}
 .wuthering-media-description{max-width:720px;margin:-4px 0 24px;color:var(--muted);font-size:14px;line-height:1.8}
 .wuthering-media-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:start}
