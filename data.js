@@ -910,6 +910,34 @@ window.PORTFOLIO = {
       "image": "media-28d25da0fb61.jpg",
       "detailCover": "media-wuthering-waves-banner.png",
       "detailImage": "assets/brands/ais-esports.jpg",
+      "detailLayout": "media-categories",
+      "mediaGroups": [
+        {
+          "id": "online",
+          "title": "สื่อออนไลน์",
+          "label": "Online Media",
+          "description": "Key Visual สำหรับประชาสัมพันธ์กิจกรรมบนช่องทางออนไลน์",
+          "items": [
+            { "type": "image", "src": "media-28d25da0fb61.jpg", "alt": "Wuthering Waves — Online Event Key Visual" }
+          ]
+        },
+        {
+          "id": "production",
+          "title": "งานผลิต",
+          "label": "Production",
+          "description": "ตัวอย่างการนำ Key Visual ไปประยุกต์ใช้กับสื่อประชาสัมพันธ์หน้างาน",
+          "items": [
+            { "type": "image", "src": "media-wuthering-waves-production.png", "alt": "Wuthering Waves — Production Media Mockup" }
+          ]
+        },
+        {
+          "id": "motion",
+          "title": "Motion ขึ้นจอ",
+          "label": "On-screen Motion",
+          "description": "งาน Motion Graphic สำหรับนำเสนอขึ้นจอภายในพื้นที่จัดกิจกรรม",
+          "items": []
+        }
+      ],
       "gallery": [],
       "overview": "นำเสนอภาพผลงาน Key Visual กิจกรรม Wuthering Waves จากไฟล์ผลงานที่จัดเก็บในหมวด Graphic & Key Visual",
       "context": null,
