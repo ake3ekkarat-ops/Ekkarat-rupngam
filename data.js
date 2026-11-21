@@ -915,7 +915,7 @@ window.PORTFOLIO = {
         {
           "id": "online",
           "title": "สื่อออนไลน์",
-          "label": "Online Media",
+          "label": "Digital Media",
           "description": "Key Visual สำหรับประชาสัมพันธ์กิจกรรมบนช่องทางออนไลน์",
           "items": [
             { "type": "image", "src": "media-28d25da0fb61.jpg", "alt": "Wuthering Waves — Online Event Key Visual" }
@@ -923,16 +923,14 @@ window.PORTFOLIO = {
         },
         {
           "id": "production",
-          "title": "งานผลิต",
-          "label": "Production",
-          "description": "ตัวอย่างการนำ Key Visual ไปประยุกต์ใช้กับสื่อประชาสัมพันธ์หน้างาน",
-          "items": [
-            { "type": "image", "src": "media-wuthering-waves-production.png", "alt": "Wuthering Waves — Production Media Mockup" }
-          ]
+          "title": "สื่อสำหรับงานผลิต",
+          "label": "Production Assets",
+          "description": "ไฟล์กราฟิกและสื่อสำหรับนำไปผลิตและติดตั้งในพื้นที่จัดกิจกรรม",
+          "items": []
         },
         {
           "id": "motion",
-          "title": "Motion ขึ้นจอ",
+          "title": "โมชันบนจอ",
           "label": "On-screen Motion",
           "description": "งาน Motion Graphic สำหรับนำเสนอขึ้นจอภายในพื้นที่จัดกิจกรรม",
           "items": []
