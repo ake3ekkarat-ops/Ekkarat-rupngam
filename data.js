@@ -914,7 +914,7 @@ window.PORTFOLIO = {
       "mediaGroups": [
         {
           "id": "online",
-          "title": "สื่อออนไลน์",
+          "title": "Online Media",
           "label": "Digital Media",
           "description": "Key Visual สำหรับประชาสัมพันธ์กิจกรรมบนช่องทางออนไลน์",
           "items": [
@@ -923,15 +923,15 @@ window.PORTFOLIO = {
         },
         {
           "id": "production",
-          "title": "สื่อสำหรับงานผลิต",
+          "title": "Production Media",
           "label": "Production Assets",
           "description": "ไฟล์กราฟิกและสื่อสำหรับนำไปผลิตและติดตั้งในพื้นที่จัดกิจกรรม",
           "items": []
         },
         {
           "id": "motion",
-          "title": "โมชันบนจอ",
-          "label": "On-screen Motion",
+          "title": "On-screen Motion",
+          "label": "Motion Graphics",
           "description": "งาน Motion Graphic สำหรับนำเสนอขึ้นจอภายในพื้นที่จัดกิจกรรม",
           "items": []
         }
