@@ -3,7 +3,7 @@
   const {profile,projects,categories,services,process:steps}=window.PORTFOLIO;
   const main=document.getElementById('main'),dialog=document.getElementById('brief-dialog'),galleryDialog=document.getElementById('gallery-dialog'),galleryDialogTitle=document.getElementById('gallery-dialog-title'),galleryDialogGrid=document.getElementById('gallery-dialog-grid');
   const menu=document.getElementById('mobile-menu'),menuToggle=document.getElementById('menu-toggle');
-  let draft={},briefRows=[],activeCategory='All Projects',revealObserver;
+  let draft={},briefRows=[],activeCategory='All Projects',revealObserver,pendingScrollY=null;
   const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const arrow='<span aria-hidden="true">↗</span>';
   function asset(value){if(!value)return '';const v=String(value).trim();return /^(https?:\/\/|\.\.?\/|[a-z0-9_-]+\/)/i.test(v)||/^[a-z0-9_.-]+\.(png|jpe?g|webp|svg|mp4|webm)$/i.test(v)?esc(v):''}
@@ -221,6 +221,8 @@
       </section>`;
   }
   function render(){
+    const restoreScroll=Number.isFinite(pendingScrollY)?pendingScrollY:null;
+    pendingScrollY=null;
     const raw=location.hash.slice(1)||'/';
     if(!raw.startsWith('/'))return;
     rememberDraft();closeMenu();if(dialog.open)dialog.close();if(galleryDialog.open)galleryDialog.close();
@@ -255,7 +257,7 @@
     const title=route==='project'?(projects.find(p=>p.id===parts[1])?.title||'Project'):({home:'Creative Designer & Digital Creator',work:'Work',services:'Services',about:'About',ai:'AI Learning',contact:'Contact'}[route]||'Page not found');
     document.title='AKE EKKARAT — '+title;
     setupForm(params.get('service'));
-    window.scrollTo({top:0,behavior:'instant'});main.focus({preventScroll:true});
+    window.scrollTo({top:restoreScroll??0,behavior:'instant'});main.focus({preventScroll:true});
     if(route==='services'&&params.get('focus'))requestAnimationFrame(()=>document.getElementById('service-'+params.get('focus'))?.scrollIntoView({block:'start'}));
     reveal();
   }
@@ -287,6 +289,15 @@
   document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!menu.hidden)closeMenu(true)});
   document.getElementById('back-top').addEventListener('click',()=>window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'}));
   main.addEventListener('click',e=>{
+    const mediaFilter=e.target.closest('.wuthering-media-filters a');
+    if(mediaFilter){
+      e.preventDefault();
+      const nextHash=new URL(mediaFilter.href,location.href).hash;
+      if(nextHash===location.hash)return;
+      pendingScrollY=window.scrollY;
+      location.hash=nextHash;
+      return;
+    }
     const lightboxButton=e.target.closest('[data-lightbox-src]');
     if(lightboxButton){
       const src=asset(lightboxButton.dataset.lightboxSrc),alt=lightboxButton.dataset.lightboxAlt||'Project image';
