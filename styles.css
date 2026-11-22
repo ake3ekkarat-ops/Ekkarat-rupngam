@@ -293,6 +293,9 @@ body:has(.hero-stage) {
   width: 112px;
   height: 112px;
 }
+.collaborator-group--large .collaborator-logos {
+  justify-content: center;
+}
 .collaborator-logos--small .brand-logo-tile {
   flex-basis: 88px;
   width: 88px;
@@ -345,6 +348,25 @@ body:has(.hero-stage) {
   max-height: none;
   border-radius: 50%;
   object-fit: cover;
+}
+
+/* Present established-brand logos as centered marks on clean white tiles. */
+.collaborator-logos--large .brand-logo-tile:has(.brand-logo-image[alt="YUM YUM — Well-Being Sports Day"]),
+.collaborator-logos--large .brand-logo-tile:has(.brand-logo-image[alt="MEGA We care"]),
+.collaborator-logos--large .brand-logo-tile:has(.brand-logo-image[alt="คณะทันตแพทยศาสตร์ มหาวิทยาลัยธรรมศาสตร์"]) {
+  padding: 14px;
+  background: #fff;
+}
+.collaborator-logos--large .brand-logo-tile:has(.brand-logo-image[alt="YUM YUM — Well-Being Sports Day"]) .brand-logo-image,
+.collaborator-logos--large .brand-logo-tile:has(.brand-logo-image[alt="MEGA We care"]) .brand-logo-image,
+.collaborator-logos--large .brand-logo-tile:has(.brand-logo-image[alt="คณะทันตแพทยศาสตร์ มหาวิทยาลัยธรรมศาสตร์"]) .brand-logo-image {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 0;
+  object-fit: contain;
+  object-position: center;
 }
 
 /* King Long artwork contains generous white margins; zoom it inside the circular tile. */
