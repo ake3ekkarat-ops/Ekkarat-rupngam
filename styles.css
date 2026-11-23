@@ -856,6 +856,8 @@ body:has(.case-hero img[src="media-wuthering-waves-banner.png"]) .case-gallery {
 .wuthering-media-album-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;padding:4px}
 .wuthering-media-album-grid img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;object-position:top}
 .wuthering-media-album-grid img:first-child{grid-column:1/-1;aspect-ratio:3/2}
+.wuthering-media-album.is-stack .wuthering-media-album-grid{grid-template-columns:minmax(0,1fr)}
+.wuthering-media-album.is-stack .wuthering-media-album-grid img,.wuthering-media-album.is-stack .wuthering-media-album-grid img:first-child{grid-column:auto;aspect-ratio:3/2}
 .wuthering-album-open{position:absolute;inset:0;width:100%;border:0;background:transparent;cursor:zoom-in}
 .wuthering-album-open:hover{background:#58baff0b}
 .wuthering-album-open:focus-visible{outline:3px solid var(--secondary);outline-offset:-5px}

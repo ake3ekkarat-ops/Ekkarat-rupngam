@@ -947,6 +947,19 @@ window.PORTFOLIO = {
                 { "src": "media-wuthering-waves-activity-schedule-03.jpg", "alt": "Wuthering Waves — Event activities" },
                 { "src": "media-wuthering-waves-activity-schedule-04.jpg", "alt": "Wuthering Waves — Activity rewards" }
               ]
+            },
+            { "type": "image", "title": "Event Giveaways", "src": "media-wuthering-waves-giveaways.jpg", "alt": "Wuthering Waves — Event giveaways and special rewards" },
+            { "type": "image", "title": "Influencers", "src": "media-wuthering-waves-influencers.jpg", "alt": "Wuthering Waves — Participating influencers announcement" },
+            { "type": "image", "title": "3-Day Countdown", "src": "media-wuthering-waves-3-day-countdown.jpg", "alt": "Wuthering Waves — Three days countdown artwork" },
+            { "type": "image", "title": "Get Ready", "src": "media-wuthering-waves-get-ready.jpg", "alt": "Wuthering Waves — Event venue and travel information" },
+            {
+              "type": "album",
+              "layout": "stack",
+              "title": "Live On Album",
+              "images": [
+                { "src": "media-wuthering-waves-live-on-day-1.jpg", "alt": "Wuthering Waves — Live On Day 1" },
+                { "src": "media-wuthering-waves-live-on-day-2.jpg", "alt": "Wuthering Waves — Live On Day 2" }
+              ]
             }
           ]
         },
