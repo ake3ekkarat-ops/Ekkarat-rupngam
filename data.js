@@ -937,7 +937,7 @@ window.PORTFOLIO = {
           "label": "",
           "description": "สื่อประชาสัมพันธ์ออนไลน์สำหรับเผยแพร่ผ่านเพจ AIS Esports Tournament",
           "items": [
-            { "type": "image", "title": "Facebook Page Banner", "src": "media-wuthering-waves-facebook-announcement.jpg", "alt": "Wuthering Waves — Facebook Page announcement banner" },
+            { "type": "image", "title": "Key Visual", "src": "media-wuthering-waves-facebook-announcement.jpg", "alt": "Wuthering Waves — Facebook Page announcement banner" },
             {
               "type": "album",
               "title": "Activity Schedule Album",
