@@ -935,9 +935,19 @@ window.PORTFOLIO = {
           "id": "online",
           "title": "Online",
           "label": "",
-          "description": "Key Visual สำหรับประชาสัมพันธ์กิจกรรมบนช่องทางออนไลน์",
+          "description": "สื่อประชาสัมพันธ์ออนไลน์สำหรับเผยแพร่ผ่านเพจ AIS Esports Tournament",
           "items": [
-            { "type": "image", "src": "media-28d25da0fb61.jpg", "alt": "Wuthering Waves — Online Event Key Visual" }
+            { "type": "image", "title": "Facebook Page Banner", "src": "media-wuthering-waves-facebook-announcement.jpg", "alt": "Wuthering Waves — Facebook Page announcement banner" },
+            {
+              "type": "album",
+              "title": "Activity Schedule Album",
+              "images": [
+                { "src": "media-wuthering-waves-activity-schedule-01.jpg", "alt": "Wuthering Waves — Activity Schedule album cover" },
+                { "src": "media-wuthering-waves-activity-schedule-02.jpg", "alt": "Wuthering Waves — Activity Schedule and event timeline" },
+                { "src": "media-wuthering-waves-activity-schedule-03.jpg", "alt": "Wuthering Waves — Event activities" },
+                { "src": "media-wuthering-waves-activity-schedule-04.jpg", "alt": "Wuthering Waves — Activity rewards" }
+              ]
+            }
           ]
         },
         {

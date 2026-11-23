@@ -843,11 +843,21 @@ body:has(.case-hero img[src="media-wuthering-waves-banner.png"]) .case-gallery {
 .wuthering-media-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:start}
 .wuthering-media-grid:has(> :only-child){grid-template-columns:minmax(0,1fr)}
 .wuthering-media-item{width:min(100%,900px);margin:0 auto;overflow:hidden;border:1px solid var(--line);border-radius:14px;background:#0c0a25}
+.wuthering-media-item-title{padding:16px 18px;border-bottom:1px solid var(--line);font-family:var(--display);font-size:18px;font-weight:600}
 .wuthering-media-item img,.wuthering-media-item video{display:block;width:100%;height:auto}
 .wuthering-lightbox-open{display:block;width:100%;padding:0;border:0;background:transparent;cursor:zoom-in}
 .wuthering-lightbox-open img{transition:transform .25s ease,filter .25s ease}
 .wuthering-lightbox-open:hover img{transform:scale(1.015);filter:brightness(1.06)}
 .wuthering-lightbox-open:focus-visible{outline:3px solid var(--secondary);outline-offset:-5px}
+.wuthering-media-album{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:14px;background:#0c0a25}
+.wuthering-media-album header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:15px 18px;border-bottom:1px solid var(--line)}
+.wuthering-media-album header h3{margin:3px 0 0;font-size:18px}
+.wuthering-media-album header>span{color:var(--muted);font-size:12px;white-space:nowrap}
+.wuthering-media-album-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px;padding:4px}
+.wuthering-media-album-grid img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;object-position:top}
+.wuthering-album-open{position:absolute;inset:0;width:100%;border:0;background:transparent;cursor:zoom-in}
+.wuthering-album-open:hover{background:#58baff0b}
+.wuthering-album-open:focus-visible{outline:3px solid var(--secondary);outline-offset:-5px}
 .wuthering-media-empty{padding:clamp(32px,6vw,64px);border:1px dashed #743be880;border-radius:14px;background:linear-gradient(145deg,#191743aa,#12102faa);text-align:center}
 .wuthering-media-empty h3{margin:12px 0 8px;font-size:clamp(22px,3vw,32px)}
 .wuthering-media-empty p{color:var(--muted);font-size:14px;line-height:1.8}
