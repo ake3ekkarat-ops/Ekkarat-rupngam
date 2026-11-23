@@ -969,8 +969,8 @@ window.PORTFOLIO = {
           "label": "",
           "description": "Roll-up artwork สำหรับจุดกิจกรรม จุดลงทะเบียน และข้อมูลภายในพื้นที่จัดงาน",
           "items": [
-            { "type": "image", "src": "media-wuthering-waves-rollup-challenges.png", "alt": "Wuthering Waves — Roll-up artwork for event challenges" },
-            { "type": "image", "src": "media-wuthering-waves-rollup-registration.png", "alt": "Wuthering Waves — Roll-up artwork for registration and PDPA information" }
+            { "type": "image", "title": "Roll-up", "src": "media-wuthering-waves-rollup-challenges.png", "alt": "Wuthering Waves — Roll-up artwork for event challenges" },
+            { "type": "image", "title": "Roll-up", "src": "media-wuthering-waves-rollup-registration.png", "alt": "Wuthering Waves — Roll-up artwork for registration and PDPA information" }
           ]
         },
         {
