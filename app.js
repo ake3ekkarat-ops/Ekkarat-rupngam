@@ -4,6 +4,7 @@
   const main=document.getElementById('main'),dialog=document.getElementById('brief-dialog'),galleryDialog=document.getElementById('gallery-dialog'),galleryDialogTitle=document.getElementById('gallery-dialog-title'),galleryDialogGrid=document.getElementById('gallery-dialog-grid');
   const menu=document.getElementById('mobile-menu'),menuToggle=document.getElementById('menu-toggle');
   let draft={},briefRows=[],activeCategory='All Projects',revealObserver,pendingMediaScroll=null;
+  const projectDisplayOrder=(()=>{const shuffled=[...projects];for(let i=shuffled.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[shuffled[i],shuffled[j]]=[shuffled[j],shuffled[i]]}if(shuffled[0]?.id==='suf-create'&&shuffled.length>1)[shuffled[0],shuffled[1]]=[shuffled[1],shuffled[0]];return shuffled})();
   const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const arrow='<span aria-hidden="true">↗</span>';
   function asset(value){if(!value)return '';const v=String(value).trim();return /^(https?:\/\/|\.\.?\/|[a-z0-9_-]+\/)/i.test(v)||/^[a-z0-9_.-]+\.(png|jpe?g|webp|svg|mp4|webm)$/i.test(v)?esc(v):''}
@@ -64,7 +65,7 @@
     return p.cardOnly?`<article class="project-card project-card-static reveal" aria-label="${esc(p.title)} — รายละเอียดผลงานจะอัปเดตภายหลัง">${content}</article>`:`<a class="project-card reveal" href="#/project/${p.id}" aria-label="View ${esc(p.title)} case study">${content}</a>`;
   }
   function gallery(){return `<div class="filter-bar" role="group" aria-label="Project categories">${categories.map(c=>'<button class="filter" data-category="'+esc(c)+'" aria-pressed="'+(c===activeCategory)+'">'+esc(c)+'</button>').join('')}</div><div class="work-grid" id="project-grid">${filtered().map(card).join('')}</div><p class="result-count" id="result-count" role="status" aria-live="polite">${filtered().length} projects · ${esc(activeCategory)}</p>`}
-  function visibleProjects(){return projects.filter(project=>Boolean(asset(project.image)||asset(project.videoUrl)))}
+  function visibleProjects(){return projectDisplayOrder.filter(project=>Boolean(asset(project.image)||asset(project.videoUrl)))}
   function filtered(){const visible=visibleProjects();return activeCategory==='All Projects'?visible:visible.filter(p=>p.category===activeCategory)}
   function portfolioStats(){
     const source=item=>typeof item==='string'?item:item?.src;
