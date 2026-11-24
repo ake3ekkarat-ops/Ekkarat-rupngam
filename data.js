@@ -936,10 +936,16 @@ window.PORTFOLIO = {
           "title": "Online",
           "label": "",
           "description": "สื่อประชาสัมพันธ์ออนไลน์สำหรับเผยแพร่ผ่านเพจ AIS Esports Tournament",
+          "sections": [
+            { "id": "campaign", "title": "Campaign Launch", "description": "Key Visual และอัลบั้มข้อมูลกิจกรรมสำหรับเปิดตัวแคมเปญ" },
+            { "id": "updates", "title": "Campaign Updates", "description": "สื่อประชาสัมพันธ์ต่อเนื่องก่อนวันจัดกิจกรรม" },
+            { "id": "live", "title": "Live Event", "description": "อัลบั้มประชาสัมพันธ์ระหว่างวันจัดกิจกรรม" }
+          ],
           "items": [
-            { "type": "image", "title": "Key Visual", "src": "media-wuthering-waves-facebook-announcement.jpg", "alt": "Wuthering Waves — Facebook Page announcement banner" },
+            { "type": "image", "section": "campaign", "title": "Key Visual", "src": "media-wuthering-waves-facebook-announcement.jpg", "alt": "Wuthering Waves — Facebook Page announcement banner" },
             {
               "type": "album",
+              "section": "campaign",
               "title": "Activity Schedule Album",
               "images": [
                 { "src": "media-wuthering-waves-activity-schedule-01.jpg", "alt": "Wuthering Waves — Activity Schedule album cover" },
@@ -948,12 +954,13 @@ window.PORTFOLIO = {
                 { "src": "media-wuthering-waves-activity-schedule-04.jpg", "alt": "Wuthering Waves — Activity rewards" }
               ]
             },
-            { "type": "image", "title": "Event Giveaways", "src": "media-wuthering-waves-giveaways.jpg", "alt": "Wuthering Waves — Event giveaways and special rewards" },
-            { "type": "image", "title": "Influencers", "src": "media-wuthering-waves-influencers.jpg", "alt": "Wuthering Waves — Participating influencers announcement" },
-            { "type": "image", "title": "3-Day Countdown", "src": "media-wuthering-waves-3-day-countdown.jpg", "alt": "Wuthering Waves — Three days countdown artwork" },
-            { "type": "image", "title": "Get Ready", "src": "media-wuthering-waves-get-ready.jpg", "alt": "Wuthering Waves — Event venue and travel information" },
+            { "type": "image", "section": "updates", "title": "Event Giveaways", "src": "media-wuthering-waves-giveaways.jpg", "alt": "Wuthering Waves — Event giveaways and special rewards" },
+            { "type": "image", "section": "updates", "title": "Influencers", "src": "media-wuthering-waves-influencers.jpg", "alt": "Wuthering Waves — Participating influencers announcement" },
+            { "type": "image", "section": "updates", "title": "3-Day Countdown", "src": "media-wuthering-waves-3-day-countdown.jpg", "alt": "Wuthering Waves — Three days countdown artwork" },
+            { "type": "image", "section": "updates", "title": "Get Ready", "src": "media-wuthering-waves-get-ready.jpg", "alt": "Wuthering Waves — Event venue and travel information" },
             {
               "type": "album",
+              "section": "live",
               "layout": "stack",
               "title": "Live On Album",
               "images": [

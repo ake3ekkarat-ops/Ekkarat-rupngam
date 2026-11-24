@@ -842,14 +842,21 @@ body:has(.case-hero img[src="media-wuthering-waves-banner.png"]) .case-gallery {
 .wuthering-media-description{max-width:720px;margin:-4px 0 24px;color:var(--muted);font-size:14px;line-height:1.8}
 .wuthering-media-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:start}
 .wuthering-media-grid:has(> :only-child){grid-template-columns:minmax(0,1fr)}
-.wuthering-media-item{width:min(100%,900px);margin:0 auto;overflow:hidden;border:1px solid var(--line);border-radius:14px;background:#0c0a25}
-.wuthering-media-item-title{padding:16px 18px;border-bottom:1px solid var(--line);font-family:var(--display);font-size:18px;font-weight:600}
-.wuthering-media-item img,.wuthering-media-item video{display:block;width:100%;height:auto}
-.wuthering-lightbox-open{display:block;width:100%;padding:0;border:0;background:transparent;cursor:zoom-in}
+.wuthering-online-groups{display:grid;gap:clamp(38px,6vw,68px)}
+.wuthering-online-group>header{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.wuthering-online-group>header h3{margin:7px 0 5px;font-size:clamp(23px,3vw,31px)}
+.wuthering-online-group>header p{max-width:620px;color:var(--muted);font-size:14px;line-height:1.7}
+.wuthering-online-group>header>span{color:var(--muted);font-size:12px;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+.wuthering-online-group--live .wuthering-media-grid{grid-template-columns:minmax(0,820px);justify-content:center}
+.wuthering-media-item{display:flex;min-width:0;height:100%;margin:0;overflow:hidden;border:1px solid var(--line);border-radius:14px;background:linear-gradient(145deg,#111032,#09081f);flex-direction:column}
+.wuthering-media-item-title{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 18px;border-bottom:1px solid var(--line);font-family:var(--display);font-size:18px;font-weight:600}
+.wuthering-media-item-title small{color:var(--muted);font-family:var(--body);font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+.wuthering-media-item img,.wuthering-media-item video{display:block;width:100%;height:100%;object-fit:contain}
+.wuthering-lightbox-open{display:flex;width:100%;height:clamp(320px,38vw,520px);padding:14px;border:0;background:radial-gradient(circle at 50% 45%,#1d2352 0,#0a0923 72%);cursor:zoom-in;align-items:center;justify-content:center}
 .wuthering-lightbox-open img{transition:transform .25s ease,filter .25s ease}
 .wuthering-lightbox-open:hover img{transform:scale(1.015);filter:brightness(1.06)}
 .wuthering-lightbox-open:focus-visible{outline:3px solid var(--secondary);outline-offset:-5px}
-.wuthering-media-album{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:14px;background:#0c0a25}
+.wuthering-media-album{position:relative;height:100%;overflow:hidden;border:1px solid var(--line);border-radius:14px;background:linear-gradient(145deg,#111032,#09081f)}
 .wuthering-media-album header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:15px 18px;border-bottom:1px solid var(--line)}
 .wuthering-media-album header h3{margin:3px 0 0;font-size:18px}
 .wuthering-media-album header>span{color:var(--muted);font-size:12px;white-space:nowrap}
@@ -865,7 +872,7 @@ body:has(.case-hero img[src="media-wuthering-waves-banner.png"]) .case-gallery {
 .wuthering-media-empty h3{margin:12px 0 8px;font-size:clamp(22px,3vw,32px)}
 .wuthering-media-empty p{color:var(--muted);font-size:14px;line-height:1.8}
 @media (max-width:700px){.wuthering-project-meta,.wuthering-case-copy{grid-template-columns:minmax(0,1fr)}.wuthering-project-meta>div{border-right:0;border-bottom:1px solid var(--line)}.wuthering-project-meta>div:last-child{border-bottom:0}}
-@media (max-width:650px){.wuthering-media-filters{grid-template-columns:minmax(0,1fr);margin-bottom:44px}.wuthering-media-grid{grid-template-columns:minmax(0,1fr)}.wuthering-detail-banner{margin-bottom:18px}}
+@media (max-width:650px){.wuthering-media-filters{grid-template-columns:minmax(0,1fr);margin-bottom:44px}.wuthering-media-grid{grid-template-columns:minmax(0,1fr)}.wuthering-detail-banner{margin-bottom:18px}.wuthering-online-group>header{align-items:start;flex-direction:column}.wuthering-lightbox-open{height:min(118vw,520px)}}
 
 /* Equal artwork frames on Work; detail pages retain original proportions. */
 #main:not(:has(.hero-stage)) .work-grid .project-card .thumbnail {
