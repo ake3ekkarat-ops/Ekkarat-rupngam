@@ -827,17 +827,16 @@ body:has(.case-hero img[src="media-wuthering-waves-banner.png"]) .case-gallery {
 .wuthering-media-filters{margin-bottom:clamp(48px,7vw,76px);grid-template-columns:repeat(3,minmax(0,1fr))}
 .wuthering-media-filters a{place-items:center;text-align:center}
 .wuthering-media-filters strong{line-height:1}
-.wuthering-case-overview{margin:0 0 clamp(58px,8vw,92px)}
 .project-detail-meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-block:1px solid var(--line);margin-top:38px}
 .project-detail-meta>div{display:grid;gap:6px;padding:20px 22px;border-right:1px solid var(--line)}
 .project-detail-meta>div:last-child{border-right:0}
 .project-detail-meta span{color:var(--muted);font-size:9px;letter-spacing:.12em}
 .project-detail-meta strong{font-family:var(--display);font-size:15px;font-weight:500}
-.wuthering-case-copy{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(280px,.75fr);gap:clamp(36px,7vw,88px);padding-top:clamp(38px,6vw,64px)}
-.wuthering-case-copy h2{margin:12px 0 24px;font-size:clamp(28px,4vw,48px)}
-.wuthering-case-copy h3{margin:12px 0 18px;font-size:clamp(22px,3vw,31px)}
-.wuthering-case-copy p{margin-top:14px;color:var(--muted);font-size:14px;line-height:1.95}
-.wuthering-case-copy aside{padding:24px;border:1px solid var(--line);border-radius:12px;background:linear-gradient(145deg,#19174399,#12102f99)}
+.project-overview-standard{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(280px,.75fr);gap:clamp(36px,7vw,88px);margin-top:clamp(48px,7vw,76px);padding-top:clamp(38px,6vw,64px);border-top:1px solid var(--line)}
+.project-overview-standard h2{margin:12px 0 24px;font-size:clamp(28px,4vw,48px)}
+.project-overview-standard h3{margin:12px 0 18px;font-size:clamp(22px,3vw,31px)}
+.project-overview-standard p{margin-top:14px;color:var(--muted);font-size:14px;line-height:1.95}
+.project-overview-standard aside{padding:24px;border:1px solid var(--line);border-radius:12px;background:linear-gradient(145deg,#19174399,#12102f99)}
 .wuthering-media-section{min-width:0}
 .wuthering-media-description{max-width:720px;margin:-4px 0 24px;color:var(--muted);font-size:14px;line-height:1.8}
 .wuthering-media-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:start}
@@ -871,7 +870,7 @@ body:has(.case-hero img[src="media-wuthering-waves-banner.png"]) .case-gallery {
 .wuthering-media-empty{padding:clamp(32px,6vw,64px);border:1px dashed #743be880;border-radius:14px;background:linear-gradient(145deg,#191743aa,#12102faa);text-align:center}
 .wuthering-media-empty h3{margin:12px 0 8px;font-size:clamp(22px,3vw,32px)}
 .wuthering-media-empty p{color:var(--muted);font-size:14px;line-height:1.8}
-@media (max-width:700px){.project-detail-meta,.wuthering-case-copy{grid-template-columns:minmax(0,1fr)}.project-detail-meta>div{border-right:0;border-bottom:1px solid var(--line)}.project-detail-meta>div:last-child{border-bottom:0}}
+@media (max-width:700px){.project-detail-meta,.project-overview-standard{grid-template-columns:minmax(0,1fr)}.project-detail-meta>div{border-right:0;border-bottom:1px solid var(--line)}.project-detail-meta>div:last-child{border-bottom:0}}
 @media (max-width:650px){.wuthering-media-filters{grid-template-columns:minmax(0,1fr);margin-bottom:44px}.wuthering-media-grid{grid-template-columns:minmax(0,1fr)}.wuthering-detail-banner{margin-bottom:18px}.wuthering-online-group>header{align-items:start;flex-direction:column}.wuthering-lightbox-open{height:min(118vw,520px)}}
 
 /* Equal artwork frames on Work; detail pages retain original proportions. */

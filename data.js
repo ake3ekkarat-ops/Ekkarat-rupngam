@@ -924,6 +924,8 @@ window.PORTFOLIO = {
       "projectType": "Freelance Project",
       "clientEvent": "AIS Esports",
       "disciplines": "Graphic & Key Visual · Video & Motion",
+      "overviewTitle": "Event Key Visual & Creative Production",
+      "projectHighlightsTitle": "One visual system, multiple formats.",
       "overviewParagraphs": [
         "รับผิดชอบงานออกแบบกราฟิกและสื่อสร้างสรรค์สำหรับกิจกรรม Wuthering Waves ในฐานะฟรีแลนซ์ ครอบคลุมทั้งสื่อประชาสัมพันธ์ออนไลน์และสื่อสำหรับใช้งานภายในพื้นที่จัดกิจกรรม",
         "ขอบเขตงานประกอบด้วยการออกแบบ Key Visual หลักของกิจกรรม การพัฒนา Artwork สำหรับงานผลิตและสื่อประชาสัมพันธ์ภายในงาน การออกแบบ Banner Ads สำหรับเผยแพร่ผ่านเพจ AIS Esports Tournament รวมถึงการจัดทำ Motion Graphics สำหรับแสดงผลบนจอภายในงาน",
